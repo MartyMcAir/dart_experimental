@@ -1,4 +1,10 @@
 *.DS_Store
+ios/
+android/
+linux/
+macos/
+windows/
+web/
 
 # Created by https://www.toptal.com/developers/gitignore/api/intellij,visualstudiocode,dart,flutter
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij,visualstudiocode,dart,flutter
