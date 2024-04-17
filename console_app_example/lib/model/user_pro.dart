@@ -1,4 +1,4 @@
-import 'package:dart_application_1/model/user.dart';
+import './user.dart';
 
 mixin showLastName {
   showThisLastName(String lastName) {

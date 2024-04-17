@@ -1,4 +1,4 @@
-import 'package:dart_application_1/model/abstract_human.dart';
+import './abstract_human.dart';
 
 class Athlete extends Human {
   String mainSkill;

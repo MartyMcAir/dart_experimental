@@ -1,4 +1,4 @@
-import 'package:dart_application_1/utils/my_exception.dart';
+import './my_exception.dart';
 
 class CalcGeneric<T> {
   T secretKey;

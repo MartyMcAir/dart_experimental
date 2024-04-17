@@ -1,9 +1,8 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:dart_application_1/utils/calc.dart';
-import 'package:dart_application_1/utils/my_exception.dart';
-import 'package:test/expect.dart';
+import '../lib/utils/calc.dart';
+import '../lib/utils/my_exception.dart';
 
 void main(List<String> arguments) {
 // useGeneratorsSyncOrAsync();

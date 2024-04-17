@@ -1,4 +1,4 @@
-import 'package:dart_application_1/model/people.dart';
+import './people.dart';
 
 class Boss extends People {
   Boss(super.name, super.age, super.veight);

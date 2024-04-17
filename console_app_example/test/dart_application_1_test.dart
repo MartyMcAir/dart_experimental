@@ -1,5 +1,6 @@
-import 'package:dart_application_1/some_function_without_class.dart';
 import 'package:test/test.dart';
+
+import '../lib/some_function_without_class.dart';
 
 void main() {
   test('calculate', () {

@@ -1,19 +1,19 @@
 // import 'package:dart_application_1/some_function_without_class.dart';
-import 'package:dart_application_1/model/abstract_human.dart';
-import 'package:dart_application_1/model/athlete.dart';
-import 'package:dart_application_1/model/user_pro.dart';
-import 'package:dart_application_1/some_function_without_class.dart'
-    as dart_application_1;
-import 'package:dart_application_1/model/boss.dart';
-import 'package:dart_application_1/model/people.dart';
-import 'package:dart_application_1/model/user.dart';
-import 'package:dart_application_1/utils/calc.dart';
-import 'package:dart_application_1/utils/enum_colors.dart';
+
 
 // как работать с breakpoints: https://code.visualstudio.com/docs/editor/debugging#_breakpoints
 
 // https://github.com/dart-archive/dart-tutorials-samples
 // +++ https://www.jpryan.me/dartbyexample/
+
+import '../lib/model/athlete.dart';
+import '../lib/model/boss.dart';
+import '../lib/model/people.dart';
+import '../lib/model/user.dart';
+import '../lib/model/user_pro.dart';
+import '../lib/some_function_without_class.dart';
+import '../lib/utils/calc.dart';
+import '../lib/utils/enum_colors.dart';
 
 void main(List<String> arguments) {
   // variableExample();
@@ -40,7 +40,7 @@ useEnumExample() {
   //   print('name: ${element.name}, and opacity: ${element.opacity}'); }
 
   colorsList.forEach((element) {
-    print('name: ${element.name}, and opacity: ${element.opacity}');
+    print('name: ${element?.name}, and opacity: ${element?.opacity}');
   });
 }
 
@@ -116,7 +116,7 @@ useOopExample() {
 }
 
 useFunctionExample() {
-  print('Hello world: ${dart_application_1.calculate()}!');
+  print('Hello world: ${calculate()}!');
   // var because can be return int or double
   var multiplyResult = multiply(1, 3, d: 8);
   print(multiplyResult);

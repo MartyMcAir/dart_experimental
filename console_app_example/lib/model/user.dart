@@ -1,5 +1,5 @@
-import 'package:dart_application_1/model/name.dart';
-import 'package:dart_application_1/model/user_pro.dart';
+import './name.dart';
+import './user_pro.dart';
 
 import 'id.dart';
 
