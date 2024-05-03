@@ -1,5 +1,3 @@
-import './user.dart';
-
 mixin showLastName {
   showThisLastName(String lastName) {
     print('showThisLastName: $lastName');

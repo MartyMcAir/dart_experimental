@@ -6,7 +6,7 @@ class Boss extends People {
   String _title = 'some';
 
   String get getTitle => _title;
-  String get initialTitle => _title ?? 'someTitle';
+  String get initialTitle => _title;
 
   set setTitle(String title) => _title = title;
 

@@ -153,7 +153,9 @@ useTryCatchBlockExample() {
   try {
     var divisionResult = CalcGeneric.divisionWithTilda(10, 0);
     print(divisionResult);
+    // } on UnsupportedError catch (e) { // <- handle UnsupportedError ONLY
   } catch (e) {
+    // throw Exception('some exception message');
     print('1) e $e'); // IntegerDivisionByZeroException
   } finally {
     print('program is done, and all resources is closed');
