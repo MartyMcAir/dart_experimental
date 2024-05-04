@@ -1,0 +1,11 @@
+{
+	"level": "info",
+	"evableFilters": true,
+	"prettypPrinter": {
+		"methodCount": 2,
+		"errorMethodCount": 8,
+		"lineLength": 120,
+		"colors": true,
+		"printTime": true
+	}
+}

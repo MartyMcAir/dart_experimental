@@ -1,10 +1,13 @@
+import 'dart:async';
+
 import 'enum.dart';
 
 void main() {
   // int
-  final storageInt = LocalStorage(5);
-  final storageStr = LocalStorage("string");
-  final storageDouble = LocalStorage<double>(3.14);
+  LocalStorage<double> storageStr = LocalStorage("string", value: 3.15);
+  var storageDouble =
+      LocalStorage<double>("", value: 3.14, nullableValue: null);
+  final storageInt = LocalStorage("", value: 5);
 
   int some = 2 + 2;
   print("runTimeType:");
@@ -12,9 +15,16 @@ void main() {
 }
 
 class LocalStorage<T> {
-  late T _value;
+  String? nullableValue;
+  late T value;
+  String _some;
 
-  LocalStorage(this._value);
+  LocalStorage(this._some, {required this.value, this.nullableValue});
+
+  String get some => _some;
+  set setSome(someNew) => this._some = someNew;
+
+  // LocalStorage(this._value);
 
   // T get value => _value;
   // set value(T value) {
@@ -23,8 +33,8 @@ class LocalStorage<T> {
 
   // like a CRUD
 
-  T read() => _value;
+  T read() => value;
   void update(T value) {
-    this._value = value;
+    this.value = value;
   }
 }

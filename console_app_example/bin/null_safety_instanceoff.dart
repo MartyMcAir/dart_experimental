@@ -1,4 +1,11 @@
 void main(List<String> arguments) {
+  String? varCanBeNull;
+  String varCantBeNullButEmpty = "";
+  varCanBeNull = "some";
+  varCanBeNull = null;
+  print(varCanBeNull);
+  print(varCantBeNullButEmpty);
+
   // class DateTime https://www.youtube.com/watch?v=QxltJeUlzCk&list=PLyaYkfwvXhRLQSevXcKNIlz4JtPt2W7P_&index=9
   DateTime someDate = DateTime(2020, 9, 1);
   print(someDate); // 2020-09-01 00:00:00.000
@@ -47,4 +54,33 @@ useNullSafetyAndInstanceOffExample() {
   int someInt = 3;
   print('someDouble is num: ${someDouble is num}'); // true
   print('someInt is num: ${someInt is num}'); // true
+
+  SomeStorage storage1 = SomeStorage(value: 13);
+  print(storage1.methodCantReturnNull());
+  print(storage1.methodCanReturnNull(
+      "unNamed not null req Str here", "unNamed required Null Str here",
+      namedReqStr: "namedReqStr"));
+}
+
+class SomeStorage {
+  SomeStorage({required this.value});
+  int value;
+
+  // Dart 2.8 - don't nullSafety. For example.., because u can..
+  // String some;
+  // pring(some.substring(0,1)); // and it can compile
+  // but in Dart version >=2.9 it cant'be compile (runtime will be = show err)
+
+  // and more Example in Dart 2.8 u can write:
+  // String some; // var most be nullable OR initialize
+  // if(some !=null){ .. } // and it can be compile, but not in Dart v >=2.9
+  String methodCantReturnNull({int? namedNotRequiredVariable}) {
+    return "";
+  }
+
+  String? methodCanReturnNull(String unNamedReqStr, String? unNamedReqNullStr,
+      {String? namedNullStr, required String namedReqStr}) {
+    print("unNamedReqStr $unNamedReqStr and $unNamedReqNullStr");
+    return null;
+  }
 }
