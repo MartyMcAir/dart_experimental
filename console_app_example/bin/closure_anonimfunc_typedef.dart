@@ -4,7 +4,7 @@ typedef int FunctionTypeAlias2(int); // old way in Dart
 
 void main(List<String> arguments) {
   // Замыкание - https://www.youtube.com/watch?v=9ONB8FWqSMA&list=PL5hgLeGlfJX222dEJY-YWObfAewOIWbvD&index=29
-  // Пример на кнригах
+  // Пример на книгах
   // название книги постоянно, а вот издатель может меняться
 
   // Closure: (dynamic, dynamic) => dynamic from Function 'getBook': static.
@@ -18,6 +18,7 @@ void main(List<String> arguments) {
   print(bookResult); // Closure: (dynamic) => String
   bookResult('Another Publisher Editor _ is changed');
   print(bookResult); // Closure: (dynamic) => String
+  // using anonim function
 // ---
 
 //------------------------------------------------------
@@ -51,6 +52,11 @@ void doWorkForClosure(bool Function(int) callback) {
 }
 
 getBookWithClosure(bookName) {
+  // String namedFunction(bookName) {
+  //   return bookName;
+  // }
+
+  // using anonim function - No Name Function
   return (bookPublisher) {
     return 'bookName: $bookName, bookPublisher: $bookPublisher';
   };

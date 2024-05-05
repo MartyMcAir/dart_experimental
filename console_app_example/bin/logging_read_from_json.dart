@@ -36,6 +36,11 @@ class Alien {
 }
 
 // ---------------------- V2 USING JSON file ----------------------------
+/* * multiline comments
+* @param {some text here} multi comments
+* almost like in Java 
+*/
+/// documentaion comment here [some_greeting_var]
 Logger createLoggerFromJson() {
   Map<String, dynamic> jsonMap = getMapFromJsonFile('logging_config.json');
   return Logger(

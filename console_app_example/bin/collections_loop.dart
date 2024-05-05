@@ -1,6 +1,33 @@
 import 'package:dart_application_1/model/boss.dart';
 
 void main(List<String> arguments) {
+  // examples simpler
+  var exampleList = <double>[];
+  var exampleMap = <String, int>{};
+  var exampleSet = <int>{};
+
+  // for understanding what Type (of data) 'do' we use
+  List<double> exampleList2 = <double>[];
+  // Map<String, int> exampleMap2 = Map<String, int>();
+  Map<String, int> exampleMap3 = <String, int>{};
+  // Set<int> exampleSet2 = Set<int>();
+  Set<int> exampleSet2 = <int>{};
+  exampleMap3.clear();
+
+  exampleSet2.addAll(exampleSet);
+  // equalient addAll(*).addAll(*);
+  List someList = [...exampleList, ...exampleList2];
+
+  // cascade notation
+  someList
+    ..add(1)
+    ..add(2)
+    ..add(3);
+  // equalient
+  // someList.add(1);
+  // someList.add(2);
+  // someList.add(3);
+
   collectionFunctionExample();
 }
 

@@ -8,7 +8,11 @@ void main(List<String> arguments) {
 
   // class DateTime https://www.youtube.com/watch?v=QxltJeUlzCk&list=PLyaYkfwvXhRLQSevXcKNIlz4JtPt2W7P_&index=9
   DateTime someDate = DateTime(2020, 9, 1);
+  DateTime currentDate = DateTime.now();
   print(someDate); // 2020-09-01 00:00:00.000
+  print('currentDate: $currentDate'); // 2024-05-05 01:57:04.309706
+
+  print('DateTime.january ${DateTime.january}'); // 1
 
   DateTime parseDate = DateTime.parse('2020-09-01 21:00:00.000');
   print(parseDate); // 2020-09-01 21:00:00.000
@@ -31,42 +35,20 @@ void main(List<String> arguments) {
   DateTime newDate2 = someDate.add(Duration(hours: 22));
   print('parseDate.difference(newDate2): ${parseDate.difference(newDate2)}');
 
-  // useNullSafetyAndInstanceOffExample();
-}
-
-useNullSafetyAndInstanceOffExample() {
-  // https://www.youtube.com/watch?v=EwZO5ibNKBE&list=PLyaYkfwvXhRLQSevXcKNIlz4JtPt2W7P_&index=8
-  num? number;
-  num number2 = 888;
-  print('number?.isNegative: ${number?.isNegative}'); // null
-  print('number ?? 3: ${number ?? 3}'); // 3
-
-  // операторы: as _ is _ is!
-  print('(number2 as int).isEven: ${(number2 as int).isEven}'); // true _ четное
-  // type 'int' is not a subtype of type 'double' in type cast
-  // print((number2 as double));
-
-  // instanceOf в Dart это 'is'
-  print(number is double); // false
-  print(number is! double); // true
-
-  double someDouble = 3.14;
-  int someInt = 3;
-  print('someDouble is num: ${someDouble is num}'); // true
-  print('someInt is num: ${someInt is num}'); // true
-
   SomeStorage storage1 = SomeStorage(value: 13);
   print(storage1.methodCantReturnNull());
   print(storage1.methodCanReturnNull(
       "unNamed not null req Str here", "unNamed required Null Str here",
       namedReqStr: "namedReqStr"));
+  print(storage1.methodCanReturnNull2(
+      "unNamed not null req Str here", "unNamed required Null Str here"));
 }
 
 class SomeStorage {
   SomeStorage({required this.value});
   int value;
 
-  // Dart 2.8 - don't nullSafety. For example.., because u can..
+  // Dart 2.8 - don't nullSafety. For e>xample.., because u can..
   // String some;
   // pring(some.substring(0,1)); // and it can compile
   // but in Dart version >=2.9 it cant'be compile (runtime will be = show err)
@@ -80,6 +62,12 @@ class SomeStorage {
 
   String? methodCanReturnNull(String unNamedReqStr, String? unNamedReqNullStr,
       {String? namedNullStr, required String namedReqStr}) {
+    print("unNamedReqStr $unNamedReqStr and $unNamedReqNullStr");
+    return null;
+  }
+
+  String? methodCanReturnNull2(String unNamedReqStr, String? unNamedReqNullStr,
+      [int? notRequired, int? anotherNotReqVar]) {
     print("unNamedReqStr $unNamedReqStr and $unNamedReqNullStr");
     return null;
   }

@@ -46,7 +46,9 @@ class Tiger implements Animal {
 // ---------------------------------
 
 abstract class Bird implements Animal {
-  static String name = "";
+  // Static
+  // https://www.youtube.com/watch?v=7OwXBisej48&list=PL5hgLeGlfJX222dEJY-YWObfAewOIWbvD&index=20
+  static const String name = "";
 }
 
 class Duck extends Bird {
