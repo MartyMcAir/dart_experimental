@@ -1,0 +1,26 @@
+name: xz_form_app
+description: A sample demonstrating different types of forms and best practices
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.0
+  english_words: ^4.0.0 # for form example
+  intl: ^0.17.0 # for form example
+  http: ^0.13.0 # for form example
+  json_annotation: any # for form example
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0 # for form example
+  json_serializable: ^4.0.0 # for form example
+  # build_runner: ^1.11.0 # for form example =err if uncommented
+
+flutter:
+  uses-material-design: true

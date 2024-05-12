@@ -1,0 +1,23 @@
+name: sdk_2_17_3_0_examples
+description: Navigation and routing sample app
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  adaptive_navigation: ^0.0.3 # for bookstore
+  cupertino_icons: ^1.0.2 # for bookstore
+  path_to_regexp: ^0.4.0 # for bookstore
+  url_launcher: ^6.0.0 # for bookstore
+  url_strategy: ^0.2.0 # for bookstore
+  collection: ^1.15.0 # for bookstore
+  quiver: ^3.0.0 # for bookstore
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test: ^1.16.0 # for bookstore
+  flutter_lints: ^1.0.0
+flutter:
+  uses-material-design: true
