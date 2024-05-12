@@ -4,10 +4,10 @@ import 'package:path_provider/path_provider.dart';
 import 'package:file_picker/file_picker.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(TextEditorV2App());
 }
 
-class MyApp extends StatelessWidget {
+class TextEditorV2App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
