@@ -1,0 +1,14 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.organizeImports": "explicit"
+	},
+	"editor.formatOnSave": true,
+	"autoHide.autoHideAuxiliaryBar": true,
+	"autoHide.autoHideReferences": true,
+	"autoHide.hideOnOpen": false,
+	"autoHide.autoHidePanel": true,
+	"autoHide.autoHideSideBar": false,
+	"autoHide.sideBarDelay": 100,
+	"autoHide.panelDelay": 100
+}
