@@ -4,9 +4,6 @@ import 'package:flutter/material.dart';
 // такой импорт доступен для BaseContainer
 // благодаря lib/thytme/v3_auto_router/ui/ui.dart
 import '../../../ui/ui.dart';
-// import '../widgets/rhyme_history_card.dart'; // тут import который не нужен
-// тк используем импорт '../widgets/widgets.dart'
-import '../../../ui/widgets/rhyme_history_card.dart';
 import '../widgets/widgets.dart';
 
 @RoutePage()
@@ -49,7 +46,7 @@ class SearchScreen extends StatelessWidget {
         ),
         const SliverToBoxAdapter(child: SizedBox(height: 16)),
         SliverList.builder(
-          itemBuilder: (context, index) => const RhymeListCard(),
+          itemBuilder: (context, index) => const RhymeListCard(rhyme: 'Рифма'),
         ),
       ],
     );

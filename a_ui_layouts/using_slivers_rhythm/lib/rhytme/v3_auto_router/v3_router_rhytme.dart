@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'router/router.dart';
+import 'ui/theme/theme.dart';
 
 // 6 https://www.youtube.com/watch?v=WiOqf8HOWgM&list=PLtUuja72DaLIywRDTLSSM5kMJLrbrUvbT&index=6
 // flutter packages pub run build_runner build
@@ -23,15 +24,9 @@ class _RhymerAppState extends State<RhymerApp> {
 
   @override
   Widget build(BuildContext context) {
-    const primaryColor = Color(0xFFF82B10);
     return MaterialApp.router(
       title: 'Rhymer',
-      theme: ThemeData(
-        primaryColor: primaryColor,
-        scaffoldBackgroundColor: const Color(0xFFEFF1F3),
-        colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
-        useMaterial3: true,
-      ),
+      theme: themeData,
       routerConfig: _router.config(),
     );
   }

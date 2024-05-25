@@ -51,7 +51,9 @@ class SearchScreen extends StatelessWidget {
         ),
         const SliverToBoxAdapter(child: SizedBox(height: 5)), // отступ
         SliverList.builder(
-          itemBuilder: (context, index) => RhymeListcard(),
+          itemBuilder: (context, index) => const RhymeListcard(
+            rhyme: 'some rhyme',
+          ),
         )
       ],
     );
@@ -59,7 +61,8 @@ class SearchScreen extends StatelessWidget {
 }
 
 class RhymeListcard extends StatelessWidget {
-  const RhymeListcard({super.key, this.isFavorite = false});
+  const RhymeListcard(
+      {super.key, this.isFavorite = false, required String rhyme});
 
   final bool isFavorite;
 
