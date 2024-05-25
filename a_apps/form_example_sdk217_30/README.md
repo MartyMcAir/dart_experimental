@@ -1,3 +1,12 @@
+### Screenshot1
+![Screenshot_1](img/Screenshot_1.jpg)
+
+### Screenshot2
+![Screenshot_2](img/Screenshot_2.jpg)
+
+### Screenshot3
+![Screenshot_3](img/Screenshot_3.jpg)
+
 # form_app
 
 A sample demonstrating different types of forms and best practices.
