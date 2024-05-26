@@ -1,3 +1,6 @@
+### 1) main screen (720)
+![screen_main](img/screen_main.jpg)
+..
 # my_app
 
 A new Flutter project.

@@ -1,3 +1,7 @@
+### 1) some console (720)
+![some_console](img/some_console.jpg)
+..
+
 A sample command-line application with an entrypoint in `bin/`, library code
 in `lib/`, and example unit test in `test/`.
 

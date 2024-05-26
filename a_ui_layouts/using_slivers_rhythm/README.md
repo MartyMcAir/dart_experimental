@@ -1,4 +1,4 @@
-### 1) screen search
+### 1) screen search (720)
 ![screen_search](img/screen_search.jpg)
 ..
 ### 1) screen favorite
