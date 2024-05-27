@@ -19,13 +19,29 @@ class RhymeListCard extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          if (sourceWord != null) ...[
-            Text(sourceWord!),
-            const Icon(Icons.arrow_forward)
-          ],
-          Text(
-            rhyme,
-            style: theme.textTheme.bodyLarge,
+          Row(
+            children: [
+              // 3 точки каскадное добавление списка в др список
+              if (sourceWord != null) ...[
+                Text(
+                  sourceWord!,
+                  style: theme.textTheme.bodyLarge,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                  child: Icon(
+                    Icons.arrow_forward_ios_outlined,
+                    size: 18,
+                    color: theme.hintColor.withOpacity(0.4),
+                  ),
+                )
+              ],
+              Text(
+                rhyme,
+                style: theme.textTheme.bodyLarge
+                    ?.copyWith(fontWeight: FontWeight.w600),
+              ),
+            ],
           ),
           IconButton(
             onPressed: () {},

@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-
-import '../../search/search_screen_with_list.dart';
+import 'package:using_slivers_rhythm/rhytme/v3_auto_router/ui/widgets/index.dart';
 
 @RoutePage()
 class FavoritesScreen extends StatelessWidget {
@@ -24,8 +23,8 @@ class FavoritesScreen extends StatelessWidget {
           ),
           const SliverToBoxAdapter(child: SizedBox(height: 5)), // отступ
           SliverList.builder(
-            itemBuilder: (context, index) =>
-                const RhymeListcard(isFavorite: true, rhyme: 'Рифма'),
+            itemBuilder: (context, index) => const RhymeListCard(
+                isFavorite: true, rhyme: 'Рифма', sourceWord: 'some word'),
           )
         ],
       ),

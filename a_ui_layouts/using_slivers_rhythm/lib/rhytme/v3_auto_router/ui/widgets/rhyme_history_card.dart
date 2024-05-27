@@ -26,9 +26,23 @@ class RhymeHistoryCard extends StatelessWidget {
 
           Flexible(
             child: Text(
-              rhymes.map((e) => '$e,  ').toList().join(),
+              rhymes.asMap().entries.map((e) {
+                final sb = StringBuffer();
+                sb.write(e.value);
+                if (e.key != rhymes.length - 1) {
+                  sb.write(',');
+                }
+                return sb.toString();
+              })
+                  // .toList()
+                  .join(),
               overflow: TextOverflow.ellipsis, // elipsis - троеточие..
               // maxLines: 3, // кажется не работает по колву строк
+              style: theme.textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 13,
+                  color: theme.hintColor.withOpacity(0.4)),
+              maxLines: 4,
             ),
           ),
           // Wrap(

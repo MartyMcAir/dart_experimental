@@ -1,10 +1,8 @@
+// -----------
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-
-// такой импорт доступен для BaseContainer
-// благодаря lib/thytme/v3_auto_router/ui/ui.dart
-import '../../../ui/ui.dart';
-import '../widgets/widgets.dart';
+import '../../../ui/widgets/index.dart';
+import '../widgets/index.dart';
 
 @RoutePage()
 class SearchScreen extends StatelessWidget {
@@ -14,20 +12,26 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return CustomScrollView(
       slivers: [
-        const SliverAppBar(
+        SliverAppBar(
           pinned: true,
           snap: true,
           floating: true,
-          title: Text('Rhymer'),
+          title: const Text('Rhymer'),
           elevation: 0,
           surfaceTintColor: Colors.transparent,
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(70),
-            child: SearchButton(),
+            preferredSize: const Size.fromHeight(70),
+            child: SearchButton(
+              onTap: () => _showSearchBottomSheet(context)
+              // ],)) // Column
+              ,
+            ),
           ),
         ),
+        const SliverToBoxAdapter(child: SizedBox(height: 16)),
         const SliverToBoxAdapter(child: SizedBox(height: 16)),
         SliverToBoxAdapter(
           child: SizedBox(
@@ -46,9 +50,36 @@ class SearchScreen extends StatelessWidget {
         ),
         const SliverToBoxAdapter(child: SizedBox(height: 16)),
         SliverList.builder(
-          itemBuilder: (context, index) => const RhymeListCard(rhyme: 'Рифма'),
+          itemBuilder: (context, index) => const RhymeListCard(
+            rhyme: 'Рифма',
+          ),
         ),
+        const SliverToBoxAdapter(child: SizedBox(height: 16)),
       ],
+    );
+  }
+
+  void _showSearchBottomSheet(BuildContext context) {
+    showModalBottomSheet(
+      // https://www.youtube.com/watch?v=G1UDhN8EbKY&list=PLtUuja72DaLIywRDTLSSM5kMJLrbrUvbT&index=8
+      // builder - строит контент внутри ботомшита
+      // showBottomSheet( // без затемнения зад фона
+      // с затемнением зад фона
+      // ботомшит+колонка+isScrollControlled =на всю высоту экрана
+      // но не будет отступа сверху
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      elevation: 0, // без elevation будет фон не белый
+      context: context,
+      builder: (context) =>
+          // Column по дефолту старается выстроиться в максимал высоту
+          // Column(
+          //       children: [
+          // const Padding(
+          const Padding(
+        padding: EdgeInsets.only(top: 60),
+        child: SearchRhymeBottomSheet(),
+      ),
     );
   }
 }
