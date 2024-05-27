@@ -1,13 +1,15 @@
 ### 1) screen search (720)
 ![screen_search](img/screen_search.jpg)
+### 1.1) screen BottomSheet (lesson #8)
+![screen_bottomsheet](img/screen_bottomsheet.jpg)
 ..
-### 1) screen favorite
+### 2) screen favorite
 ![screen_favorite](img/screen_favorite.jpg)
 ..
-### 1) screen history
+### 3) screen history
 ![screen_history](img/screen_history.jpg)
 ..
-### 1) screen settings
+### 4) screen settings
 ![screen_settings](img/screen_settings.jpg)
 ..
 
