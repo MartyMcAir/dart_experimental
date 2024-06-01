@@ -36,12 +36,24 @@ dependencies:
   cupertino_icons: ^1.0.6
   auto_route: ^7.8.0
   flutter_bloc: ^8.1.5
+  # // https://www.youtube.com/watch?v=Yt2K5U0dNQk&list=PLtUuja72DaLIywRDTLSSM5kMJLrbrUvbT&index=9
+  # FOR JSON SERIALIZABLE FROM AND TO >>>
+  retrofit: ^4.0.3
+  json_annotation: ^4.9.0
+  json_serializable: ^6.6.2
+  dio: ^5.4.3+1
+  # for using console aoutPut
+  args: ^2.3.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner:
+
   auto_route_generator: ^7.3.1
+  # FOR JSON SERIALIZABLE FROM AND TO >>>
+  build_runner: ^2.3.3
+  json_serializable: ^6.6.1
+  retrofit_generator: ^8.1.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

@@ -59,11 +59,11 @@ class SearchRhymeBottomSheet extends StatelessWidget {
           Expanded(
             child: ListView.separated(
                 itemBuilder: (context, index) => ListTile(
-                      title: const Text('word from autocomplete'),
+                      title: Text('$index word from autocomplete'),
                       onTap: () {},
                     ),
                 separatorBuilder: (context, _) => const Divider(height: 1),
-                itemCount: 15),
+                itemCount: 35),
           ),
         ],
       ),

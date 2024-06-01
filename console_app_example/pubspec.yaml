@@ -12,9 +12,22 @@ environment:
 dev_dependencies:
   lints: ^2.0.0
   test: ^1.16.0
+  # FOR JSON SERIALIZABLE FROM AND TO >>>
+  build_runner: ^2.3.3
+  json_serializable: ^6.6.1
+  retrofit_generator: ^8.1.0
+
 dependencies:
   flutter:
     sdk: flutter
   logger: ^2.2.0
   path_provider: ^2.1.2
   screenshot: ^2.5.0
+
+  # FOR JSON SERIALIZABLE FROM AND TO >>>
+  retrofit: ^4.0.3
+  json_annotation: ^4.9.0
+  json_serializable: ^6.6.2
+  dio: ^5.4.3+1
+  # for using console aoutPut
+  args: ^2.3.0

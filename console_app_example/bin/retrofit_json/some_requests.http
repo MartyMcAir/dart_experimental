@@ -1,0 +1,15 @@
+# proxy sniffer wireshark zap Hotwire traffic  security tool http protocols
+# в arch linux из сниферов установить почти ничего не удалось а то что установилось работает а бы как
+# так что кажется тут apple & windows рулят - в снифингах и тд
+
+### request
+GET https://reqres.in/api/users?page=2
+HTTP/1.1
+AUTH-USER-ID: AMJ1K
+
+### request
+GET https://reqres.in/api/user/1
+HTTP/1.1
+AUTH-USER-ID: AMJ1K
+
+
