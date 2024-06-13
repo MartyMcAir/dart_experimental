@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:using_slivers_rhythm/rhytme/bloc_counter_lite/bloc/counter_bloc.dart';
+import 'package:using_slivers_rhythm/rhytme/a1_bloc_counter_lite/bloc/counter_bloc.dart';
 
 // https://www.youtube.com/watch?v=yHDzHZVcL6Y
 void main() {
-  runApp(const MyAppCounter2());
+  runApp(const MyAppCounter1());
 }
 
-class MyAppCounter2 extends StatelessWidget {
-  const MyAppCounter2({super.key});
+class MyAppCounter1 extends StatelessWidget {
+  const MyAppCounter1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MyBlocCounter2(
+      home: MyBlocCounter1(
           // title: 'some title',
           ),
     );
   }
 }
 
-class MyBlocCounter2 extends StatelessWidget {
-  const MyBlocCounter2({super.key});
+class MyBlocCounter1 extends StatelessWidget {
+  const MyBlocCounter1({super.key});
 
   @override
   Widget build(BuildContext context) {
