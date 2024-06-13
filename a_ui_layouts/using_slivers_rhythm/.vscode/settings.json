@@ -6,7 +6,7 @@
 	"editor.formatOnSave": true,
 	"autoHide.autoHideAuxiliaryBar": true,
 	"autoHide.autoHideReferences": true,
-	"autoHide.hideOnOpen": false,
+	"autoHide.hideOnOpen": true,
 	"autoHide.autoHidePanel": true,
 	"autoHide.autoHideSideBar": false,
 	"autoHide.sideBarDelay": 100,
