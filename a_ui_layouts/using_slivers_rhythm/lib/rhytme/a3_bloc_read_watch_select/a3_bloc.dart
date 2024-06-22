@@ -1,27 +1,28 @@
+// context.read() - при поступлении новых данных, перерисовки UI не происходит
+// используется для: получения значения из провайдера, БЕЗ подписки на его изменения
+// плюсы: получение данных не вызывая перестроение виджета при изменении этих данных
+
+// context.watch() - перерисовка всего UI при любых изменениях
+// используется для: получения значения из провайдера, C подпиской на его изменения
+// плюсы: их нет, просто обновляет весь UI при любых изменениях провайдера
+
+// context.select() - перерисовка UI части виджета, при определнных изменениях данных
+// используется для: получения части данных из провайдера,
+//      подписываясь только на оперделенные изменения конкретной части
+// плюсы: когда виджет зависит, только от определнной части данных,
+//      и подписываясь только на эту часть данных провайдера,
+//      тогда только при их изменении будет перестраиваться нужный виджет
+
+// https://www.youtube.com/watch?v=Sunwo30Q_68 - не понял примеры не оч наглядно
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:logger/logger.dart';
 import 'package:using_slivers_rhythm/rhytme/a1_bloc_counter_lite/bloc/counter_bloc.dart';
+import '../a2_multi_bloc_provider/job_bloc/job_bloc.dart';
+import '../a2_multi_bloc_provider/user_bloc/user_bloc.dart';
+import 'package:logger/logger.dart';
 
-import 'config_reader.dart';
-import 'job_bloc/job_bloc.dart';
-import 'user_bloc/user_bloc.dart';
-
-// https://www.youtube.com/watch?v=33DYnEfh0ng&list=PLwT4VxCiStYTa60yGDebJoZV0lQ6eKfuk&index=2
-// MultiBlocProvider - когда необходимо разместить и обработать несколько блоков на одном экране
-// еще варианты: 1 создать один общий common bloc (view model bloc) содержащий другие блоки
-// 2 создать Redux Store общий для всех блоков который будет правлять State's для любого экрана
-// 3 плохой вариант создавать 100500+ блоков которые, будут как-то между собой взаимодействовать без "общей точки сбора"
-// в конечном итоге что где происходит и как это работает будет понять крайне не просто если вообще возможно
-
-void main() async {
-  // final Logger logger2 = LogConfig.logger;
-  // final Level logger = await ConfigReader.getLogLevel();
-  // var string = logger.toString();
-  // logger2.i('Logger initialized with level 8888: $logger');
-
-  WidgetsFlutterBinding.ensureInitialized();
-  LogConfig.init(); // ТУТ проблема с подгрузкой асинхронщины с json конфига
+void main() {
   runApp(const MyAppCounter2());
 }
 
@@ -30,16 +31,16 @@ class MyAppCounter2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: MyBlocCounter2(),
     );
   }
 }
 
 class MyBlocCounter2 extends StatelessWidget {
-  const MyBlocCounter2({super.key});
+  MyBlocCounter2({super.key});
   final double buttonSize = 66;
-  static final Logger logger = LogConfig.logger;
+  final Logger logger = Logger();
 
   @override
   Widget build(BuildContext context) {

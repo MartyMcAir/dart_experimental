@@ -7,7 +7,7 @@
 	"autoHide.autoHideAuxiliaryBar": true,
 	"autoHide.autoHideReferences": true,
 	"autoHide.hideOnOpen": true,
-	"autoHide.autoHidePanel": true,
+	// "autoHide.autoHidePanel": true,
 	"autoHide.autoHideSideBar": false,
 	"autoHide.sideBarDelay": 100,
 	"autoHide.panelDelay": 100
