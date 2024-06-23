@@ -8,13 +8,11 @@ class LogConfig {
 
   static Future<void> init() async {
     levelResult = await ConfigReader.getLogLevel();
-    // some
   }
 
-// если logger =null, тогда
   static Logger get logger {
     return Logger(
-      level: levelResult ?? Level.all,
+      level: levelResult ?? Level.off,
       printer: PrettyPrinter(
         methodCount:
             2, // Показываем 2 уровня вызовов, чтобы видеть и метод, и класс

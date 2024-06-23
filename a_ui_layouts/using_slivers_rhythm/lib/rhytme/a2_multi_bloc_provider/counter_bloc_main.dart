@@ -14,14 +14,10 @@ import 'user_bloc/user_bloc.dart';
 // 3 плохой вариант создавать 100500+ блоков которые, будут как-то между собой взаимодействовать без "общей точки сбора"
 // в конечном итоге что где происходит и как это работает будет понять крайне не просто если вообще возможно
 
-void main() async {
-  // final Logger logger2 = LogConfig.logger;
-  // final Level logger = await ConfigReader.getLogLevel();
-  // var string = logger.toString();
-  // logger2.i('Logger initialized with level 8888: $logger');
-
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  LogConfig.init(); // ТУТ проблема с подгрузкой асинхронщины с json конфига
+  await LogConfig.init();
+  // ставим await, что бы перед запуском app дождались подгрузки конфига
   runApp(const MyAppCounter2());
 }
 
