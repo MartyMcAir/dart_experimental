@@ -56,6 +56,7 @@ class ConfigReader {
     }
 
     // Google logging library Logs Levels
+    // logging библиотека - боле низкоуровневая и гибкая НО требует больше кода
     // Level.OFF
     // Level.SEVERE; // Только критичные ошибки
     // Level.WARNING; // Только критичные ошибки

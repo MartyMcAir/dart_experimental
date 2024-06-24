@@ -1,3 +1,13 @@
+## Getting Started
+This project is a starting point for a Flutter application.
+A few resources to get you started if this is your first Flutter project:
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+
+## Examples:
 ### 1) screen search (720)
 ![screen_search](img/screen_search.jpg)
 ### 1.1) screen BottomSheet (lesson #8)
@@ -12,20 +22,7 @@
 ### 4) screen settings
 ![screen_settings](img/screen_settings.jpg)
 ..
+### 5) a2_bloc MultiProvider + logs config
+![screen_search](img/a3_bloc.jpg)
+..
 
-# using_slivers_rhythm
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
