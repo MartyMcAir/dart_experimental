@@ -57,7 +57,7 @@ class LogStorage {
   static String _findLastLog() {
     // int indexForLastLog = _logsList.length - 2;
     // _logsList[indexForLastLog]
-    String strResult = "last log not find";
+    String strResult = "last log not found";
     if (_logsList.isNotEmpty) {
       for (int i = _logsList.length - 1; i >= 0; i--) {
         String currentStr = _logsList[i].toLowerCase();
