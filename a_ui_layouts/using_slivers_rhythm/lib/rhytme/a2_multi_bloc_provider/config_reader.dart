@@ -5,21 +5,77 @@ import 'package:logger/logger.dart';
 
 class LogConfig {
   static Level? levelResult;
-
   static Future<void> init() async {
     levelResult = await ConfigReader.getLogLevel();
   }
 
   static Logger get logger {
+    MyLogOutPut myLogOut = MyLogOutPut();
     return Logger(
-      level: levelResult ?? Level.off,
       printer: PrettyPrinter(
         methodCount:
             2, // Показываем 2 уровня вызовов, чтобы видеть и метод, и класс
       ),
+      output: myLogOut,
     );
   }
 }
+
+// ----------------------------------------------------------------------------
+
+class MyLogOutPut extends ConsoleOutput {
+  late String _currentLog = "no logs";
+  String get currentLog => _currentLog;
+  set currentLog(String value) => _currentLog = value;
+
+  @override
+  void output(OutputEvent event) {
+    int length = event.lines.length;
+    _currentLog = event.lines[length - 2];
+    LogStorage.addLog(_currentLog);
+    LogStorage.setLogsList = event.lines;
+    event.lines.forEach(print);
+  }
+}
+
+class LogStorage {
+  static List<String> _logsList = [];
+  static set setLogsList(List<String> value) => _logsList = value;
+
+  static void addLog(String log) {
+    _logsList.add(log);
+  }
+
+  static void addLogs(List<String> logsList) {
+    _logsList.addAll(logsList);
+  }
+
+  static String getLastLog() {
+    return _logsList.isNotEmpty ? _findLastLog() : "No logs available";
+  }
+
+  static String _findLastLog() {
+    // int indexForLastLog = _logsList.length - 2;
+    // _logsList[indexForLastLog]
+    String strResult = "last log not find";
+    if (_logsList.isNotEmpty) {
+      for (int i = _logsList.length - 1; i >= 0; i--) {
+        String currentStr = _logsList[i].toLowerCase();
+        if (currentStr.contains("reloaded") ||
+            currentStr.contains("└───────") ||
+            currentStr.contains("├┄┄┄┄┄┄┄")) {
+          continue;
+        } else {
+          strResult = currentStr;
+          break;
+        }
+      }
+    }
+    return strResult;
+  }
+}
+
+// ----------------------------------------------------------------------------
 
 class ConfigReader {
   static Future<Level> getLogLevel() async {

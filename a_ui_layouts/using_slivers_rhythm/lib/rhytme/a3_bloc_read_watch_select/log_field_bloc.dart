@@ -7,17 +7,21 @@ class LogBloc extends Bloc<LogEvent, String> {
     on<ClearLogEvent>(_onClearLog);
   }
 
-  _onUpdLog(UpdLogEvent event, Emitter<String> emit) {
-    emit(state);
+  void _onUpdLog(UpdLogEvent event, Emitter<String> emit) {
+    // emit(state);
+    emit(event.log);
   }
 
-  _onClearLog(ClearLogEvent event, Emitter<String> emit) {
+  void _onClearLog(ClearLogEvent event, Emitter<String> emit) {
     emit("");
   }
 }
 
 abstract class LogEvent {}
 
-class UpdLogEvent extends LogEvent {}
+class UpdLogEvent extends LogEvent {
+  final String log;
+  UpdLogEvent(this.log);
+}
 
 class ClearLogEvent extends LogEvent {}
