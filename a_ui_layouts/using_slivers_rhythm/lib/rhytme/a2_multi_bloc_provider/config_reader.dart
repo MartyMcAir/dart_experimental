@@ -32,13 +32,13 @@ class MyLogOutPut extends ConsoleOutput {
   void output(OutputEvent event) {
     int length = event.lines.length;
     _currentLog = event.lines[length - 2];
-    LogStorage.addLog(_currentLog);
-    LogStorage.setLogsList = event.lines;
+    LogInterceptor.addLog(_currentLog);
+    LogInterceptor.setLogsList = event.lines;
     event.lines.forEach(print);
   }
 }
 
-class LogStorage {
+class LogInterceptor {
   static List<String> _logsList = [];
   static set setLogsList(List<String> value) => _logsList = value;
 

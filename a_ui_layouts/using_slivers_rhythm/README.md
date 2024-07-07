@@ -25,4 +25,7 @@ samples, guidance on mobile development, and a full API reference.
 ### 5) a2_bloc MultiProvider + logs config
 ![screen_search](img/a3_bloc.jpg)
 ..
+### 6) speedometr (Radial Slider)
+![screen_search](img/speedometr.jpg)
+..
 
