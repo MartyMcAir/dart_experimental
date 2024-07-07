@@ -28,4 +28,7 @@ samples, guidance on mobile development, and a full API reference.
 ### 6) speedometr (Radial Slider)
 ![screen_search](img/speedometr.jpg)
 ..
+### 7) five containers (2 top, 1 middle, 2 bottom)
+![screen_search](img/five_containers.jpg)
+..
 
