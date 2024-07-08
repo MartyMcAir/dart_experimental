@@ -7,7 +7,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Examples:
+## Examples from Rhytmer:
 ### 1) screen search (720)
 ![screen_search](img/screen_search.jpg)
 ### 1.1) screen BottomSheet (lesson #8)
@@ -22,13 +22,15 @@ samples, guidance on mobile development, and a full API reference.
 ### 4) screen settings
 ![screen_settings](img/screen_settings.jpg)
 ..
-### 5) a2_bloc MultiProvider + logs config
+
+## Other Examples:
+### 1) a2_bloc MultiProvider + logs config
 ![screen_search](img/a3_bloc.jpg)
 ..
-### 6) speedometr (Radial Slider)
+### 2) speedometr (Radial Slider)
 ![screen_search](img/speedometr.jpg)
 ..
-### 7) five containers (2 top, 1 middle, 2 bottom)
+### 3) five containers (2 top, 1 middle, 2 bottom)
 ![screen_search](img/five_containers.jpg)
 ..
 

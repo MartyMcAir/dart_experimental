@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
-import 'package:using_slivers_rhythm/rhytme/a1_bloc_counter_lite/bloc/counter_bloc.dart';
+import 'package:using_slivers_rhythm/a1_bloc_counter_lite/bloc/counter_bloc.dart';
 
 import 'config_reader.dart';
 import 'job_bloc/job_bloc.dart';
