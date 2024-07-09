@@ -1,9 +1,10 @@
 // import 'dart:typed_data';
-import 'package:flutter/material.dart';
-import 'package:screenshot/screenshot.dart';
-import 'package:path_provider/path_provider.dart';
 import 'dart:io';
+
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+// import 'package:path_provider/path_provider.dart';
+import 'package:screenshot/screenshot.dart';
 
 void main() async {
   runApp(MyApp());
@@ -25,7 +26,8 @@ class ScreenshotService {
       Uint8List? image = await _controller.capture(
           delay: Duration(seconds: 1), pixelRatio: 3.0);
       if (image != null) {
-        Directory? directory = await getApplicationDocumentsDirectory();
+        // Directory? directory = await getApplicationDocumentsDirectory();
+        Directory? directory = await null;
         if (directory != null) {
           File file = File('${directory.path}/screenshot.png');
           await file.writeAsBytes(image);

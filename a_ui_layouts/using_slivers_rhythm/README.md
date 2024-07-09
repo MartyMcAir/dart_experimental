@@ -33,4 +33,9 @@ samples, guidance on mobile development, and a full API reference.
 ### 3) five containers (2 top, 1 middle, 2 bottom)
 ![screen_search](img/five_containers.jpg)
 ..
-
+### 4) provider lite example to use Like State Manager
+![screen_search](img/provider_lite.jpg)
+..
+### 5) bloc_lite_list 
+![screen_search](img/bloc_lite_list.jpg)
+..
