@@ -39,3 +39,7 @@ samples, guidance on mobile development, and a full API reference.
 ### 5) bloc_lite_list 
 ![screen_search](img/bloc_lite_list.jpg)
 ..
+### 6) theme_switcher1 
+![screen_search](img/theme_switcher1.jpg)
+..
+
