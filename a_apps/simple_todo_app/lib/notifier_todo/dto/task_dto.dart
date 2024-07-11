@@ -1,8 +1,8 @@
-class Task {
+class TaskDto {
   final String title;
   bool isCompleted;
 
-  Task({
+  TaskDto({
     required this.title,
     required this.isCompleted,
   });

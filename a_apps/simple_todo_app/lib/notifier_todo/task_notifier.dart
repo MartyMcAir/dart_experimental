@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-import 'task.dart';
+import 'dto/task_dto.dart';
 
 class TaskNotifier extends ChangeNotifier {
-  List<Task> _tasks = [
-    Task(title: 'Learn Flutter', isCompleted: false),
-    Task(title: 'Drink milk', isCompleted: false)
+  List<TaskDto> _tasks = [
+    TaskDto(title: 'Learn Flutter', isCompleted: false),
+    TaskDto(title: 'Drink milk', isCompleted: false)
   ];
 
-  List<Task> get tasks => _tasks;
+  List<TaskDto> get tasks => _tasks;
 
-  void addTask(Task task) {
+  void addTask(TaskDto task) {
     tasks.add(task);
     // instead using state(){} _ here using notifyListeners();
     notifyListeners();
   }
 
-  void removedTask(Task task) {
+  void removedTask(TaskDto task) {
     tasks.remove(task);
     notifyListeners();
   }
