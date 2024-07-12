@@ -32,7 +32,7 @@
 - 3 Page: extends StatefulWidget {..}
 - 5 "controller": inside class TodoScreenState extends State<TodoPage>{..}
     - TextEditingController
-![screen_search](img/simple_todo.jpg)
+![screen_search](img/state_todo.jpg)
 ..
 
 # ------------------------------------------------------------------
@@ -47,7 +47,7 @@
     - onChanges / onPressed: context.read<TaskNotifier>().checkTask(index);
         - using: context.read<TaskNotifier>().checkTask(index);
 - 5 "controller": TaskNotifier extends ChangeNotifier {..}
-![screen_search](img/state_todo.jpg)
+![screen_search](img/notifier_todo.jpg)
 ..
 
 
