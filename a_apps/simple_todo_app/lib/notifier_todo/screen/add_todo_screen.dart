@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_todo_app/notifier_todo/dto/task_dto.dart';
-import 'package:simple_todo_app/notifier_todo/task_notifier.dart';
+import 'package:simple_todo_app/notifier_todo/controller/task_notifier.dart';
 
 class AddTodoScreen extends StatelessWidget {
   final controller = TextEditingController();

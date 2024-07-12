@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:simple_todo_app/notifier_todo/task_notifier.dart';
+import 'package:simple_todo_app/notifier_todo/controller/task_notifier.dart';
 
 import 'screen/add_todo_screen.dart';
 import 'screen/todo_list_screen.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'dto/task_dto.dart';
+import '../dto/task_dto.dart';
 
 class TaskNotifier extends ChangeNotifier {
   List<TaskDto> _tasks = [
