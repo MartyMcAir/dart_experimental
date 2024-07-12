@@ -4,7 +4,7 @@
 
 - 2 MyApp extends StatelessWidget /StatefulWidget {..}
 - 2.1 if StatelessWidget -> Widget buil(..){..}
-- 2.2 if StatefulWidget ->  State<MyPage> createState() => MyPageScreenState();
+- 2.2 if StatefulWidget ->  State<MyPage> createState() => MyScreenState();
 
 - 3 MyPage extends StatelessWidget or StatefulWidget {..}
 
