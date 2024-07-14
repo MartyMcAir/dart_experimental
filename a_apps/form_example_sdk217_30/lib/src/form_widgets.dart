@@ -81,18 +81,18 @@ class _FormWidgetsDemoState extends State<FormWidgetsDemo> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
-                                  'Estimated value',
-                                  style: Theme.of(context).textTheme.bodyText1,
-                                ),
+                                Text('Estimated value'
+                                    // ,
+                                    // style: Theme.of(context).textTheme.bodyText1,
+                                    ),
                               ],
                             ),
-                            Text(
-                              intl.NumberFormat.currency(
-                                      symbol: "\$", decimalDigits: 0)
-                                  .format(maxValue),
-                              style: Theme.of(context).textTheme.subtitle1,
-                            ),
+                            Text(intl.NumberFormat.currency(
+                                        symbol: "\$", decimalDigits: 0)
+                                    .format(maxValue)
+                                //     ,
+                                // style: Theme.of(context).textTheme.subtitle1,
+                                ),
                             Slider(
                               min: 0,
                               max: 500,
@@ -118,16 +118,20 @@ class _FormWidgetsDemoState extends State<FormWidgetsDemo> {
                                 });
                               },
                             ),
-                            Text('Brushed Teeth',
-                                style: Theme.of(context).textTheme.subtitle1),
+                            Text('Brushed Teeth'
+                                // ,
+                                //     style: Theme.of(context).textTheme.subtitle1
+                                ),
                           ],
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text('Enable feature',
-                                style: Theme.of(context).textTheme.bodyText1),
+                            Text('Enable feature'
+                                // ,
+                                //     style: Theme.of(context).textTheme.bodyText1
+                                ),
                             Switch(
                               value: enableFeature,
                               onChanged: (enabled) {
@@ -184,11 +188,11 @@ class _FormDatePickerState extends State<_FormDatePicker> {
           children: [
             Text(
               'Date',
-              style: Theme.of(context).textTheme.bodyText1,
+              // style: Theme.of(context).textTheme.bodyText1,
             ),
             Text(
               intl.DateFormat.yMd().format(widget.date),
-              style: Theme.of(context).textTheme.subtitle1,
+              // style: Theme.of(context).textTheme.subtitle1,
             ),
           ],
         ),

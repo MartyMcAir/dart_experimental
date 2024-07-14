@@ -140,20 +140,20 @@ class _FormValidationDemoState extends State<FormValidationDemo> {
                                 });
                               },
                             ),
-                            Text(
-                              'I agree to the terms of service.',
-                              style: Theme.of(context).textTheme.subtitle1,
-                            ),
+                            Text('I agree to the terms of service.'
+                                // ,
+                                // style: Theme.of(context).textTheme.subtitle1,
+                                ),
                           ],
                         ),
                         if (!formFieldState.isValid)
-                          Text(
-                            formFieldState.errorText ?? "",
-                            style: Theme.of(context)
-                                .textTheme
-                                .caption!
-                                .copyWith(color: Theme.of(context).errorColor),
-                          ),
+                          Text(formFieldState.errorText ?? ""
+                              // ,
+                              // style: Theme.of(context)
+                              //     .textTheme
+                              //     .caption!
+                              //     .copyWith(color: Theme.of(context).errorColor),
+                              ),
                       ],
                     );
                   },
