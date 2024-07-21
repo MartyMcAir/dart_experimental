@@ -19,7 +19,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
 import '../a1_bloc_counter_lite/bloc/counter_bloc.dart';
-import '../../multi_provider/job_with_logger/config_reader.dart';
+import '../../../multi_provider/bloc_provider_with_logger/config_reader.dart';
 import 'log_field_bloc.dart';
 
 Future<void> main() async {

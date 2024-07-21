@@ -12,3 +12,7 @@
 ### bloc_lite_list 
 ![screen_search](img/bloc_lite_list.jpg)
 ..
+
+
+
+

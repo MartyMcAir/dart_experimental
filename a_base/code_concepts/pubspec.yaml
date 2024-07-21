@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
   http: ^0.13.0
   json_annotation: any
   json_serializable: ^4.0.0

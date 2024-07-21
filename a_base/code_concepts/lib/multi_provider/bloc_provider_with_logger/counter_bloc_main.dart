@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
-import '../../experimental/a1_bloc_counter_lite/bloc/counter_bloc.dart';
+import '../../bloc/experimental/a1_bloc_counter_lite/bloc/counter_bloc.dart';
 import 'config_reader.dart';
 import 'job_bloc/job_bloc.dart';
 import 'user_bloc/user_bloc.dart';
