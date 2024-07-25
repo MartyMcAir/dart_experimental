@@ -11,3 +11,6 @@
 ## bloc_provider
 ![screen_search](img/mmd/bloc_provider.jpg)
 ..
+## text_controller
+![screen_search](img/mmd/text_controller.jpg)
+..

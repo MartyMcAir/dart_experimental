@@ -1,0 +1,33 @@
+classDiagram
+    TextControllerApp_extends_StatelessWidget ..> TextControllerPage_extends_StatefulWidget
+    TextControllerPage_extends_StatefulWidget ..> TextControlerScreenState_extends_State~TextControllerPage~
+
+    TextControlerScreenState_extends_State~TextControllerPage~ ..> BoxElementList_extends_StatelessWidget : Scaffold_body
+
+  TextEditingController <|--|> TextControlerScreenState_extends_State~TextControllerPage~
+
+namespace main_runApp_TextControllerApp {
+    class TextControllerApp_extends_StatelessWidget {
+      build(BuildContext) : MaterialApp
+      MaterialApp_home: TextControllerPage()
+    }
+}
+
+    class TextControllerPage_extends_StatefulWidget {
+      State~TextControllerPage~ createState() => TextControlerScreenState()
+    }
+
+    class TextControlerScreenState_extends_State~TextControllerPage~ {
+    final _controller = TextEditingController()
+    build(BuildContext) : Scaffold
+    Scaffold_body : BoxElementList(item)
+    controller: _controller
+    FloatingActionButton_onPressed: addItem
+    addItem() : setState((_controller.clear()))
+    }
+
+    class BoxElementList_extends_StatelessWidget {
+    const BoxElementList(super_key_item)
+    final String item
+    build(BuildContext) : Text(item)
+    }
