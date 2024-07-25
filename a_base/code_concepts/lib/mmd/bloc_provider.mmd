@@ -1,0 +1,46 @@
+classDiagram
+    BlocApp_extends_StatelessWidget ..> BlocPage_extends_StatefulWidget
+    BlocPage_extends_StatefulWidget ..> BlocPageScreenState_extends_State-BlocPage-
+    BlocPageScreenState_extends_State-BlocPage- ..> ExampleBloc_extends_Bloc-BlocEvent_BlocState- : ElevatedButton_onPressed
+
+    BlocPageScreenState_extends_State-BlocPage- ..> class_BlocSomeEvent : ExampleBloc-Add_BlocSomeEvent()
+    ExampleBloc_extends_Bloc-BlocEvent_BlocState- ..> class_BlocInitialState : super_BlocInitialState_
+
+
+  class_BlocInitialState --|> class_BlocBaseState : Inheritance
+  class_BlocSomeEvent --|> class_BlocBaseEvent : Inheritance
+
+  class_BlocBaseState <|--|> ExampleBloc_extends_Bloc-BlocEvent_BlocState-
+  class_BlocBaseEvent <|--|> ExampleBloc_extends_Bloc-BlocEvent_BlocState-
+
+namespace main_runApp_BlocApp {
+    class BlocApp_extends_StatelessWidget {
+      return MaterialApp_home : BlocProvider
+      BlocProvider_create: (_) => ExampleBloc()
+      BlocProvider_child: BlocPage()
+      +build_BuildContext_context()
+    }
+}
+
+    class BlocPage_extends_StatefulWidget {
+      createState() => BlocPageScreenState()
+    }
+
+    class BlocPageScreenState_extends_State-BlocPage- {
+    +deposit(amount) : bool
+    List~int~ position
+    setPoints(List~int~ points)
+    getPoints() List~int~
+
+    return Scaffold_body: BlocBuilder-ExampleBloc_BlocBaseState-
+    builder: context_state
+    ElevatedButton_onPressed: contextRead-ExampleBloc-Add_BlocSomeEvent()
+      +build_BuildContext_context
+    }
+
+    class ExampleBloc_extends_Bloc-BlocEvent_BlocState- {
+    ExampleBloc() : super_BlocInitialState_
+    return on-BlocSomeEvent-_onMethodForEvent
+    _onMethodForEvent_await: doSomeThingForEventInAnoterClass()
+    _onMethodForEvent_emit: NameSomeForEmitState()
+    }
