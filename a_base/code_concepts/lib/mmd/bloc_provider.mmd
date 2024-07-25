@@ -6,12 +6,11 @@ classDiagram
     BlocPageScreenState_extends_State~BlocPage~ ..> class_BlocSomeEvent : ExampleBloc-Add_BlocSomeEvent()
     ExampleBloc_extends_Bloc~BlocEvent_BlocState~ ..> class_BlocInitialState : super_BlocInitialState_
 
-
   class_BlocInitialState --|> class_BlocBaseState : Inheritance
   class_BlocSomeEvent --|> class_BlocBaseEvent : Inheritance
 
-  class_BlocBaseState <|--|> ExampleBloc_extends_Bloc-BlocEvent_BlocState-
-  class_BlocBaseEvent <|--|> ExampleBloc_extends_Bloc-BlocEvent_BlocState-
+  class_BlocBaseState <|--|> ExampleBloc_extends_Bloc~BlocEvent_BlocState~
+  class_BlocBaseEvent <|--|> ExampleBloc_extends_Bloc~BlocEvent_BlocState~
 
 namespace main_runApp_BlocApp {
     class BlocApp_extends_StatelessWidget {
