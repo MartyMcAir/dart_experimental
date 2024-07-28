@@ -1,0 +1,32 @@
+graph TD
+    subgraph UI
+        A[Root Widget]
+        B[Child Widget 1]
+        C[Child Widget 2]
+    end
+    
+    subgraph State Management
+        D[Model]
+        E[ScopedModel]
+        F[ScopedModelDescendant]
+    end
+
+    A -->|Provides| E
+    E -->|Contains| D
+    D -->|State| G[State]
+    B -->|Subscribes to| F
+    C -->|Subscribes to| F
+    F -->|Accesses| D
+    D -->|Notifies| F
+    F -->|Rebuilds| B
+    F -->|Rebuilds| C
+
+    subgraph User Interaction
+        H[User Action]
+        I[State Change]
+    end
+
+    H -->|Triggers| I
+    I -->|Updates| G
+    G -->|Calls notifyListeners| D
+    D -->|Notifies| F

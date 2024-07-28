@@ -1,0 +1,33 @@
+graph TD
+    subgraph UI
+        A[Consumer Widget]
+        B[Context.watch]
+        C[Context.read]
+    end
+
+    subgraph State Management
+        D[Provider]
+        E[ChangeNotifierProvider]
+        F[State]
+        G[ChangeNotifier]
+    end
+
+    subgraph User Interaction
+        H[User Action]
+        I[State Change]
+    end
+
+    A -->|Subscribes to| D
+    D -->|Provides| F
+    E -->|Provides| G
+    G -->|Manages| F
+    F -->|Notifies| G
+    G -->|Updates| A
+
+    H -->|Triggers| I
+    I -->|Updates| F
+    F -->|Calls notifyListeners| G
+    G -->|Notifies| A
+
+    B -->|Listens to| F
+    C -->|Reads| F

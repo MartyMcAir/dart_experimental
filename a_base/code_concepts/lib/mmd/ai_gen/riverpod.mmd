@@ -1,0 +1,27 @@
+graph TD
+    subgraph UI
+        A[Consumer Widget]
+    end
+    
+    subgraph State Management
+        B[Provider]
+        C[StateNotifier/StateProvider]
+        D[State]
+    end
+
+    subgraph User Interaction
+        E[User Action]
+        F[State Change]
+    end
+
+    A -->|Subscribes to| B
+    B -->|Provides| D
+    C -->|Manages| D
+    D -->|Notifies| B
+    B -->|Updates| A
+
+    E -->|Triggers| F
+    F -->|Updates| D
+    D -->|Calls| C
+    C -->|Notifies| B
+

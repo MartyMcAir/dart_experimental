@@ -1,0 +1,34 @@
+graph TD
+    subgraph UI
+        A[View]
+    end
+    
+    subgraph State Management
+        B[Store]
+        C[Reducer]
+        D[Effect]
+        E[Adapter]
+        F[State]
+    end
+
+    subgraph User Interaction
+        G[User Action]
+        H[Action]
+    end
+
+    A -->|Dispatches| H
+    H -->|Handled by| C
+    H -->|Handled by| D
+    C -->|Updates| F
+    D -->|Triggers| H
+    E -->|Transforms| F
+    F -->|Notifies| A
+
+    B -->|Holds| F
+    B -->|Uses| C
+    B -->|Uses| D
+    B -->|Uses| E
+
+    G -->|Triggers| H
+    H -->|Changes| F
+    F -->|Updates| A

@@ -1,0 +1,32 @@
+graph TD
+    subgraph UI
+        A[Widget]
+    end
+    
+    subgraph BLoC Components
+        B[Bloc]
+        C[Event]
+        D[State]
+    end
+
+    subgraph State Management
+        E[BlocProvider]
+        F[BlocBuilder]
+    end
+
+    A -->|Dispatches| C
+    C -->|Received by| B
+    B -->|Maps to| D
+    D -->|Emitted to| A
+
+    E -->|Provides| B
+    F -->|Builds UI based on| D
+
+    subgraph User Interaction
+        G[User Action]
+        H[State Change]
+    end
+
+    G -->|Triggers| C
+    H -->|Updates| D
+    D -->|Updates UI in| A

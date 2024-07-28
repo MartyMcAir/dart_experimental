@@ -1,0 +1,16 @@
+graph TD
+    A[User Interface _UI_] -->|Events| B(Cubit)
+    B -->|Emits new State| C(State)
+    C -->|Updates| A
+
+    subgraph UI
+        A[Widget Tree]
+    end
+
+    subgraph Business Logic
+        B(Cubit)
+        direction TB
+        B -->|Manages| D[State 1]
+        B -->|Manages| E[State 2]
+        B -->|Manages| F[State 3]
+    end

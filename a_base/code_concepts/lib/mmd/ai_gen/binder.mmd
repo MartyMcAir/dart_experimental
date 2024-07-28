@@ -1,0 +1,26 @@
+graph TD
+    subgraph UI
+        A[Widget]
+    end
+    
+    subgraph State Management
+        B[Binder]
+        C[StateRef]
+        D[Logic Component]
+        E[State]
+    end
+
+    subgraph State Change
+        F[User Action]
+        G[State Update]
+    end
+
+    A -->|Uses| B
+    B -->|Provides| C
+    C -->|References| E
+    D -->|Updates| E
+    E -->|Notifies| A
+
+    F -->|Triggers| D
+    G -->|Changes| E
+    E -->|Notifies| A

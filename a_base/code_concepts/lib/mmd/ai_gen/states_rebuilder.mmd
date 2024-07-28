@@ -1,0 +1,29 @@
+graph TD
+    subgraph UI
+        A[ReactiveModel]
+        B[Observer Widget]
+    end
+    
+    subgraph State Management
+        C[Injectable]
+        D[State]
+        E[State Manager]
+    end
+
+    subgraph User Interaction
+        F[User Action]
+        G[State Change]
+    end
+
+    A -->|Subscribes to| E
+    B -->|Listens to| A
+    C -->|Provides| D
+    D -->|Managed by| E
+    E -->|Updates| A
+    A -->|Notifies| B
+
+    F -->|Triggers| G
+    G -->|Updates| D
+    D -->|Notifies| E
+    E -->|Notifies| A
+    A -->|Rebuilds| B

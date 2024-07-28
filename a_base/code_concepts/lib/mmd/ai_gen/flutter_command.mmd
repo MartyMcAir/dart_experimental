@@ -1,0 +1,26 @@
+graph TD
+    subgraph UI
+        A[Widget]
+    end
+    
+    subgraph State Management
+        B[FlutterCommand]
+        C[Command]
+        D[State]
+    end
+
+    subgraph User Interaction
+        E[User Action]
+        F[Command Execution]
+    end
+
+    A -->|Binds to| C
+    C -->|Manages| D
+    B -->|Creates| C
+    C -->|Updates| D
+    D -->|Notifies| A
+
+    E -->|Triggers| F
+    F -->|Executes| C
+    C -->|Updates| D
+    D -->|Notifies| A

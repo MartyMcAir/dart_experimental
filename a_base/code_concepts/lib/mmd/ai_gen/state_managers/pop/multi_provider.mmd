@@ -1,0 +1,28 @@
+graph TD
+    subgraph App
+        A[MultiProvider]
+    end
+    
+    subgraph Providers
+        B[Provider1]
+        C[Provider2]
+        D[Provider3]
+    end
+
+    subgraph UI
+        E[Widget1]
+        F[Widget2]
+        G[Widget3]
+    end
+
+    A -->|Provides| B
+    A -->|Provides| C
+    A -->|Provides| D
+
+    B -->|Provides State| E
+    C -->|Provides State| F
+    D -->|Provides State| G
+
+    E -->|Consumes State from| B
+    F -->|Consumes State from| C
+    G -->|Consumes State from| D

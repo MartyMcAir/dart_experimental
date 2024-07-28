@@ -1,0 +1,28 @@
+graph TD
+    subgraph UI
+        A[Widget]
+    end
+    
+    subgraph State Management
+        B[Atom]
+        C[Selector]
+        D[RecoilRoot]
+    end
+
+    subgraph User Interaction
+        E[User Action]
+        F[State Change]
+    end
+
+    A -->|Subscribes to| B
+    A -->|Subscribes to| C
+    B -->|Provides State| C
+    C -->|Provides Derived State| A
+    D -->|Contains| B
+    D -->|Contains| C
+
+    E -->|Triggers| F
+    F -->|Updates| B
+    B -->|Notifies| A
+    B -->|Notifies| C
+    C -->|Notifies| A

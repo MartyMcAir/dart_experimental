@@ -1,0 +1,21 @@
+graph TD
+    subgraph UI
+        A[User Interface _UI_]
+    end
+    
+    subgraph Business Logic
+        B(Bloc)
+        D(Event 1)
+        E(Event 2)
+        F(State 1)
+        G(State 2)
+    end
+
+    A -->|Dispatches Event| B
+    B -->|Processes Event and Emits State| A
+    B -->|Receives| D
+    B -->|Receives| E
+    B -->|Emits| F
+    B -->|Emits| G
+    F -->|Updates| A
+    G -->|Updates| A

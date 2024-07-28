@@ -1,0 +1,30 @@
+classDiagram
+    SomeApp_extends_StatelessWidget ..> ToggleButtonPage_extends_StatelessWidget
+
+    ToggleButtonPage_extends_StatelessWidget ..> ToggleButton_extends_StatefulWidget
+
+    ToggleButton_extends_StatefulWidget <|--|> ToggleButtonScreenState_extends_State~ToggleButton~
+
+
+namespace main_runApp_SomeApp {
+    class SomeApp_extends_StatelessWidget {
+      build(BuildContext) : MaterialApp
+      MaterialApp_home: ToggleButtonPage()
+    }
+}
+
+    class ToggleButtonPage_extends_StatelessWidget {
+      build(BuildContext) : Scaffold
+      Scaffold_body: ToggleButton()
+    }
+
+    class ToggleButton_extends_StatefulWidget {
+      ToggleButtonScreenState createState() => ToggleButtonScreenState()
+    }
+
+    class ToggleButtonScreenState_extends_State~ToggleButton~ {
+      _isPressed : bool
+      build(BuildContext) : GestureDetector
+      onTap: setState((_isPressed = !_isPressed))
+      decoration: BoxDecoration(color: _isPressed ? Colors.blue : Colors.grey))
+    }

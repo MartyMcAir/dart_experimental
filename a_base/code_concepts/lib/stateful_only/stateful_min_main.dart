@@ -18,10 +18,7 @@ class ToggleButtonPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Toggle Button Demo')),
-      body: const Center(child: ToggleButton()),
-    );
+    return const Scaffold(body: Center(child: ToggleButton()));
   }
 }
 

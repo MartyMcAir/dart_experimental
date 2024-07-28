@@ -1,0 +1,23 @@
+graph TD
+    subgraph UI
+        A[Consumer/Listener]
+    end
+    
+    subgraph State Management
+        B[ChangeNotifier]
+        C[State]
+    end
+
+    A -->|Subscribes to| B
+    B -->|Holds| C
+    C -->|Change| B
+    B -->|Notifies| A
+
+    subgraph User Interaction
+        D[User Action]
+        E[State Change]
+    end
+
+    D -->|Triggers| E
+    E -->|Updates| C
+    C -->|Calls notifyListeners| B

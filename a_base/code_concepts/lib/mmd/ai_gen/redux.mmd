@@ -1,0 +1,30 @@
+graph TD
+    subgraph UI
+        A[Widget]
+    end
+    
+    subgraph State Management
+        B[Redux Store]
+        C[State]
+        D[Reducer]
+    end
+
+    subgraph Actions
+        E[Action 1]
+        F[Action 2]
+        G[Action 3]
+    end
+
+    A -->|Dispatches| E
+    A -->|Dispatches| F
+    A -->|Dispatches| G
+
+    E -->|Handled by| D
+    F -->|Handled by| D
+    G -->|Handled by| D
+
+    D -->|Updates| C
+    C -->|Stored in| B
+    B -->|Provides State to| A
+
+    A -->|Subscribes to| B

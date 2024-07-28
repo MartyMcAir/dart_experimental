@@ -18,16 +18,16 @@ namespace main_runApp_TextControllerApp {
     }
 
     class TextControlerScreenState_extends_State~TextControllerPage~ {
-    final _controller = TextEditingController()
-    build(BuildContext) : Scaffold
-    Scaffold_body : BoxElementList(item)
-    controller: _controller
-    FloatingActionButton_onPressed: addItem
-    addItem() : setState((_controller.clear()))
+      final _controller = TextEditingController()
+      build(BuildContext) : Scaffold
+      Scaffold_body : BoxElementList(item)
+      controller: _controller
+      FloatingActionButton_onPressed: addItem
+      addItem() : setState((_controller.clear()))
     }
 
     class BoxElementList_extends_StatelessWidget {
-    const BoxElementList(super_key_item)
-    final String item
-    build(BuildContext) : Text(item)
+      const BoxElementList(super_key_item)
+      final String item
+      build(BuildContext) : Text(item)
     }

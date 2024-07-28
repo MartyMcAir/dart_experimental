@@ -1,0 +1,30 @@
+graph TD
+    subgraph UI
+        A[Widget]
+    end
+    
+    subgraph GetX State Management
+        B[Controller]
+        C[Observable State]
+    end
+
+    A -->|Subscribes to| B
+    B -->|Contains| C
+    C -->|Changes| B
+    B -->|Updates| A
+
+    subgraph Dependency Injection
+        D[Bindings]
+        E[Services]
+    end
+
+    A -->|Requests| D
+    D -->|Provides| E
+
+    subgraph Routing
+        F[GetMaterialApp]
+        G[GetPage]
+    end
+
+    A -->|Navigates using| F
+    F -->|Defines| G

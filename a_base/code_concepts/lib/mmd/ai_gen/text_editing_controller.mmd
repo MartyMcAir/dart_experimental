@@ -1,0 +1,24 @@
+graph TD
+    subgraph UI
+        A[TextField]
+    end
+    
+    subgraph Controllers
+        B[TextEditingController]
+    end
+
+    subgraph State Management
+        C[Text Input State]
+    end
+
+    A -->|Uses| B
+    B -->|Holds| C
+    C -->|Updates| B
+    B -->|Updates| A
+
+    subgraph User Interaction
+        D[User Types Text]
+    end
+
+    D -->|Triggers| C
+    C -->|Updates Text in| A

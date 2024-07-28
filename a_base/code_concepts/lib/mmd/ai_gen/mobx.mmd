@@ -1,0 +1,34 @@
+graph TD
+    subgraph UI
+        A[Observer Widget]
+    end
+    
+    subgraph State Management
+        B[Observable]
+        C[Action]
+        D[Store]
+    end
+
+    subgraph Reactions
+        E[Reaction]
+        F[Autorun]
+    end
+
+    A -->|Observes| B
+    B -->|Holds| G[State]
+    C -->|Modifies| B
+    D -->|Contains| B
+    D -->|Defines| C
+    B -->|Triggers| E
+    B -->|Triggers| F
+    E -->|Updates| A
+    F -->|Runs Automatically| B
+
+    subgraph User Interaction
+        H[User Action]
+        I[State Change]
+    end
+
+    H -->|Triggers| C
+    I -->|Updates| G
+    G -->|Notifies| B

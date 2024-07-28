@@ -1,0 +1,22 @@
+graph TD
+    subgraph Widget Tree
+        A[StatefulWidget]
+        B[State]
+    end
+
+    A -->|Creates| B
+    B -->|Holds mutable state| C[State Variables]
+    B -->|Contains| D[build method]
+    D -->|Returns| E[UI]
+    C -->|Triggers setState| B
+
+    subgraph User Interaction
+        F[User Action]
+        G[State Change]
+    end
+
+    F -->|Triggers| G
+    G -->|Calls| C
+    C -->|Updates State| B
+    B -->|Calls| D
+    D -->|Updates| E

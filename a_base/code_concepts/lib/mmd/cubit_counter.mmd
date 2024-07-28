@@ -1,0 +1,27 @@
+classDiagram
+    CubitApp_extends_StatelessWidget ..> CubitPage_extends_StatelessWidget
+
+    CubitPage_extends_StatelessWidget <|--|> CounterCubit_extends_Cubit~int~
+
+namespace main_runApp_CubitApp {
+    class CubitApp_extends_StatelessWidget {
+      build(BuildContext) : MaterialApp
+      MaterialApp_home: BlocProvider
+      BlocProvider_create: (_) => CounterCubit()
+      BlocProvider_child: CubitPage()
+    }
+}
+
+    class CubitPage_extends_StatelessWidget {
+      build(BuildContext) : Scaffold
+      Scaffold_body : BlocBuilder~CounterCubit_int~
+      FloatingActionButton_onPressed: contextRead~CounterCubit~increment()
+      FloatingActionButton_onPressed: contextRead~CounterCubit~decrement()
+    }
+
+    class CounterCubit_extends_Cubit~int~ {
+      CounterCubit() : super(0);
+      void increment() => emit(state + 1);
+      void decrement() => emit(state - 1);
+    }
+
