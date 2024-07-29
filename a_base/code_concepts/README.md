@@ -35,7 +35,8 @@
 ![screen_search](img/bloc_selector_vs_context_select.jpg)
 ..
 
-**context.read() vs BlocProvider.of<T>**
+## **context.read() vs BlocProvider.of<T>**
+### context_read_watch_select/context_read_vs_bloc_provider_of
 - Так как `flutter_bloc` под капотом использует `provider`, тогда наиболее подобным `context.read()` является использование `BlocProvider.of<T>(context)`.
 - Оба метода позволяют получить экземпляр блока и вызвать его методы или диспатчить события без подписки на изменения состояния и перерисовки виджета (конечно если следом, не используется .add(..)).
 - Диспатчить события - отправлять случившийся Event в систему управления состоянием, с целью уведомления о том, что произошло определённое действие.
