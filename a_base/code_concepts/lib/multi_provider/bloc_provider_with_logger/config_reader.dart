@@ -78,13 +78,23 @@ class LogInterceptor {
 // ----------------------------------------------------------------------------
 
 class ConfigReader {
+  static const String _configFileName = 'app_config.json';
+  static const String _defaultConfigFileName = 'app_config_default.json';
+
   static Future<Level> getLogLevel() async {
     final config = await _loadConfig();
     return _parseLogLevel(config['logLevel']);
   }
 
   static Future<Map<String, dynamic>> _loadConfig() async {
-    final file = File('app_config.json');
+    final file = File(_configFileName);
+
+    // Проверяем наличие файла, если нет — создаем пустой
+    if (!(await file.exists())) {
+      await file.create(recursive: true);
+      await file.writeAsString(jsonEncode({}));
+    }
+
     final content = await file.readAsString();
     return jsonDecode(content);
   }
