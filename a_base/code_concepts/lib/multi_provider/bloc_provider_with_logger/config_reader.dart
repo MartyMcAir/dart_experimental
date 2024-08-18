@@ -12,6 +12,7 @@ class LogConfig {
   static Logger get logger {
     MyLogOutPut myLogOut = MyLogOutPut();
     return Logger(
+      level: levelResult,
       printer: PrettyPrinter(
         methodCount:
             2, // Показываем 2 уровня вызовов, чтобы видеть и метод, и класс
@@ -83,16 +84,35 @@ class ConfigReader {
 
   static Future<Level> getLogLevel() async {
     final config = await _loadConfig();
-    return _parseLogLevel(config['logLevel']);
+    final defaultConfig = await _loadDefaultConfig();
+    // если в конфиге пользователя не поля logLevel,
+    // тогда его берем из дефолтного конфига
+    final logLevel = config['logLevel'] ?? defaultConfig['logLevel'];
+    return _parseLogLevel(logLevel);
   }
 
   static Future<Map<String, dynamic>> _loadConfig() async {
     final file = File(_configFileName);
 
-    // Проверяем наличие файла, если нет — создаем пустой
+    // Проверяем наличие файла, если нет — создаем его на основе app_config_default.json
     if (!(await file.exists())) {
+      print(
+          'Файл $_configFileName не найден. Создаю на основе $_defaultConfigFileName.');
+      final defaultConfig = await _loadDefaultConfig();
       await file.create(recursive: true);
-      await file.writeAsString(jsonEncode({}));
+      await file.writeAsString(jsonEncode(defaultConfig));
+    }
+
+    final content = await file.readAsString();
+    return jsonDecode(content);
+  }
+
+  static Future<Map<String, dynamic>> _loadDefaultConfig() async {
+    final file = File(_defaultConfigFileName);
+
+    if (!(await file.exists())) {
+      throw Exception(
+          'Файл $_defaultConfigFileName не найден. Пожалуйста, создайте файл с необходимыми настройками.');
     }
 
     final content = await file.readAsString();
@@ -112,13 +132,13 @@ class ConfigReader {
       case 'INFO':
         return Level.info; // информационные и то что выше
       case 'DEBUG':
-        return Level.debug; // подроьбный вывод для отладки
+        return Level.debug; // подробный вывод для отладки
       case 'ALL':
         return Level.all; // вывод логов всех уровней логирования
       case 'TRACE':
         return Level.trace; // избыточные логи включая значения переменных
       default:
-        return Level.off;
+        return Level.off; // если пользователь указал не существующий Level
     }
 
     // Google logging library Logs Levels
