@@ -15,9 +15,9 @@ class SimpleObjectView extends StatelessWidget {
   Widget build(BuildContext context) {
     final localTheme = Theme.of(context).textTheme;
     final boldStyle =
-        localTheme.bodyText2!.copyWith(fontWeight: FontWeight.w600);
+        localTheme.bodySmall!.copyWith(fontWeight: FontWeight.w600);
 
-    if (simpleObject == null) return Text('NULL', style: localTheme.bodyText2);
+    if (simpleObject == null) return Text('NULL', style: localTheme.bodySmall);
 
     return Table(
       columnWidths: const {
@@ -35,7 +35,7 @@ class SimpleObjectView extends StatelessWidget {
               simpleObject.aString != null
                   ? '"${simpleObject.aString}"'
                   : 'NULL',
-              style: localTheme.bodyText2,
+              style: localTheme.bodySmall,
             ),
           ],
         ),
@@ -44,7 +44,7 @@ class SimpleObjectView extends StatelessWidget {
             Text('anInt:', style: boldStyle),
             Text(
               simpleObject.anInt?.toString() ?? 'NULL',
-              style: localTheme.bodyText2,
+              style: localTheme.bodySmall,
             ),
           ],
         ),
@@ -52,7 +52,7 @@ class SimpleObjectView extends StatelessWidget {
           Text('aDouble:', style: boldStyle),
           Text(
             simpleObject.aDouble?.toString() ?? 'NULL',
-            style: localTheme.bodyText2,
+            style: localTheme.bodySmall,
           ),
         ]),
         TableRow(
@@ -62,7 +62,7 @@ class SimpleObjectView extends StatelessWidget {
               prettyPrintList(
                 simpleObject.aListOfStrings as Iterable<dynamic>?,
               ),
-              style: localTheme.bodyText2,
+              style: localTheme.bodySmall,
             ),
           ],
         ),
@@ -71,7 +71,7 @@ class SimpleObjectView extends StatelessWidget {
             Text('aListOfInts:', style: boldStyle),
             Text(
               prettyPrintList(simpleObject.aListOfInts as Iterable<dynamic>?),
-              style: localTheme.bodyText2,
+              style: localTheme.bodySmall,
             ),
           ],
         ),
@@ -84,7 +84,7 @@ class SimpleObjectView extends StatelessWidget {
             Text(
               prettyPrintList(
                   simpleObject.aListOfDoubles as Iterable<dynamic>?),
-              style: localTheme.bodyText2,
+              style: localTheme.bodySmall,
             ),
           ],
         ),
@@ -107,7 +107,7 @@ class SimpleObjectViewList extends StatelessWidget {
       widgets.addAll([
         Text(
           'SimpleObject $i:',
-          style: Theme.of(context).textTheme.subtitle1,
+          style: Theme.of(context).textTheme.bodySmall,
         ),
         const SizedBox(height: 4.0),
         SimpleObjectView(simpleObject: simpleObjects[i]),
@@ -162,7 +162,7 @@ class ComplexObjectView extends StatelessWidget {
   Widget build(BuildContext context) {
     final localTheme = Theme.of(context).textTheme;
     final boldStyle =
-        localTheme.bodyText2!.copyWith(fontWeight: FontWeight.w600);
+        localTheme.bodySmall!.copyWith(fontWeight: FontWeight.w600);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -180,21 +180,21 @@ class ComplexObjectView extends StatelessWidget {
                     complexObject.aString != null
                         ? '"${complexObject.aString}"'
                         : 'NULL',
-                    style: localTheme.bodyText2),
+                    style: localTheme.bodySmall),
               ],
             ),
             TableRow(
               children: [
                 Text('anInt:', style: boldStyle),
                 Text(complexObject.anInt?.toString() ?? 'NULL',
-                    style: localTheme.bodyText2),
+                    style: localTheme.bodySmall),
               ],
             ),
             TableRow(
               children: [
                 Text('aDouble:', style: boldStyle),
                 Text(complexObject.aDouble?.toString() ?? 'NULL',
-                    style: localTheme.bodyText2),
+                    style: localTheme.bodySmall),
               ],
             ),
             TableRow(
@@ -221,7 +221,7 @@ class ComplexObjectView extends StatelessWidget {
                 Text(
                   prettyPrintList(
                       complexObject.aListOfStrings as Iterable<dynamic>?),
-                  style: localTheme.bodyText2,
+                  style: localTheme.bodySmall,
                 ),
               ],
             ),
@@ -231,7 +231,7 @@ class ComplexObjectView extends StatelessWidget {
                 Text(
                   prettyPrintList(
                       complexObject.aListOfInts as Iterable<dynamic>?),
-                  style: localTheme.bodyText2,
+                  style: localTheme.bodySmall,
                 ),
               ],
             ),
@@ -244,7 +244,7 @@ class ComplexObjectView extends StatelessWidget {
                 Text(
                   prettyPrintList(
                       complexObject.aListOfDoubles as Iterable<dynamic>?),
-                  style: localTheme.bodyText2,
+                  style: localTheme.bodySmall,
                 ),
               ],
             ),
@@ -283,7 +283,7 @@ class ComplexObjectViewList extends StatelessWidget {
       widgets.addAll([
         Text(
           'Complex Object $i:',
-          style: Theme.of(context).textTheme.subtitle1,
+          style: Theme.of(context).textTheme.bodySmall,
         ),
         const SizedBox(height: 4.0),
         ComplexObjectView(complexObject: complexObjects[i]),

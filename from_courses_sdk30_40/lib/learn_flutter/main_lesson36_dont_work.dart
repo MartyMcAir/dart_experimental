@@ -47,8 +47,8 @@ Widget _myListView() {
 
       if (item is HeadingItem) {
         return ListTile(
-          title:
-              Text(item.heading, style: Theme.of(context).textTheme.headline5),
+          title: Text(item.heading,
+              style: Theme.of(context).textTheme.headlineSmall),
         );
       } else if (item is MessageItem) {
         return ListTile(

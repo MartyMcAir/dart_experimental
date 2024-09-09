@@ -1,8 +1,143 @@
 {
+	// "editor.rulers": [
+	// 	160
+	// ],
+	// "editor.formatOnType": false,
+	// "editor.formatOnPaste": false,
+	// "editor.wordWrap": "off",
+	// "editor.wordWrapColumn": 160,
+	// "prettier.printWidth": 160,
+	// "eslint.rules": {
+	// 	"max-len": [
+	// 		"error",
+	// 		126
+	// 	]
+	// },
+	// "[dart]": {
+	// 	"editor.wordWrap": "off",
+	// 	"editor.formatOnSave": false,
+	// 	"editor.formatOnType": false,
+	// 	"editor.formatOnPaste": false,
+	// 	"editor.wordWrapColumn": 160,
+	// 	"editor.rulers": [
+	// 		160
+	// 	],
+	// 	// "editor.selectionHighlight": false,
+	// 	// "editor.suggest.snippetsPreventQuickSuggestions": false,
+	// 	// "editor.suggestSelection": "first",
+	// 	// "editor.tabCompletion": "onlySnippets",
+	// 	// "editor.wordBasedSuggestions": "off"
+	// },
+	// Using the light mode
+	"indentRainbow.indicatorStyle": "light",
+	// we use a simple 1 pixel wide line
+	"indentRainbow.lightIndicatorStyleLineWidth": 1,
+	// the same colors as above but more visible
+	"indentRainbow.colors": [
+		// "rgba(255,255,102,0.3)", // Светло-желтый
+		// "rgba(102,255,255,0.3)", // Голубой/Циан
+		// "rgba(255,102,102,0.3)", // Светло-красный
+		// "rgba(102,255,102,0.3)", // Светло-зеленый
+		// "rgba(102,178,255,0.3)", // Светло-синий
+		// "rgba(178,102,255,0.3)", // Светло-фиолетовый
+		// "rgba(192,192,192,0.3)", // Серый
+		// "rgba(255,178,102,0.3)", // Светло-оранжевый
+		// "rgba(102,102,178,0.3)", // Темно-синий
+		// "rgba(178,255,178,0.3)" // Бледно-зеленый
+		// --------------------
+		"rgba(255,255,153,0.3)", // Очень светло-желтый
+		"rgba(153,255,255,0.15)", // Очень светло-голубой/Циан
+		"rgba(255,153,153,0.3)", // Очень светло-красный
+		"rgba(153,204,255,0.15)", // Очень светло-синий
+		"rgba(153,255,153,0.3)", // Очень светло-зеленый
+		"rgba(224,224,224,0.15)", // Очень светло-серый
+		"rgba(204,153,255,0.3)", // Очень светло-фиолетовый
+		"rgba(153,153,204,0.15)", // Очень светло-темно-синий
+		"rgba(255,204,153,0.3)", // Очень светло-оранжевый
+		"rgba(204,255,204,0.15)" // Очень светло-бледно-зеленый
+	],
+	// Defining custom colors instead of default "Rainbow" for dark backgrounds.
+	// "indentRainbow.colors": [
+	// "rgba(255,255,64,0.3)",
+	// "rgba(127,255,127,0.3)",
+	// "rgba(255,127,255,0.3)",
+	// "rgba(79,236,236,0.3)"
+	// 	"rgba(255,255,64,0.07)",
+	// 	"rgba(127,255,127,0.07)",
+	// 	"rgba(255,127,255,0.07)",
+	// 	"rgba(79,236,236,0.07)"
+	// ],
+	// ----------------------------------
+	// "editor.lineHeight": 15,
+	"[dart]": {
+		"editor.rulers": [
+			85
+		],
+	},
+	"editor.fontWeight": "400",
+	"editor.fontSize": 13,
+	// --- почти одинаковы
+	// "editor.fontFamily": "'JetBrains Mono'", // тоже что и Fira но Bold
+	// "editor.fontFamily": "DejaVu Sans Mono", // JetBrains отличия минимал
+	// "editor.fontFamily": "Menlo", // Тоже что и JetBrains но толше
+	// 
+	// --- длинно и толсто
+	// "editor.fontFamily": "Input Mono", // оч длинный и толстый
+	// "editor.fontFamily": "Droid Sans Mono", // Source но выше и толше
+	// "editor.fontFamily": "Monaco", // Droid но ниже толше
+	// "editor.fontFamily": "'IBM Plex Mono'", // длинно толсто с выпендрежом
+	// "editor.fontFamily": "Hack", // похоже на IBM но без закорючек
+	// --- СТИЛЬНО но слишком длинно по ширине
+	// "editor.fontFamily": "monospace", // Source нр тоньше +++
+	// "editor.fontFamily": "'Source Code Pro'", // толше чем monospace
+	// "editor.fontFamily": "Fira Code", // расстояния между символами большое
+	// --- чуть короче
+	"editor.fontFamily": "'Anonymous Pro'", // short and thin +++
+	// --- Компактные короткие
+	// "editor.fontFamily": "'Ubuntu Mono'", // 
+	// "editor.fontFamily": "'Inconsolata'", // тоже что и Ubuntu но тоньше
+	// "editor.fontWeight": "normal",
+	// ------------------------------------------------------
+	// ------------------------------------------------------
+	// ------------------------------------------------------
+	// "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+	// "workbench.preferredLightColorTheme": "Monokai Dimmed",
+	// "workbench.preferredHighContrastColorTheme": "Monokai Dimmed",
+	// "workbench.preferredHighContrastLightColorTheme": "Monokai Dimmed",
+	// --------
+	// GRAY _ слигком много цветастости
+	// "workbench.colorTheme": "Monokai",
+	// "workbench.colorTheme": "Monokai Dimmed",
+	// GRAY _ оч много серости но четкость кода
+	// "workbench.colorTheme": "Material Theme Darker", // SMOOTHED
+	// "workbench.colorTheme": "Tomorrow Night", // четко
+	// GRAY
+	// "workbench.colorTheme": "Visual Studio 2017 Dark - C++", // похоже на Default Dark Modern
+	// "workbench.colorTheme": "Tomorrow Night",
+	// "workbench.colorTheme": "Default Dark Modern", // наверно лучшее
+	// BLUE DARKER
+	// "workbench.colorTheme": "Dracula Theme", // LIGHT A lot
+	// "workbench.colorTheme": "Tokyo Night", // SMOOTHED
+	// "workbench.colorTheme": "Night Owl",
+	// "workbench.colorTheme": "Winter is Coming (Dark Blue - No Italics)",
+	// PURPLE
+	// "workbench.colorTheme": "SynthWave '84", // LIGHTER
+	// "workbench.colorTheme": "Shades of Purple (Super Dark)",
+	// TRUE BLACK
+	// "workbench.colorTheme": "Ayu Dark Bordered",
+	// "workbench.colorTheme": "Material Theme Ocean",
+	// "workbench.colorTheme": "GitHub Dark Default",
+	"workbench.colorTheme": "Tomorrow Night Bright",
+	// -----------
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.editor.alwaysShowEditorActions": false,
+	"workbench.editor.editorActionsLocation": "hidden",
+	// ----------------------------------------------------
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "explicit",
 		"source.organizeImports": "explicit"
 	},
+	// "editor.formatOnType": true,
 	"editor.formatOnSave": true,
 	"autoHide.autoHideAuxiliaryBar": true,
 	"autoHide.autoHideReferences": true,
@@ -10,6 +145,5 @@
 	// "autoHide.autoHidePanel": true,
 	"autoHide.autoHideSideBar": false,
 	"autoHide.sideBarDelay": 100,
-	"autoHide.panelDelay": 100,
-	"accessibility.signalOptions.volume": 70
+	"autoHide.panelDelay": 100
 }

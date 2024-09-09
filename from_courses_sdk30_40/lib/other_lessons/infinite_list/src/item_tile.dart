@@ -24,7 +24,8 @@ class ItemTile extends StatelessWidget {
             color: item.color,
           ),
         ),
-        title: Text(item.name, style: Theme.of(context).textTheme.headline6),
+        title:
+            Text(item.name, style: Theme.of(context).textTheme.headlineSmall),
         trailing: Text('\$ ${(item.price / 100).toStringAsFixed(2)}'),
       ),
     );
@@ -45,7 +46,7 @@ class LoadingItemTile extends StatelessWidget {
           aspectRatio: 1,
           child: Placeholder(),
         ),
-        title: Text('...', style: Theme.of(context).textTheme.headline6),
+        title: Text('...', style: Theme.of(context).textTheme.headlineSmall),
         trailing: const Text('\$ ...'),
       ),
     );
