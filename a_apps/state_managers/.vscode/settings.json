@@ -11,5 +11,5 @@
 	"autoHide.autoHideSideBar": false,
 	"autoHide.sideBarDelay": 100,
 	"autoHide.panelDelay": 100,
-	"accessibility.signals.sounds.volume": 70
+	"accessibility.signalOptions.volume": 70
 }
