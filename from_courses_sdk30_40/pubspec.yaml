@@ -75,6 +75,13 @@ flutter:
   assets:
     - assets/images/apple.png
     - assets/icons/yasher.jpeg
+    - assets/compl_guide/img/quiz-logo.png
+    - assets/compl_guide/img/dice-1.png
+    - assets/compl_guide/img/dice-2.png
+    - assets/compl_guide/img/dice-3.png
+    - assets/compl_guide/img/dice-4.png
+    - assets/compl_guide/img/dice-5.png
+    - assets/compl_guide/img/dice-6.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

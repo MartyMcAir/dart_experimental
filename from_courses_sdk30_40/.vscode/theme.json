@@ -1,0 +1,72 @@
+{
+	"name": "Custom Dart Theme",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#2d2a2e",
+		"editor.foreground": "#fcfcfa",
+		"editor.selectionBackground": "#403e41",
+		"editor.lineHighlightBackground": "#3b3539",
+		"editorCursor.foreground": "#fcfcfa",
+		"editorLineNumber.foreground": "#5b595c",
+		"editorLineNumber.activeForeground": "#c1c0c0"
+	},
+	"tokenColors": [
+		{
+			"scope": "keyword",
+			"settings": {
+				"foreground": "#ff6188",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"foreground": "#ffd866"
+			}
+		},
+		{
+			"scope": "comment",
+			"settings": {
+				"foreground": "#727072",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "variable",
+			"settings": {
+				"foreground": "#fcfcfa"
+			}
+		},
+		{
+			"scope": "function",
+			"settings": {
+				"foreground": "#78dce8"
+			}
+		},
+		{
+			"scope": "annotation",
+			"settings": {
+				"foreground": "#a9dc76"
+			}
+		},
+		{
+			"scope": "type",
+			"settings": {
+				"foreground": "#a9dc76"
+			}
+		},
+		{
+			"scope": "class",
+			"settings": {
+				"foreground": "#78dce8",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "constant",
+			"settings": {
+				"foreground": "#f59762"
+			}
+		}
+	]
+}

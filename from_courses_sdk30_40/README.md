@@ -1,3 +1,20 @@
+# course_flutter_complete_guide
+###### https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/
+-> from Flutter & Dart - The Complete Guide [2025 Edition]
+- https://academind.com/
+####### ----------------------
+- dart pub cache repair
+- flutter clean
+- dart pub get
+	- flutter pub get
+
+### m38 roll dice app
+![screen_search](img/roll_dice.jpg)
+
+### m53 quiz app
+
+
+-----------------------------------------------------------------------------------------------
 # Learn_flutter
 #### main_lesson15_16_img_font
 ![main_lesson15_16_img_font](img/main_lesson15_16_img_font.jpg)
@@ -35,7 +52,7 @@
 ..
 
 
----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 # other_lessons
 ### filepicker_dont_ready
 ![filepicker_dont_ready](img/filepicker_dont_ready.jpg)
@@ -59,7 +76,7 @@
 ![text_editor_v1](img/text_editor_v1.jpg)
 ..
 
----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 # pro_flutter
 ### lesson_10_1
 ![lesson_10_1](img/lesson_10_1.jpg)
