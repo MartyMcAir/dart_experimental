@@ -3,7 +3,7 @@
 // https://github.com/academind/flutter-complete-guide-course-resources/blob/main/Code%20Snapshots/02%20Flutter%20%26%20Dart%20Basics%20I/01%20Starting%20Setup/lib/main.dart
 import 'package:flutter/material.dart';
 
-import './gradient_container.dart';
+import 'gradient_container.dart';
 
 void main() {
   runApp(const MaterialApp(

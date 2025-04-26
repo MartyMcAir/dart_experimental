@@ -1,17 +1,18 @@
-# course_flutter_complete_guide
-###### https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/
--> from Flutter & Dart - The Complete Guide [2025 Edition]
-- https://academind.com/
 ####### ----------------------
 - dart pub cache repair
 - flutter clean
 - dart pub get
-	- flutter pub get
+- flutter pub get
 
-### m38 roll dice app
+# complete_guide - flutter complete guide
+###### https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/
+-> from Flutter & Dart - The Complete Guide [2025 Edition]
+- https://academind.com/
+
+### lesson38 roll dice app
 ![screen_search](img/roll_dice.jpg)
 
-### m53 quiz app
+### lesson53 quiz app
 
 
 -----------------------------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import './dice_roller.dart';
+import 'dice_roller.dart';
 
 // Alignment topLeft = Alignment.topLeft;
 const Alignment topLeft = Alignment.topLeft;
