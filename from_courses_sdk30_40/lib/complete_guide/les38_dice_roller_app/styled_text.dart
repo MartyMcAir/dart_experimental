@@ -12,6 +12,8 @@ class StyledText extends StatelessWidget {
   // однажды занесенный текст в obj Text меняться не планируется, а значит можно final
   final String text;
 
+  static const _somePrivateField = 'someText';
+
   @override
   Widget build(BuildContext context) {
     return Text(

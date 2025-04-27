@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   // using functions as value / param (lesson 60)
@@ -24,12 +25,12 @@ class StartScreen extends StatelessWidget {
         //   child: Image.asset('assets/images/quiz-logo.png',
         //     width: 300), ),
         const SizedBox(height: 80),
-        const Text(
+        Text(
           'Learn Flutter the fun way!',
-          style: TextStyle(
-            color: Colors.white70,
-            fontSize: 24,
-          ),
+// leson76 https://docs.flutter.dev/cookbook/design/fonts
+// https://pub.dev/packages/google_fonts
+// https://fonts.google.com/
+          style: GoogleFonts.lato(color: Colors.white70, fontSize: 24),
         ),
         const SizedBox(height: 30),
         OutlinedButton.icon(
