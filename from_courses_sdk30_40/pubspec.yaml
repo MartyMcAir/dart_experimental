@@ -43,6 +43,8 @@ dependencies:
   built_collection: ^5.0.0 # for jsonuse_example
   built_value: ^8.0.0 # for jsonuse_example
   file_picker: ^7.0.2 # for filepicker
+  uuid: ^4.5.1
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
