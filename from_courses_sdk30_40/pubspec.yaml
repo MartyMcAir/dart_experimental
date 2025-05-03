@@ -45,6 +45,7 @@ dependencies:
   file_picker: ^7.0.2 # for filepicker
   uuid: ^4.5.1
   intl: ^0.20.2
+  transparent_image: ^2.0.1
 
 dev_dependencies:
   flutter_test:
