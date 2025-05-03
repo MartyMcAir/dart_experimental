@@ -12,6 +12,12 @@ var kDarkColorScheme = ColorScheme.fromSeed(
 );
 
 void main() {
+  // lesson 137 - adaptive
+  // WidgetsFlutterBinding.ensureInitialized();
+  // SystemChrome.setPreferredOrientations([
+  //   DeviceOrientation.portraitUp, // locking Device Orientation
+  // ]).then((fn) {
+  // ---------------------------------
   runApp(MaterialApp(
     // variant 1
     // theme: ThemeData(useMaterial3: true), // Appbar - white by default
@@ -78,4 +84,6 @@ void main() {
     // -----------------------------------------------
     home: const Expenses(),
   ));
+  // ------------------------------------
+  // }); // setPreferredOrientations
 }

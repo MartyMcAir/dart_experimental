@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:from_courses_sdk30_40/complete_guide/les98_expense_tracker_app/widgets/new_expense.dart';
 
 import '../models/expense.dart';
+import '../widgets/new_expense.dart';
 import 'chart/chart.dart';
 import 'expenses_list/expenses_list.dart';
 
@@ -34,6 +34,9 @@ class _ExpensesState extends State<Expenses> {
     // context - from State<Expenses>
     // ctx - context from BottomSheet
     showModalBottomSheet(
+      // useSafeArea - that we stay away from the device features
+      // like the camera that might be affecting our UI
+      useSafeArea: true, // default false
       isScrollControlled: true, // true = full screen size
       context: context,
       builder: (ctx) => NewExpense(onAddExpense: _addExpense),
@@ -69,6 +72,8 @@ class _ExpensesState extends State<Expenses> {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width; // screen size width for actual display
+    // double height = MediaQuery.of(context).size.height;
     Widget mainContent = const Center(child: Text('No expenses found, Start adding some!'));
     if (_registeredExpenses.isNotEmpty) {
       mainContent = ExpensesList(
@@ -79,15 +84,23 @@ class _ExpensesState extends State<Expenses> {
 
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false, // by default for iOS true
         title: const Text('Flutter ExpenseTracker'),
         actions: [IconButton(onPressed: _openAddExpenseOverlay, icon: const Icon(Icons.add))],
       ),
-      body: Column(
-        children: [
-          Chart(expenses: _registeredExpenses),
-          Expanded(child: mainContent),
-        ],
-      ),
+      body: width < 600
+          ? Column(
+              children: [
+                Chart(expenses: _registeredExpenses),
+                Expanded(child: mainContent),
+              ],
+            )
+          : Row(
+              children: [
+                Expanded(child: Chart(expenses: _registeredExpenses)),
+                Expanded(child: mainContent),
+              ],
+            ),
     );
   }
 }

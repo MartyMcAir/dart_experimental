@@ -25,17 +25,24 @@
 <br>
 
 ![quiz_l77_values_across_widgets](img/compl_edit/quiz_l77_values_across_widgets.jpg)
-<br>
-</details>
+<br></details>
 
-### les98_expense_tracker_app (chart &theme &calendar use examples)
+### les98_expense_tracker_app (chart &theme &calendar use examples &adaptive)
 ![expense_1](img/compl_edit/expense_1.jpg)
+<details>
+
 ..
 ![expense_2](img/compl_edit/expense_2.jpg)
-..
-![expense_3](img/compl_edit/expense_3.jpg)
-..
+<br>
 
+![expense_3](img/compl_edit/expense_3.jpg)
+<br>
+
+![expense_adaptive_1](img/compl_edit/expense_adaptive_1.jpg)
+<br>
+
+![expense_adaptive_2](img/compl_edit/expense_adaptive_2.jpg)
+<br></details>
 
 --------------------------------------------------------------------------------
 # Learn_flutter
