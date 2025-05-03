@@ -31,7 +31,6 @@
 ![expense_1](img/compl_edit/expense_1.jpg)
 <details>
 
-..
 ![expense_2](img/compl_edit/expense_2.jpg)
 <br>
 
@@ -43,6 +42,24 @@
 
 ![expense_adaptive_2](img/compl_edit/expense_adaptive_2.jpg)
 <br></details>
+
+### les146_todo_app
+#### how ui updated
+![how_ui_updated](img/compl_edit/how_ui_updated.jpg)
+<details>
+
+![uI_up_interface](img/compl_edit/uI_up_interface.jpg)
+<br>
+
+![ui_upd_console](img/compl_edit/ui_upd_console.jpg)
+<br></details>
+
+#### les149 todo app with reOrder..
+![todo_app](img/compl_edit//todo_app.jpg)
+<details>
+
+![widget_elem_trees](img/compl_edit/widget_elem_trees.jpg)
+</details>
 
 --------------------------------------------------------------------------------
 # Learn_flutter
