@@ -41,7 +41,7 @@
 <br>
 
 ![expense_adaptive_2](img/compl_edit/expense_adaptive_2.jpg)
-<br></details>
+</details>
 
 ### les146_todo_app
 #### how ui updated
@@ -52,7 +52,7 @@
 <br>
 
 ![ui_upd_console](img/compl_edit/ui_upd_console.jpg)
-<br></details>
+</details>
 
 #### les149 todo app with reOrder..
 ![todo_app](img/compl_edit//todo_app.jpg)
@@ -62,7 +62,27 @@
 </details>
 
 ### les155_meals_app (multi screen app, using Grid)
-![some](img/compl_edit/some.jpg)
+![meal_app_1_categories](img/compl_edit/meal/meal_app_1_categories.jpg)
+
+<details>
+
+![meal_app_screens](img/compl_edit/meal/meal_app_screens.jpg)
+<br>
+
+![meal_app_2](img/compl_edit/meal/meal_app_2.jpg)
+<br>
+
+![meal_app_3_meal_details](img/compl_edit/meal/meal_app_3_meal_details.jpg)
+<br>
+
+![meal_app_4_favorites](img/compl_edit/meal/meal_app_4_favorites.jpg)
+<br>
+
+![meal_app_5_drawer_menu](img/compl_edit/meal/meal_app_5_drawer_menu.jpg)
+<br>
+
+![meal_app_6_checkbox_filters](img/compl_edit/meal/meal_app_6_checkbox_filters.jpg)
+</details>
 
 --------------------------------------------------------------------------------
 # Learn_flutter

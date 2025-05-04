@@ -7,14 +7,16 @@ import '../widgets/category_grid_item.dart';
 import 'meals.dart';
 
 class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({super.key, required this.onToggleFavorite});
+  const CategoriesScreen({super.key, required this.onToggleFavorite, required this.availableMeals});
 
   final void Function(Meal meal) onToggleFavorite;
+  final List<Meal> availableMeals;
 
   // https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37143978#overview
   void _selectCategory(BuildContext context, Category category) {
     final List<Meal> filteredMeals =
-        dummyMeals.where((meal) => meal.categories.contains(category.id)).toList();
+        // dummyMeals.where((meal) => meal.categories.contains(category.id)).toList();
+        availableMeals.where((meal) => meal.categories.contains(category.id)).toList();
     // Stateful - не нужен для смены экрана
     // push -add _ pop - remove from the stack
     // Navigator.push(context, route); // the same - of(context).push
