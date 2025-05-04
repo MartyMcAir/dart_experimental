@@ -61,7 +61,8 @@
 ![widget_elem_trees](img/compl_edit/widget_elem_trees.jpg)
 </details>
 
-### les155_meals_app (multi screen app, using Grid)
+### les155_meals_app 
+  - (multi screen app, with filters for food, using Grid & Navigator)
 ![meal_app_1_categories](img/compl_edit/meal/meal_app_1_categories.jpg)
 
 <details>
