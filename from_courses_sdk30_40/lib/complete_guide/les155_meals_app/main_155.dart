@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'screens/categories.dart';
+import './screens/tabs.dart';
 // import 'screen/categories.dart';
 // import './data/dummy_data.dart';
 // import './screen/meals.dart';
@@ -26,7 +26,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      home: const CategoriesScreen(),
+      home: const TabsScreen(),
+      // home: const CategoriesScreen(),
       // home: const MealsScreen( // for Test MealsScreen
       //   title: 'Some category..',
       //   // meals: [], // for test if empty, them expect = 'Uh oh ... nothing here!'
