@@ -83,6 +83,13 @@
 <br>
 
 ![meal_app_6_checkbox_filters](img/compl_edit/meal/meal_app_6_checkbox_filters.jpg)
+<br>
+
+### les155_meals_app  lesson 183 meals app with riverpod example
+![meals_app_riverpod_1](img/compl_edit/meal/meals_app_riverpod_1.jpg)
+<br>
+
+![meals_app_riverpod_2](img/compl_edit/meal/meals_app_riverpod_2.jpg)
 </details>
 
 --------------------------------------------------------------------------------

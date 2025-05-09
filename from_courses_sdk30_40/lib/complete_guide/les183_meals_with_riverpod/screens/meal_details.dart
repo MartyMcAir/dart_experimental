@@ -18,6 +18,9 @@ class MealDetailsScreen extends ConsumerWidget {
   @override
   // Widget build(BuildContext context) {
   Widget build(BuildContext context, WidgetRef ref) {
+    final favoriteMeals = ref.watch(favoriteMealsProvider);
+    // final isFavorite = ref.watch(favoriteMealsProvider.notifier).toggleMealsFovoriteStatus(meal);
+    final isFavorite = favoriteMeals.contains(meal);
     return Scaffold(
         appBar: AppBar(title: Text(meal.title), actions: [
           IconButton(
@@ -29,7 +32,9 @@ class MealDetailsScreen extends ConsumerWidget {
               ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text(wasAdded ? 'Meal added as a favorite.' : 'Meal removed.')));
             },
-            icon: const Icon(Icons.star),
+            // https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37144850#overview
+            // TODO: fix favorite btn here
+            icon: Icon(isFavorite ? Icons.star : Icons.star_border),
           )
         ]),
         body: SingleChildScrollView(
@@ -44,10 +49,10 @@ class MealDetailsScreen extends ConsumerWidget {
               const SizedBox(height: 14),
               Text(
                 'Ingredients',
-                style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                      color: Theme.of(context).colorScheme.primary,
-                      fontWeight: FontWeight.bold,
-                    ),
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge!
+                    .copyWith(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 14),
               for (final ingredient in meal.ingredients)
