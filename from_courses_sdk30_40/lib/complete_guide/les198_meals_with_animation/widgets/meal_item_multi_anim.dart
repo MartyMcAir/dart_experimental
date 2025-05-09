@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:transparent_image/transparent_image.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 import '../models/meal.dart';
@@ -33,12 +34,17 @@ class MealItem extends StatelessWidget {
         },
         child: Stack(
           children: [
-            FadeInImage(
-              placeholder: MemoryImage(kTransparentImage),
-              image: NetworkImage(meal.imageUrl),
-              fit: BoxFit.cover,
-              height: 200,
-              width: double.infinity,
+            // multi screen animation / multi screen transitions (Hero)
+            // les 205 https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37145116#overview
+            Hero(
+              tag: meal.id,
+              child: FadeInImage(
+                placeholder: MemoryImage(kTransparentImage),
+                image: NetworkImage(meal.imageUrl),
+                fit: BoxFit.cover,
+                height: 200,
+                width: double.infinity,
+              ),
             ),
             Positioned(
               bottom: 0,

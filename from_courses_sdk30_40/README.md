@@ -63,6 +63,7 @@
 
 ### les155_meals_app 
   - (multi screen app, with filters for food, using Grid & Navigator)
+  - with examples to use: riverpod & animation
 ![meal_app_1_categories](img/compl_edit/meal/meal_app_1_categories.jpg)
 
 <details>
@@ -93,9 +94,7 @@
 <br>
 
 ![meals_app_riverpod_2](img/compl_edit/meal/meals_app_riverpod_2.jpg)
-
 ### lesson 198 meals app with animation
-
 </details>
 
 --------------------------------------------------------------------------------

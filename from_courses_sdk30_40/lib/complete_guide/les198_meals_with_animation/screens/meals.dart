@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../models/meal.dart';
-import '../widgets/meal_item.dart';
-import 'meal_details.dart';
+import '../widgets/meal_item_multi_anim.dart';
+import 'meal_details_implicit_anim.dart';
 
 class MealsScreen extends StatelessWidget {
   const MealsScreen({super.key, this.title, required this.meals});

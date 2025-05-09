@@ -4,9 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/meal.dart';
 import '../providers/favorites_provider.dart';
 
+// Implicit Animation - https://docs.flutter.dev/ui/widgets/animation
+// les203 https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37145108#overview
+
 class MealDetailsScreen extends ConsumerWidget {
   const MealDetailsScreen({super.key, required this.meal});
-
   final Meal meal;
 
   @override
@@ -24,13 +26,35 @@ class MealDetailsScreen extends ConsumerWidget {
                 SnackBar(content: Text(wasAdded ? 'Meal added as a favorite.' : 'Meal removed.')),
               );
             },
-            icon: Icon(isFavorite ? Icons.star : Icons.star_border),
+            // AnimatedSwitcher - animated transition from one widget to anoter
+            icon: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 300),
+                transitionBuilder: (child, animation) {
+                  return RotationTransition(
+                    // turns: animation,
+                    turns: Tween<double>(begin: 0.8, end: 1.0).animate(animation),
+                    child: child,
+                  );
+                },
+                child: Icon(
+                  isFavorite ? Icons.star : Icons.airplay, // star_border
+                  // key for Flutter will therefore see that something changed here
+                  key: ValueKey(isFavorite), // and will then tregger this animation (AnimatedSwitcher)
+                )),
           )
         ]),
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Image.network(meal.imageUrl, height: 300, width: double.infinity, fit: BoxFit.cover),
+              // multi screen transitions / animations (Hero)
+              Hero(
+                  tag: meal.id,
+                  child: Image.network(
+                    meal.imageUrl,
+                    height: 300,
+                    width: double.infinity,
+                    fit: BoxFit.cover,
+                  )),
               const SizedBox(height: 14),
               Text('Ingredients',
                   style: Theme.of(context)

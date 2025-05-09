@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/favorites_provider.dart';
 import '../providers/filters_provider.dart';
 import '../widgets/main_drawer.dart';
-import 'categories.dart';
+import 'categories_explicit_anim.dart';
 import 'filters.dart';
 import 'meals.dart';
 

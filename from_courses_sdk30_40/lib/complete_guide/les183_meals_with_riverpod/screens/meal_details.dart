@@ -19,7 +19,6 @@ class MealDetailsScreen extends ConsumerWidget {
   // Widget build(BuildContext context) {
   Widget build(BuildContext context, WidgetRef ref) {
     final favoriteMeals = ref.watch(favoriteMealsProvider);
-    // final isFavorite = ref.watch(favoriteMealsProvider.notifier).toggleMealsFovoriteStatus(meal);
     final isFavorite = favoriteMeals.contains(meal);
     return Scaffold(
         appBar: AppBar(title: Text(meal.title), actions: [
@@ -32,9 +31,7 @@ class MealDetailsScreen extends ConsumerWidget {
               ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text(wasAdded ? 'Meal added as a favorite.' : 'Meal removed.')));
             },
-            // https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37144850#overview
-            // TODO: fix favorite btn here
-            icon: Icon(isFavorite ? Icons.star : Icons.star_border),
+            icon: Icon(isFavorite ? Icons.star : Icons.airplay), // star_border
           )
         ]),
         body: SingleChildScrollView(
