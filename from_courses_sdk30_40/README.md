@@ -12,35 +12,35 @@
 ![roll_dice](img/compl_edit/roll_dice.jpg)
 ..
 ### les53_quiz_app
-![quiz_1](img/compl_edit/quiz_1.jpg)
+![quiz_1](img/compl_edit/quiz/quiz_1.jpg)
 <details>
 
-![quiz_2](img/compl_edit/quiz_2.jpg)
+![quiz_2](img/compl_edit/quiz/quiz_2.jpg)
 <br>
 
-![quiz_3](img/compl_edit/quiz_3.jpg)
+![quiz_3](img/compl_edit/quiz/quiz_3.jpg)
 <br>
 
-![quiz_lesson77](img/compl_edit/quiz_lesson77.jpg)
+![quiz_lesson77](img/compl_edit/quiz/quiz_lesson77.jpg)
 <br>
 
-![quiz_l77_values_across_widgets](img/compl_edit/quiz_l77_values_across_widgets.jpg)
+![quiz_l77_values_across_widgets](img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg)
 <br></details>
 
 ### les98_expense_tracker_app (chart &theme &calendar use examples &adaptive)
-![expense_1](img/compl_edit/expense_1.jpg)
+![expense_1](img/compl_edit/expense/expense_1.jpg)
 <details>
 
-![expense_2](img/compl_edit/expense_2.jpg)
+![expense_2](img/compl_edit/expense/expense_2.jpg)
 <br>
 
-![expense_3](img/compl_edit/expense_3.jpg)
+![expense_3](img/compl_edit/expense/expense_3.jpg)
 <br>
 
-![expense_adaptive_1](img/compl_edit/expense_adaptive_1.jpg)
+![expense_adaptive_1](img/compl_edit/expense/expense_adaptive_1.jpg)
 <br>
 
-![expense_adaptive_2](img/compl_edit/expense_adaptive_2.jpg)
+![expense_adaptive_2](img/compl_edit/expense/expense_adaptive_2.jpg)
 </details>
 
 ### les146_todo_app
