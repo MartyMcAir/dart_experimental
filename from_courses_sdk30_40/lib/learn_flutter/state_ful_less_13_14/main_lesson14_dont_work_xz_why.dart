@@ -1,12 +1,15 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 // lessons 14
 // StateFullWidget - изменчивый
 
-void main(List<String> args) => runApp(MyFirstApp());
+void main(List<String> args) => runApp(const MyFirstApp());
 
 class MyFirstApp extends StatefulWidget {
+  const MyFirstApp({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _MyFirstAppState();
@@ -30,12 +33,12 @@ class _MyFirstAppState extends State<MyFirstApp> {
       home: Scaffold(
         backgroundColor: Colors.indigo,
         appBar: AppBar(
-          title: Text("My First App"),
+          title: const Text("My First App"),
           centerTitle: true,
         ),
         body: Center(
           child: Container(
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: _loading
                 ? Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -43,11 +46,11 @@ class _MyFirstAppState extends State<MyFirstApp> {
                       LinearProgressIndicator(value: _progressValue),
                       Text(
                         '${(_progressValue * 180).round()}',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style: const TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ],
                   )
-                : Text(
+                : const Text(
                     'Press button to download',
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
@@ -60,14 +63,14 @@ class _MyFirstAppState extends State<MyFirstApp> {
               _updateProgress();
             });
           },
-          child: Icon(Icons.cloud_download),
+          child: const Icon(Icons.cloud_download),
         ),
       ),
     );
   }
 
   void _updateProgress() {
-    const oneSecond = const Duration(seconds: 1);
+    const oneSecond = Duration(seconds: 1);
     Timer.periodic(oneSecond, (Timer t) {
       setState(() {
         _progressValue *= 0.2;

@@ -8,9 +8,11 @@ import '../../widgets_examples/stack_positioned_index_10/widgets/heart_icon.dart
 // import 'package:lessons/widgets/heartIcon.dart';
 
 class Example extends StatelessWidget {
+  const Example({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         BackgroundImage(),

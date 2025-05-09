@@ -1,28 +1,33 @@
 import 'dart:io';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:file_picker/file_picker.dart';
 
 void main() {
-  runApp(TextEditorV2App());
+  runApp(const TextEditorV2App());
 }
 
 class TextEditorV2App extends StatelessWidget {
+  const TextEditorV2App({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: MyTextEditor(),
     );
   }
 }
 
 class MyTextEditor extends StatefulWidget {
+  const MyTextEditor({super.key});
+
   @override
   _MyTextEditorState createState() => _MyTextEditorState();
 }
 
 class _MyTextEditorState extends State<MyTextEditor> {
-  TextEditingController _textEditingController = TextEditingController();
+  final TextEditingController _textEditingController = TextEditingController();
   String _enteredText = "";
   File? _currentFile;
 
@@ -90,16 +95,16 @@ class _MyTextEditorState extends State<MyTextEditor> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Text Editor'),
+        title: const Text('Text Editor'),
         actions: [
           IconButton(
-            icon: Icon(Icons.save),
+            icon: const Icon(Icons.save),
             onPressed: () async {
               await _saveToFile();
             },
           ),
           IconButton(
-            icon: Icon(Icons.folder_open),
+            icon: const Icon(Icons.folder_open),
             onPressed: () async {
               await _openFile();
             },
@@ -113,12 +118,12 @@ class _MyTextEditorState extends State<MyTextEditor> {
           children: [
             TextField(
               controller: _textEditingController,
-              decoration: InputDecoration(labelText: 'Enter Text'),
+              decoration: const InputDecoration(labelText: 'Enter Text'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               'Entered Text: $_enteredText',
-              style: TextStyle(fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
           ],
         ),

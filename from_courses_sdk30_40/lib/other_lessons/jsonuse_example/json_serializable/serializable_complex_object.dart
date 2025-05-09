@@ -3,7 +3,8 @@
 // found in the LICENSE file.
 
 import 'package:json_annotation/json_annotation.dart';
-import 'package:from_courses_sdk30_40/other_lessons/jsonuse_example/json_serializable/serializable_simple_object.dart';
+
+import 'serializable_simple_object.dart';
 
 part 'serializable_complex_object.g.dart';
 

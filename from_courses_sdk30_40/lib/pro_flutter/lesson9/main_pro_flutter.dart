@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(ScreenWidget());
+void main() => runApp(const ScreenWidget());
 
 class ScreenWidget extends StatelessWidget {
+  const ScreenWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,6 +23,8 @@ class ScreenWidget extends StatelessWidget {
 class PageViewWidget extends StatelessWidget {
   final PageController pageController = PageController(initialPage: 2);
 
+  PageViewWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return PageView(
@@ -36,27 +40,27 @@ class PageViewWidget extends StatelessWidget {
       children: <Widget>[
         Container(
           color: Colors.red,
-          child: Center(
+          child: const Center(
             child: Text('Stop!'),
           ),
         ),
         Container(
           color: Colors.green,
-          child: Center(
+          child: const Center(
             child: Text('Ready?'),
           ),
         ),
         Container(
-          color: Color.fromARGB(255, 250, 153, 7),
+          color: const Color.fromARGB(255, 250, 153, 7),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'Go!',
                 style: TextStyle(fontSize: 40),
               ),
               ElevatedButton(
-                child: Text('Reload'),
+                child: const Text('Reload'),
                 onPressed: () {
                   pageController.jumpToPage(0);
                   // pageController.animateToPage(0, duration: Duration(seconds: 1), curve: Curves.easeInBack);
@@ -71,6 +75,8 @@ class PageViewWidget extends StatelessWidget {
 }
 
 class PageViewBuilderWidget extends StatelessWidget {
+  const PageViewBuilderWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
@@ -87,13 +93,15 @@ class PageViewBuilderWidget extends StatelessWidget {
 }
 
 class PageViewCustomWidget extends StatelessWidget {
+  const PageViewCustomWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return PageView.custom(
       childrenDelegate: SliverChildListDelegate([
-        Text('1'),
-        Text('2'),
-        Text('3'),
+        const Text('1'),
+        const Text('2'),
+        const Text('3'),
       ]),
     );
   }
@@ -109,11 +117,10 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      decoration:
-          BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
+      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
       child: Text(
         text,
-        style: TextStyle(fontSize: 40),
+        style: const TextStyle(fontSize: 40),
       ),
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import './anonymous_routes.dart';
 import 'named_routes.dart';
 
 void main() {

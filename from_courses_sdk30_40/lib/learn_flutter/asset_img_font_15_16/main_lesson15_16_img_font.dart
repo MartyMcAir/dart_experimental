@@ -1,11 +1,12 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 
 // lesson 15 img _ 16 font
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,16 +14,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(fontFamily: 'IndieFlower'),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Adding Assets'),
+          title: const Text('Adding Assets'),
           centerTitle: true,
         ),
         body: Center(
             child: Stack(fit: StackFit.expand, children: <Widget>[
-          Image(
+          const Image(
             image: AssetImage('assets/images/apple.png'),
           ),
           Image.asset('assets/icons/yasher.jpeg'),
-          Positioned(
+          const Positioned(
             top: 16,
             left: 115,
             child: Text(

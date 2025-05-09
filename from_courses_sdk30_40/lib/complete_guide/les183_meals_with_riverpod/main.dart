@@ -5,6 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'screens/tabs.dart';
 
 // https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37144808#overview
+// There’s a bunch of old, commented-out code here — kind of like “code trash” from the earlier version.
+// It’s left here on purpose, so you can see how much extra code was needed before,
+// and how much cleaner things look now with Riverpod.
 
 final theme = ThemeData(
   useMaterial3: true,

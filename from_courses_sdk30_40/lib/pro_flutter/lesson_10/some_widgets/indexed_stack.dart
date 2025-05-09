@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class IndexedStackWidget extends StatefulWidget {
+  const IndexedStackWidget({super.key});
+
   @override
   _IndexedStackWidgetState createState() => _IndexedStackWidgetState();
 }
@@ -23,8 +25,9 @@ class _IndexedStackWidgetState extends State<IndexedStackWidget> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -65,13 +68,13 @@ class AnimatedSquare extends StatelessWidget {
   final double size;
   final Color color;
 
-  const AnimatedSquare(this.size, this.color);
+  const AnimatedSquare(this.size, this.color, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
       curve: Curves.easeInBack,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
       width: size,
       height: size,
       color: color,

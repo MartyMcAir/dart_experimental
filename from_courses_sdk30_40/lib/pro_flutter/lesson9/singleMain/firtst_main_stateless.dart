@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(ScreenWidget());
+void main() => runApp(const ScreenWidget());
 
-var CENTER_TEXT = "Some text is good 333";
+var centerText = "Some text is good 333";
 
 class ScreenWidget extends StatelessWidget {
+  const ScreenWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,17 +14,17 @@ class ScreenWidget extends StatelessWidget {
         appBar: AppBar(
           title: const Text('StatelessWidget'),
         ),
-        body: SimpleWidget(),
+        body: const SimpleWidget(),
       ),
     );
   }
 }
 
 class SimpleWidget extends StatelessWidget {
+  const SimpleWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child:
-            Center(child: Text(CENTER_TEXT, textDirection: TextDirection.ltr)));
+    return Center(child: Text(centerText, textDirection: TextDirection.ltr));
   }
 }

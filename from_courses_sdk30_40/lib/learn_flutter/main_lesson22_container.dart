@@ -1,18 +1,19 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 
 // lesson 21 Container widget
 // it contains 2 widgets: Padding() and Align() and BoxDecoration()?
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Building layouts"),
+          title: const Text("Building layouts"),
           centerTitle: true,
         ),
         body: Container(
@@ -22,11 +23,12 @@ class MyApp extends StatelessWidget {
           ),
           width: 200,
           height: 100,
-          padding: EdgeInsets.all(16),
-          margin: EdgeInsets.all(30),
+          padding: const EdgeInsets.all(16),
+          margin: const EdgeInsets.all(30),
+
           alignment: Alignment.center,
           // here text
-          child: Text(
+          child: const Text(
             'Hello flutter!',
             style: TextStyle(fontSize: 30),
           ),

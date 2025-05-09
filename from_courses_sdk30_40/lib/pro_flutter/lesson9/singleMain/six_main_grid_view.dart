@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 // import 'package:second_by_studio/four_main_row_column.dart';
 
-void main() => runApp(ScreenWidget());
+void main() => runApp(const ScreenWidget());
 
 class ScreenWidget extends StatelessWidget {
+  const ScreenWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,32 +17,32 @@ class ScreenWidget extends StatelessWidget {
         // body: GridViewBuilderWidget(),
         // body: GridViewSomeWidget(),
         // body: GridViewExtendsmWidget(),
-        body: GridViewCustomWidget(),
+        body: const GridViewCustomWidget(),
       ),
     );
   }
 }
 
 class GridViewCustomWidget extends StatelessWidget {
+  const GridViewCustomWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GridView.custom(
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-        childrenDelegate: SliverChildListDelegate([
-          TextWidget(text: "1"),
-          TextWidget(text: "2"),
-          TextWidget(text: "3")
-        ]));
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        childrenDelegate: SliverChildListDelegate(
+            [const TextWidget(text: "1"), const TextWidget(text: "2"), const TextWidget(text: "3")]));
 
-    childrenDelegate:
-    SliverChildBuilderDelegate((context, index) {
-      return TextWidget(text: '$index');
-    }, childCount: 15);
+    // childrenDelegate:
+    // SliverChildBuilderDelegate((context, index) {
+    //   return TextWidget(text: '$index');
+    // }, childCount: 15);
   }
 }
 
 class GridViewExtendsmWidget extends StatelessWidget {
+  const GridViewExtendsmWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     final queryData = MediaQuery.of(context);
@@ -51,7 +53,7 @@ class GridViewExtendsmWidget extends StatelessWidget {
         color: Colors.greenAccent,
         child: GridView.extent(
           maxCrossAxisExtent: 100,
-          children: [
+          children: const [
             TextWidget(text: "1"),
             TextWidget(text: "2"),
             TextWidget(text: "3"),
@@ -63,18 +65,19 @@ class GridViewExtendsmWidget extends StatelessWidget {
 }
 
 class GridViewSomeWidget extends StatelessWidget {
+  const GridViewSomeWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GridView(
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
 
         // scrollDirection: Axis.horizontal,
         // reverse: true,
         // controller: ScrollController(initialScrollOffset: 100),
         // physics: NeverScrollableScrollPhysics(),
         // padding: EdgeInsets.all(20),
-        children: <Widget>[
+        children: const <Widget>[
           TextWidget(text: "1"),
           TextWidget(text: "2"),
           TextWidget(text: "3"),
@@ -90,12 +93,13 @@ class GridViewSomeWidget extends StatelessWidget {
 }
 
 class GridViewBuilderWidget extends StatelessWidget {
+  const GridViewBuilderWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
         // itemCount: 10, // for infinity lazy load it most commented
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (BuildContext context, int index) {
           return TextWidget(text: '$index');
         });
@@ -103,9 +107,11 @@ class GridViewBuilderWidget extends StatelessWidget {
 }
 
 class GridViewCountWidget extends StatelessWidget {
+  const GridViewCountWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return GridView.count(crossAxisCount: 2, children: <Widget>[
+    return GridView.count(crossAxisCount: 2, children: const <Widget>[
       TextWidget(text: "1"),
       TextWidget(text: "2"),
       TextWidget(text: "3"),
@@ -130,13 +136,12 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      padding: EdgeInsets.all(20),
-      margin: EdgeInsets.all(5),
-      decoration:
-          BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
+      padding: const EdgeInsets.all(20),
+      margin: const EdgeInsets.all(5),
+      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
       child: Text(
         text,
-        style: TextStyle(fontSize: 40),
+        style: const TextStyle(fontSize: 40),
       ),
     );
   }

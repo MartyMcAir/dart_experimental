@@ -120,6 +120,7 @@ class _NewExpenseState extends State<NewExpense> {
       // ----------------------------------------------------------------------------
       return SizedBox(
         // because on that sized box can set the height
+
         height: double.infinity, // for avoid size screen error
         child: SingleChildScrollView(
           child: Padding(

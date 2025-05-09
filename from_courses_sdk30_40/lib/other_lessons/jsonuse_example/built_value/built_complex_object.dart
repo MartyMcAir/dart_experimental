@@ -5,14 +5,13 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
-import 'package:from_courses_sdk30_40/other_lessons/jsonuse_example/built_value/built_simple_object.dart';
+
+import 'built_simple_object.dart';
 
 part 'built_complex_object.g.dart';
 
-abstract class BuiltComplexObject
-    implements Built<BuiltComplexObject, BuiltComplexObjectBuilder> {
-  static Serializer<BuiltComplexObject> get serializer =>
-      _$builtComplexObjectSerializer;
+abstract class BuiltComplexObject implements Built<BuiltComplexObject, BuiltComplexObjectBuilder> {
+  static Serializer<BuiltComplexObject> get serializer => _$builtComplexObjectSerializer;
 
   String? get aString;
 
@@ -32,7 +31,5 @@ abstract class BuiltComplexObject
 
   BuiltComplexObject._();
 
-  factory BuiltComplexObject(
-          [void Function(BuiltComplexObjectBuilder) updates]) =
-      _$BuiltComplexObject;
+  factory BuiltComplexObject([void Function(BuiltComplexObjectBuilder) updates]) = _$BuiltComplexObject;
 }

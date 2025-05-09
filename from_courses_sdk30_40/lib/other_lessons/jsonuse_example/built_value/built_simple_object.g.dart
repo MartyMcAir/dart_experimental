@@ -6,11 +6,9 @@ part of 'built_simple_object.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<BuiltSimpleObject> _$builtSimpleObjectSerializer =
-    new _$BuiltSimpleObjectSerializer();
+Serializer<BuiltSimpleObject> _$builtSimpleObjectSerializer = new _$BuiltSimpleObjectSerializer();
 
-class _$BuiltSimpleObjectSerializer
-    implements StructuredSerializer<BuiltSimpleObject> {
+class _$BuiltSimpleObjectSerializer implements StructuredSerializer<BuiltSimpleObject> {
   @override
   final Iterable<Type> types = const [BuiltSimpleObject, _$BuiltSimpleObject];
   @override
@@ -25,8 +23,7 @@ class _$BuiltSimpleObjectSerializer
     if (value != null) {
       result
         ..add('aString')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(String)));
     }
     value = object.anInt;
     if (value != null) {
@@ -38,39 +35,34 @@ class _$BuiltSimpleObjectSerializer
     if (value != null) {
       result
         ..add('aDouble')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(double)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(double)));
     }
     value = object.aListOfStrings;
     if (value != null) {
       result
         ..add('aListOfStrings')
         ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(String)])));
+            specifiedType: const FullType(BuiltList, const [const FullType(String)])));
     }
     value = object.aListOfInts;
     if (value != null) {
       result
         ..add('aListOfInts')
         ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(int)])));
+            specifiedType: const FullType(BuiltList, const [const FullType(int)])));
     }
     value = object.aListOfDoubles;
     if (value != null) {
       result
         ..add('aListOfDoubles')
         ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(double)])));
+            specifiedType: const FullType(BuiltList, const [const FullType(double)])));
     }
     return result;
   }
 
   @override
-  BuiltSimpleObject deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
+  BuiltSimpleObject deserialize(Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = new BuiltSimpleObjectBuilder();
 
@@ -81,33 +73,26 @@ class _$BuiltSimpleObjectSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'aString':
-          result.aString = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          result.aString = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
           break;
         case 'anInt':
-          result.anInt = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
+          result.anInt = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
           break;
         case 'aDouble':
-          result.aDouble = serializers.deserialize(value,
-              specifiedType: const FullType(double)) as double;
+          result.aDouble = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
           break;
         case 'aListOfStrings':
           result.aListOfStrings.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(String)]))!
+                  specifiedType: const FullType(BuiltList, const [const FullType(String)]))!
               as BuiltList<Object>);
           break;
         case 'aListOfInts':
           result.aListOfInts.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(BuiltList, const [const FullType(int)]))!
-              as BuiltList<Object>);
+              specifiedType: const FullType(BuiltList, const [const FullType(int)]))! as BuiltList<Object>);
           break;
         case 'aListOfDoubles':
           result.aListOfDoubles.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(double)]))!
+                  specifiedType: const FullType(BuiltList, const [const FullType(double)]))!
               as BuiltList<Object>);
           break;
       }
@@ -131,17 +116,11 @@ class _$BuiltSimpleObject extends BuiltSimpleObject {
   @override
   final BuiltList<double>? aListOfDoubles;
 
-  factory _$BuiltSimpleObject(
-          [void Function(BuiltSimpleObjectBuilder)? updates]) =>
+  factory _$BuiltSimpleObject([void Function(BuiltSimpleObjectBuilder)? updates]) =>
       (new BuiltSimpleObjectBuilder()..update(updates)).build();
 
   _$BuiltSimpleObject._(
-      {this.aString,
-      this.anInt,
-      this.aDouble,
-      this.aListOfStrings,
-      this.aListOfInts,
-      this.aListOfDoubles})
+      {this.aString, this.anInt, this.aDouble, this.aListOfStrings, this.aListOfInts, this.aListOfDoubles})
       : super._();
 
   @override
@@ -149,8 +128,7 @@ class _$BuiltSimpleObject extends BuiltSimpleObject {
       (toBuilder()..update(updates)).build();
 
   @override
-  BuiltSimpleObjectBuilder toBuilder() =>
-      new BuiltSimpleObjectBuilder()..replace(this);
+  BuiltSimpleObjectBuilder toBuilder() => new BuiltSimpleObjectBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -168,9 +146,7 @@ class _$BuiltSimpleObject extends BuiltSimpleObject {
   int get hashCode {
     return $jf($jc(
         $jc(
-            $jc(
-                $jc($jc($jc(0, aString.hashCode), anInt.hashCode),
-                    aDouble.hashCode),
+            $jc($jc($jc($jc(0, aString.hashCode), anInt.hashCode), aDouble.hashCode),
                 aListOfStrings.hashCode),
             aListOfInts.hashCode),
         aListOfDoubles.hashCode));
@@ -189,8 +165,7 @@ class _$BuiltSimpleObject extends BuiltSimpleObject {
   }
 }
 
-class BuiltSimpleObjectBuilder
-    implements Builder<BuiltSimpleObject, BuiltSimpleObjectBuilder> {
+class BuiltSimpleObjectBuilder implements Builder<BuiltSimpleObject, BuiltSimpleObjectBuilder> {
   _$BuiltSimpleObject? _$v;
 
   String? _aString;
@@ -206,22 +181,16 @@ class BuiltSimpleObjectBuilder
   set aDouble(double? aDouble) => _$this._aDouble = aDouble;
 
   ListBuilder<String>? _aListOfStrings;
-  ListBuilder<String> get aListOfStrings =>
-      _$this._aListOfStrings ??= new ListBuilder<String>();
-  set aListOfStrings(ListBuilder<String>? aListOfStrings) =>
-      _$this._aListOfStrings = aListOfStrings;
+  ListBuilder<String> get aListOfStrings => _$this._aListOfStrings ??= new ListBuilder<String>();
+  set aListOfStrings(ListBuilder<String>? aListOfStrings) => _$this._aListOfStrings = aListOfStrings;
 
   ListBuilder<int>? _aListOfInts;
-  ListBuilder<int> get aListOfInts =>
-      _$this._aListOfInts ??= new ListBuilder<int>();
-  set aListOfInts(ListBuilder<int>? aListOfInts) =>
-      _$this._aListOfInts = aListOfInts;
+  ListBuilder<int> get aListOfInts => _$this._aListOfInts ??= new ListBuilder<int>();
+  set aListOfInts(ListBuilder<int>? aListOfInts) => _$this._aListOfInts = aListOfInts;
 
   ListBuilder<double>? _aListOfDoubles;
-  ListBuilder<double> get aListOfDoubles =>
-      _$this._aListOfDoubles ??= new ListBuilder<double>();
-  set aListOfDoubles(ListBuilder<double>? aListOfDoubles) =>
-      _$this._aListOfDoubles = aListOfDoubles;
+  ListBuilder<double> get aListOfDoubles => _$this._aListOfDoubles ??= new ListBuilder<double>();
+  set aListOfDoubles(ListBuilder<double>? aListOfDoubles) => _$this._aListOfDoubles = aListOfDoubles;
 
   BuiltSimpleObjectBuilder();
 
@@ -272,8 +241,7 @@ class BuiltSimpleObjectBuilder
         _$failedField = 'aListOfDoubles';
         _aListOfDoubles?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'BuiltSimpleObject', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError('BuiltSimpleObject', _$failedField, e.toString());
       }
       rethrow;
     }

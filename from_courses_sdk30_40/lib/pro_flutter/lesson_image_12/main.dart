@@ -16,10 +16,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -38,23 +40,23 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: ImageWidget(title: 'Flutter Demo Home Page'),
-      home: ImageWidget(const Key("some")),
+      home: const ImageWidget(Key("some")),
     );
   }
 }
 
 class ImageWidget extends StatelessWidget {
-  ImageWidget(Key key) : super(key: key);
+  const ImageWidget(Key key) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final String assetNamePath1 = 'assets/images/lesson_12/a_dot_burr.jpg';
-    final String assetNamePath2 = 'ssets/images/lesson_12/a_dot_ham.jpg';
-    final String assetNamePath3 = 'assets/lesson_12/subscribe.svg';
-    final String assetNamePathUrl =
+    const String assetNamePath1 = 'assets/images/lesson_12/a_dot_burr.jpg';
+    const String assetNamePath2 = 'ssets/images/lesson_12/a_dot_ham.jpg';
+    const String assetNamePath3 = 'assets/lesson_12/subscribe.svg';
+    const String assetNamePathUrl =
         'https://i.kym-cdn.com/entries/icons/original/000/006/151/ObamaNotBad.jpg';
 
-    AssetImage imageFromAsset = AssetImage(assetNamePath1);
+    AssetImage imageFromAsset = const AssetImage(assetNamePath1);
     Image imageFromAsset2 = Image.asset(assetNamePath2, fit: BoxFit.cover);
     // here use flutter_svg - dependency
     // SvgPicture imageFromAsset3 = SvgPicture.asset(assetNamePath3, fit:);
@@ -70,7 +72,7 @@ class ImageWidget extends StatelessWidget {
     );
 
     return Container(
-      constraints: BoxConstraints.expand(height: double.infinity),
+      constraints: const BoxConstraints.expand(height: double.infinity),
       child: changedImage,
       // child: Image(image: imageFromAsset, fit: BoxFit.cover),
     );

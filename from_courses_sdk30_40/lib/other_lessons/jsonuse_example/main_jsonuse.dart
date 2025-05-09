@@ -3,7 +3,8 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:from_courses_sdk30_40/other_lessons/jsonuse_example/jsonuse_widgets/tab_pages.dart';
+
+import 'jsonuse_widgets/tab_pages.dart';
 
 void main() => runApp(const JsonUseExampleApp());
 

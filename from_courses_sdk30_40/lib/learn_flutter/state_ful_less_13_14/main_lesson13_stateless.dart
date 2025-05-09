@@ -5,22 +5,24 @@ import 'package:flutter/material.dart';
 
 // lessons 13
 
-void main(List<String> args) => runApp(MyFirstApp());
+void main(List<String> args) => runApp(const MyFirstApp());
 
 class MyFirstApp extends StatelessWidget {
+  const MyFirstApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.indigo,
         appBar: AppBar(
-          title: Text("My First App"),
+          title: const Text("My First App"),
           centerTitle: true,
         ),
         body: Center(
           child: Container(
-            padding: EdgeInsets.all(16),
-            child: Column(
+            padding: const EdgeInsets.all(16),
+            child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 LinearProgressIndicator(value: 23),
@@ -36,7 +38,7 @@ class MyFirstApp extends StatelessWidget {
             ),
           ),
         ),
-        floatingActionButton: FloatingActionButton(
+        floatingActionButton: const FloatingActionButton(
           onPressed: null,
           child: Icon(Icons.cloud_download),
         ),

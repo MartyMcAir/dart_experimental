@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'anonymous_routes_with_params.dart';
-import 'named_routes_with_params.dart';
 import 'on_generate_route.dart';
 
 // https://docs.flutter.dev/cookbook/navigation/named-routes

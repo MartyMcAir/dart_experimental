@@ -8,9 +8,11 @@ import '../../widgets_examples/stack_positioned_index_10/widgets/heart_icon.dart
 // import 'package:lessons/widgets/heartIcon.dart';
 
 class PositionedWidget extends StatelessWidget {
+  const PositionedWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return const Stack(
       alignment: Alignment.center,
       clipBehavior: Clip.none,
       fit: StackFit.expand,

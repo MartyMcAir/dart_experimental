@@ -3,19 +3,18 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:from_courses_sdk30_40/other_lessons/jsonuse_example/jsonuse_widgets/utils.dart';
+
+import 'utils.dart';
 
 class SimpleObjectView extends StatelessWidget {
-  const SimpleObjectView({required this.simpleObject, Key? key})
-      : super(key: key);
+  const SimpleObjectView({required this.simpleObject, Key? key}) : super(key: key);
 
   final dynamic simpleObject;
 
   @override
   Widget build(BuildContext context) {
     final localTheme = Theme.of(context).textTheme;
-    final boldStyle =
-        localTheme.bodySmall!.copyWith(fontWeight: FontWeight.w600);
+    final boldStyle = localTheme.bodySmall!.copyWith(fontWeight: FontWeight.w600);
 
     if (simpleObject == null) return Text('NULL', style: localTheme.bodySmall);
 
@@ -32,9 +31,7 @@ class SimpleObjectView extends StatelessWidget {
               style: boldStyle,
             ),
             Text(
-              simpleObject.aString != null
-                  ? '"${simpleObject.aString}"'
-                  : 'NULL',
+              simpleObject.aString != null ? '"${simpleObject.aString}"' : 'NULL',
               style: localTheme.bodySmall,
             ),
           ],
@@ -82,8 +79,7 @@ class SimpleObjectView extends StatelessWidget {
               child: Text('aListOfDoubles:', style: boldStyle),
             ),
             Text(
-              prettyPrintList(
-                  simpleObject.aListOfDoubles as Iterable<dynamic>?),
+              prettyPrintList(simpleObject.aListOfDoubles as Iterable<dynamic>?),
               style: localTheme.bodySmall,
             ),
           ],
@@ -94,8 +90,7 @@ class SimpleObjectView extends StatelessWidget {
 }
 
 class SimpleObjectViewList extends StatelessWidget {
-  const SimpleObjectViewList({required this.simpleObjects, Key? key})
-      : super(key: key);
+  const SimpleObjectViewList({required this.simpleObjects, Key? key}) : super(key: key);
 
   final List<dynamic> simpleObjects;
 
@@ -127,8 +122,7 @@ class SimpleObjectViewList extends StatelessWidget {
 class ComplexObjectView extends StatelessWidget {
   final dynamic complexObject;
 
-  const ComplexObjectView({required this.complexObject, Key? key})
-      : super(key: key);
+  const ComplexObjectView({required this.complexObject, Key? key}) : super(key: key);
 
   List<Widget> _generateSimpleObjectWidgets(Iterable<dynamic>? simpleObjects) {
     if (simpleObjects == null) {
@@ -161,8 +155,7 @@ class ComplexObjectView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final localTheme = Theme.of(context).textTheme;
-    final boldStyle =
-        localTheme.bodySmall!.copyWith(fontWeight: FontWeight.w600);
+    final boldStyle = localTheme.bodySmall!.copyWith(fontWeight: FontWeight.w600);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -176,25 +169,20 @@ class ComplexObjectView extends StatelessWidget {
             TableRow(
               children: [
                 Text('aString:', style: boldStyle),
-                Text(
-                    complexObject.aString != null
-                        ? '"${complexObject.aString}"'
-                        : 'NULL',
+                Text(complexObject.aString != null ? '"${complexObject.aString}"' : 'NULL',
                     style: localTheme.bodySmall),
               ],
             ),
             TableRow(
               children: [
                 Text('anInt:', style: boldStyle),
-                Text(complexObject.anInt?.toString() ?? 'NULL',
-                    style: localTheme.bodySmall),
+                Text(complexObject.anInt?.toString() ?? 'NULL', style: localTheme.bodySmall),
               ],
             ),
             TableRow(
               children: [
                 Text('aDouble:', style: boldStyle),
-                Text(complexObject.aDouble?.toString() ?? 'NULL',
-                    style: localTheme.bodySmall),
+                Text(complexObject.aDouble?.toString() ?? 'NULL', style: localTheme.bodySmall),
               ],
             ),
             TableRow(
@@ -219,8 +207,7 @@ class ComplexObjectView extends StatelessWidget {
               children: [
                 Text('aListOfStrings:', style: boldStyle),
                 Text(
-                  prettyPrintList(
-                      complexObject.aListOfStrings as Iterable<dynamic>?),
+                  prettyPrintList(complexObject.aListOfStrings as Iterable<dynamic>?),
                   style: localTheme.bodySmall,
                 ),
               ],
@@ -229,8 +216,7 @@ class ComplexObjectView extends StatelessWidget {
               children: [
                 Text('aListOfInts:', style: boldStyle),
                 Text(
-                  prettyPrintList(
-                      complexObject.aListOfInts as Iterable<dynamic>?),
+                  prettyPrintList(complexObject.aListOfInts as Iterable<dynamic>?),
                   style: localTheme.bodySmall,
                 ),
               ],
@@ -242,17 +228,13 @@ class ComplexObjectView extends StatelessWidget {
                   child: Text('aListOfDoubles:', style: boldStyle),
                 ),
                 Text(
-                  prettyPrintList(
-                      complexObject.aListOfDoubles as Iterable<dynamic>?),
+                  prettyPrintList(complexObject.aListOfDoubles as Iterable<dynamic>?),
                   style: localTheme.bodySmall,
                 ),
               ],
             ),
             TableRow(
-              children: [
-                Text('aListOfObjects:', style: boldStyle),
-                Container()
-              ],
+              children: [Text('aListOfObjects:', style: boldStyle), Container()],
             ),
           ],
         ),
@@ -260,8 +242,7 @@ class ComplexObjectView extends StatelessWidget {
           padding: const EdgeInsets.only(left: 24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: _generateSimpleObjectWidgets(
-                complexObject.aListOfObjects as Iterable<dynamic>?),
+            children: _generateSimpleObjectWidgets(complexObject.aListOfObjects as Iterable<dynamic>?),
           ),
         ),
       ],
@@ -270,8 +251,7 @@ class ComplexObjectView extends StatelessWidget {
 }
 
 class ComplexObjectViewList extends StatelessWidget {
-  const ComplexObjectViewList({required this.complexObjects, Key? key})
-      : super(key: key);
+  const ComplexObjectViewList({required this.complexObjects, Key? key}) : super(key: key);
 
   final List<dynamic> complexObjects;
 

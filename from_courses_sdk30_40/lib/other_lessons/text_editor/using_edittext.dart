@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: MyEditText(),
   ));
 }
@@ -22,7 +22,7 @@ class MyEditTextState extends State<MyEditText> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Using EditText"),
+        title: const Text("Using EditText"),
         backgroundColor: Colors.red,
       ),
       body: Container(
@@ -32,10 +32,10 @@ class MyEditTextState extends State<MyEditText> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               TextField(
-                decoration: InputDecoration(hintText: "Enter text here..."),
+                decoration: const InputDecoration(hintText: "Enter text here..."),
                 onSubmitted: (String str) {
                   setState(() {
-                    results = results + "\n" + str;
+                    results = "$results\n$str";
                     controller.text = "";
                   });
                 },

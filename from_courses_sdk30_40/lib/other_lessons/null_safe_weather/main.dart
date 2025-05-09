@@ -4,7 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-import 'badapp.dart';
 import 'goodapp.dart';
 
 void main() {

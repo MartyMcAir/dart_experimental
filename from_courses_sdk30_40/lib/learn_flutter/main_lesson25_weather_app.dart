@@ -74,9 +74,9 @@ Image _headerImage() {
 }
 
 Column _weatherDescription() {
-  return Column(
+  return const Column(
     crossAxisAlignment: CrossAxisAlignment.center,
-    children: const <Widget>[
+    children: <Widget>[
       Text(
         'Tuesday - May 22',
         style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
@@ -91,24 +91,24 @@ Column _weatherDescription() {
 }
 
 Row _temperature() {
-  return Row(
+  return const Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: <Widget>[
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const <Widget>[
+        children: <Widget>[
           Icon(
             Icons.wb_sunny,
             color: Colors.yellow,
           ),
         ],
       ),
-      const SizedBox(width: 16.0),
+      SizedBox(width: 16.0),
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Row(
-            children: const <Widget>[
+            children: <Widget>[
               Text(
                 '15 Clear',
                 style: TextStyle(color: Colors.deepPurple),
@@ -116,7 +116,7 @@ Row _temperature() {
             ],
           ),
           Row(
-            children: const <Widget>[
+            children: <Widget>[
               Text(
                 'Murmanskaya oblast, Murmans',
                 style: TextStyle(color: Colors.grey),

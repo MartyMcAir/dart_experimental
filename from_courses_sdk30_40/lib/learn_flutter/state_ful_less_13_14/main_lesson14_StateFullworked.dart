@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,6 +21,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     _loading = false;
     _progressValue = 0.0;
+
     super.initState();
   }
 

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'example.dart';
-import 'indexedStack.dart';
-import 'positioned.dart';
-import 'stack.dart';
+
+import 'indexed_stack.dart';
 
 void main() => runApp(const ScreenWidget());
 

@@ -2,9 +2,11 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-main() => runApp(App());
+main() => runApp(const App());
 
 class App extends StatefulWidget {
+  const App({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _App();
@@ -17,10 +19,10 @@ class _App extends State<App> {
   Map<String, String>? _paths;
   String? _extension;
   bool _loadingPath = false;
-  bool _multiPick = false;
-  bool _hasValidMime = false;
+  final bool _multiPick = false;
+  final bool _hasValidMime = false;
   FileType? _pickingType;
-  TextEditingController _controller = new TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   void initState() {
@@ -42,7 +44,7 @@ class _App extends State<App> {
           //     type: _pickingType, fileExtension: _extension);
         }
       } on PlatformException catch (e) {
-        print("Unsupported operation" + e.toString());
+        print("Unsupported operation$e");
       }
       if (!mounted) return;
       setState(() {});
@@ -54,23 +56,21 @@ class _App extends State<App> {
     var materialApp = MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("FilePickerApp"),
+          title: const Text("FilePickerApp"),
         ),
-        body: Container(
-          child: Center(
-            // child: Text("Lets coding.."),
-            child: Column(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(top: 50.0, bottom: 20.0),
-                  child: MaterialButton(
-                    onPressed: () => _openFileExplorer(),
-                    child: new Text("Open file picker"),
-                  ),
+        body: Center(
+          // child: Text("Lets coding.."),
+          child: Column(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(top: 50.0, bottom: 20.0),
+                child: MaterialButton(
+                  onPressed: () => _openFileExplorer(),
+                  child: const Text("Open file picker"),
                 ),
-                // const Builder()
-              ],
-            ),
+              ),
+              // const Builder()
+            ],
           ),
         ),
       ),

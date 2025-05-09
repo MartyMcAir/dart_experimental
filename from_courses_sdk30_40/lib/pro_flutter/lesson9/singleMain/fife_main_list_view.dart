@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(ScreenWidget());
+void main() => runApp(const ScreenWidget());
 
 class ScreenWidget extends StatelessWidget {
+  const ScreenWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -10,7 +12,7 @@ class ScreenWidget extends StatelessWidget {
         appBar: AppBar(
           title: const Text('ListView Widget'),
         ),
-        body: ListViewCustomWidget(),
+        body: const ListViewCustomWidget(),
       ),
     );
   }
@@ -25,19 +27,20 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      padding: EdgeInsets.all(20),
-      margin: EdgeInsets.all(5),
-      decoration:
-          BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
+      padding: const EdgeInsets.all(20),
+      margin: const EdgeInsets.all(5),
+      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
       child: Text(
         text,
-        style: TextStyle(fontSize: 40),
+        style: const TextStyle(fontSize: 40),
       ),
     );
   }
 }
 
 class ListViewWidget extends StatelessWidget {
+  const ListViewWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -46,7 +49,7 @@ class ListViewWidget extends StatelessWidget {
       // controller: ScrollController(initialScrollOffset: 100),
       // physics: NeverScrollableScrollPhysics(),
       // padding: EdgeInsets.all(20),
-      children: <Widget>[
+      children: const <Widget>[
         TextWidget(text: "1"),
         TextWidget(text: "2"),
         TextWidget(text: "3"),
@@ -63,6 +66,8 @@ class ListViewWidget extends StatelessWidget {
 }
 
 class ListViewBuilderWidget extends StatelessWidget {
+  const ListViewBuilderWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -74,6 +79,8 @@ class ListViewBuilderWidget extends StatelessWidget {
 }
 
 class ListViewSeparatedWidget extends StatelessWidget {
+  const ListViewSeparatedWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
@@ -81,17 +88,18 @@ class ListViewSeparatedWidget extends StatelessWidget {
           return TextWidget(text: "$index");
         },
         separatorBuilder: (context, index) {
-          return Divider(color: Colors.black);
+          return const Divider(color: Colors.black);
         },
         itemCount: 20);
   }
 }
 
 class ListViewCustomWidget extends StatelessWidget {
+  const ListViewCustomWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return ListView.custom(childrenDelegate:
-        SliverChildBuilderDelegate((BuildContext context, int index) {
+    return ListView.custom(childrenDelegate: SliverChildBuilderDelegate((BuildContext context, int index) {
       return TextWidget(text: "$index");
     }));
   }

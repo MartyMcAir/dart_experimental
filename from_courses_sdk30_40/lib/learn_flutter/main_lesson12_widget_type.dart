@@ -10,14 +10,13 @@ void main(List<String> args) {
     home: Scaffold(
       backgroundColor: Colors.indigo,
       appBar: AppBar(
-        title: Text("My first App"),
+        title: const Text("My first App"),
         centerTitle: true,
       ),
-      body: Center(
+      body: const Center(
           child: Text(
         "This is home page",
-        style: TextStyle(
-            fontSize: 30, fontWeight: FontWeight.bold, color: Colors.purple),
+        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.purple),
       )),
     ),
   ));
