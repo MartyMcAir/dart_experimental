@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/favorites_provider.dart';
 import '../providers/filters_provider.dart';
-import '../providers/meals_provider.dart';
 import '../widgets/main_drawer.dart';
 import 'categories.dart';
 import 'filters.dart';
@@ -82,7 +81,7 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final meals = ref.watch(mealsProvider);
+    // final meals = ref.watch(mealsProvider);
     // ref.read(provider) // read from Provider
     // watch:
     // riverpod docs recommends - to use as often as possible
@@ -94,23 +93,24 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
     // ref.watch(provider)
     //
     // final availableMeals = dummyMeals.where((meal) {
-    final activeFilters = ref.watch(filtersProvider);
-    final availableMeals = meals.where((meal) {
-      if (activeFilters[Filter.glutenFree]! && !meal.isGlutenFree) {
-        // if (_selectedFilters[Filter.glutenFree]! && !meal.isGlutenFree) {
-        return false;
-      }
-      if (activeFilters[Filter.lactoseFree]! && !meal.isLactoseFree) {
-        return false;
-      }
-      if (activeFilters[Filter.vegetarian]! && !meal.isVegetarian) {
-        return false;
-      }
-      if (activeFilters[Filter.vegan]! && !meal.isVegan) {
-        return false;
-      }
-      return true;
-    }).toList();
+    // final activeFilters = ref.watch(filtersProvider);
+    final availableMeals = ref.watch(filteredMealsProvider);
+    // meals.where((meal) {
+    //   if (activeFilters[Filter.glutenFree]! && !meal.isGlutenFree) {
+    //     // if (_selectedFilters[Filter.glutenFree]! && !meal.isGlutenFree) {
+    //     return false;
+    //   }
+    //   if (activeFilters[Filter.lactoseFree]! && !meal.isLactoseFree) {
+    //     return false;
+    //   }
+    //   if (activeFilters[Filter.vegetarian]! && !meal.isVegetarian) {
+    //     return false;
+    //   }
+    //   if (activeFilters[Filter.vegan]! && !meal.isVegan) {
+    //     return false;
+    //   }
+    //   return true;
+    // }).toList();
 
     Widget activePage = CategoriesScreen(
       // onToggleFavorite: _toggleMealFavoriteStatus,
