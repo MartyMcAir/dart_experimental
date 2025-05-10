@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/grocery_list.dart';
+import 'widgets/grocery_list_try_catch.dart';
 
 // import 'package:http/http.dart' as http;
 // les 224 https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37215156#overview

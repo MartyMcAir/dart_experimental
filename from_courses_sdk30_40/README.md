@@ -75,8 +75,14 @@
 <hr></details>
 
 ### les221 shop list with FireBase
-<img src="img/compl_edit/back_end/some.jpg" width="200">
-
+- http request/response & try catch & FutureBuilder
+<img src="img/compl_edit/shopping_list/shop_list_fire_base_1.jpg" width="200">
+<details>
+<img src="img/compl_edit/shopping_list/shop_list_fire_base_1.jpg" width="300">
+<img src="img/compl_edit/shopping_list/shop_list_fire_base_2.jpg" width="300">
+<img src="img/compl_edit/shopping_list/shop_list_fire_base_3.jpg" width="250">
+<img src="img/compl_edit/shopping_list/shop_list_fire_base_4.jpg" width="250">
+<hr></details>
 
 <hr>--------------------------------------------------------------------------------
 
