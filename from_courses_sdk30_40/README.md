@@ -15,10 +15,11 @@
 <img src="img/compl_edit/quiz/quiz_1.jpg" width="200">
 <details>
 
-<img src="img/compl_edit/quiz/quiz_2.jpg" width="200"><br>
-<img src="img/compl_edit/quiz/quiz_3.jpg" width="200"><br>
-<img src="img/compl_edit/quiz/quiz_lesson77.jpg" width="200"><br>
-<img src="img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg" width="200"><br>
+<img src="img/compl_edit/quiz/quiz_2.jpg" width="400"><br>
+<img src="img/compl_edit/quiz/quiz_3.jpg" width="400"><br>
+<img src="img/compl_edit/quiz/quiz_lesson77.jpg" width="400"><br>
+<img src="img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg" width="400"><br>
+---
 </details>
 
 ### les98_expense_tracker_app (chart &theme &calendar use examples &adaptive)
