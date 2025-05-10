@@ -23,7 +23,7 @@
 ### les98_expense_tracker_app (chart &theme &calendar use examples &adaptive)
 - if (Platform.isIOS), theme: ThemeData(useMaterial3: true)
 - examples to use: Theme from(..) & copyWith(..) & colorScheme
-- Theme dark & light by device settings and TextField
+- Theme dark & light by device settings and TextField and Calendar
 - based on one color: ColorScheme.fromSeed(seedColor..
 <img src="img/compl_edit/expense/expense_1.jpg" width="200">
 <details>
