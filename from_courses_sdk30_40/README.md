@@ -76,13 +76,16 @@
 
 ### les221 shop list with FireBase
 - http request/response & try catch & FutureBuilder
-<img src="img/compl_edit/shopping_list/shop_list_fire_base_1.jpg" width="200">
-<details>
 <img src="img/compl_edit/shopping_list/shop_list_fire_base_1.jpg" width="300">
-<img src="img/compl_edit/shopping_list/shop_list_fire_base_2.jpg" width="300">
+<details>
+<img src="img/compl_edit/shopping_list/shop_list_fire_base_1.jpg" width="450">
+<img src="img/compl_edit/shopping_list/shop_list_fire_base_2.jpg" width="450">
 <img src="img/compl_edit/shopping_list/shop_list_fire_base_3.jpg" width="250">
 <img src="img/compl_edit/shopping_list/shop_list_fire_base_4.jpg" width="250">
 <hr></details>
+
+### les237 use native sensors in device (camera /gps /etc) loading..
+<img src="img/compl_edit/native/some.jpg" width="200">
 
 <hr>--------------------------------------------------------------------------------
 
