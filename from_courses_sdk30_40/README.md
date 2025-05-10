@@ -17,7 +17,7 @@
 <img src="img/compl_edit/quiz/quiz_2.jpg" width="300"><br>
 <img src="img/compl_edit/quiz/quiz_3.jpg" width="300"><br>
 <img src="img/compl_edit/quiz/quiz_lesson77.jpg" width="400"><br>
-<img src="img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg" width="400">
+<img src="img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg" width="400"><br>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
@@ -32,7 +32,7 @@
 <img src="img/compl_edit/expense/expense_2.jpg" width="300"><br>
 <img src="img/compl_edit/expense/expense_3.jpg" width="300"><br>
 <img src="img/compl_edit/expense/expense_adaptive_1.jpg" width="300"><br>
-<img src="img/compl_edit/expense/expense_adaptive_2.jpg" width="300">
+<img src="img/compl_edit/expense/expense_adaptive_2.jpg" width="300"><br>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
@@ -42,7 +42,7 @@
 <img src="img/compl_edit/widget_elem_trees.jpg" width="400"><br>
 <img src="img/compl_edit/how_ui_updated.jpg" width="400"><br>
 <img src="img/compl_edit/uI_up_interface.jpg" width="300"><br>
-<img src="img/compl_edit/ui_upd_console.jpg" width="300">>
+<img src="img/compl_edit/ui_upd_console.jpg" width="300">><br>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
@@ -63,7 +63,7 @@
 <img src="img/compl_edit/meal/meal_app_6_checkbox_filters.jpg" width="400"><br>
 - lesson 183 meals app with riverpod example
 <img src="img/compl_edit/meal/meals_app_riverpod_1.jpg" width="400"><br>
-<img src="img/compl_edit/meal/meals_app_riverpod_2.jpg" width="400">
+<img src="img/compl_edit/meal/meals_app_riverpod_2.jpg" width="400"><br>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
@@ -145,7 +145,7 @@
 
 # other_lessons
 <details>
-- filepicker_dont_ready
+- **filepicker_dont_ready**  
 <img src="img/other_lessons/filepicker_dont_ready.jpg" width="300">
 - infinite_list
 <img src="img/other_lessons/infinite_list.jpg" width="300">
