@@ -17,8 +17,8 @@
 <img src="img/compl_edit/quiz/quiz_2.jpg" width="300"><br>
 <img src="img/compl_edit/quiz/quiz_3.jpg" width="300"><br>
 <img src="img/compl_edit/quiz/quiz_lesson77.jpg" width="400"><br>
-<img src="img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg" width="400"><br>
----
+<img src="img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg" width="400">
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
 ### les98_expense_tracker_app (chart &theme &calendar use examples &adaptive)
@@ -26,7 +26,6 @@
 - examples to use: Theme from(..) & copyWith(..) & colorScheme
 - Theme dark & light by device settings and TextField
 <img src="img/compl_edit/expense/expense_1.jpg" width="200">
----
 <details>
 <img src="img/compl_edit/expense/expense_1.jpg" width="300">
 <img src="img/compl_edit/expense/expense_light.jpg" width="300">
@@ -34,7 +33,7 @@
 <img src="img/compl_edit/expense/expense_3.jpg" width="300"><br>
 <img src="img/compl_edit/expense/expense_adaptive_1.jpg" width="300"><br>
 <img src="img/compl_edit/expense/expense_adaptive_2.jpg" width="300">
----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
 ### les149 todo app with reOrder.. & les146 how ui updated
@@ -44,7 +43,7 @@
 <img src="img/compl_edit/how_ui_updated.jpg" width="400"><br>
 <img src="img/compl_edit/uI_up_interface.jpg" width="300"><br>
 <img src="img/compl_edit/ui_upd_console.jpg" width="300">>
----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
 ### les155_meals_app 
@@ -54,7 +53,6 @@
     - theme: ThemeData(useMaterial3: true) & colorCheme (colorSchemeSeed?)
   - lesson 198 meals app with animation
 <img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="200">
----
 <details>
 <img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="300">
 <img src="img/compl_edit/meal/meal_app_screens.jpg" width="400"><br>
@@ -66,7 +64,7 @@
 - lesson 183 meals app with riverpod example
 <img src="img/compl_edit/meal/meals_app_riverpod_1.jpg" width="400"><br>
 <img src="img/compl_edit/meal/meals_app_riverpod_2.jpg" width="400">
----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
 ### les207 shopping list with forms examples
@@ -77,7 +75,7 @@
 <img src="img/compl_edit/shopping_list/shopping_list_1.jpg" width="300"><br>
 <img src="img/compl_edit/shopping_list/shopping_list_2.jpg" width="300"><br>
 <img src="img/compl_edit/shopping_list/shopping_list_3.jpg" width="300"><br>
----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </details>
 
 ### les221 http connect to BackEnd
