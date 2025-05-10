@@ -19,6 +19,7 @@
 <img src="img/compl_edit/quiz/quiz_lesson77.jpg" width="400"><br>
 <img src="img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg" width="400"><br>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+<hr>
 </details>
 
 ### les98_expense_tracker_app (chart &theme &calendar use examples &adaptive)
@@ -146,16 +147,16 @@
 # other_lessons
 <details>
 - **filepicker_dont_ready**  
-<img src="img/other_lessons/filepicker_dont_ready.jpg" width="300">
+<img src="img/other_lessons/filepicker_dont_ready.jpg" width="300"><br>
 - infinite_list
-<img src="img/other_lessons/infinite_list.jpg" width="300">
+<img src="img/other_lessons/infinite_list.jpg" width="300"><br>
 - jsonuse_example
-<img src="img/other_lessons/jsonuse_example.jpg" width="300">
+<img src="img/other_lessons/jsonuse_example.jpg" width="300"><br>
 - 1) using_edittext.dart (720)
-<img src="img/other_lessons/using_edittext.jpg" width="300">
+<img src="img/other_lessons/using_edittext.jpg" width="300"><br>
 - 2) text_editor_v2.dart (720)
-<img src="img/other_lessons/text_editor_v2.jpg" width="300">
+<img src="img/other_lessons/text_editor_v2.jpg" width="300"><br>
 - 3) text_editor_v1.dart (720)
-<img src="img/other_lessons/text_editor_v1.jpg" width="300">
+<img src="img/other_lessons/text_editor_v1.jpg" width="300"><br>
 </details>
 --------------------------------------------------------------------------------
