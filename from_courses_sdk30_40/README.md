@@ -15,86 +15,69 @@
 ![quiz_1](img/compl_edit/quiz/quiz_1.jpg)
 <details>
 
-![quiz_2](img/compl_edit/quiz/quiz_2.jpg)
-<br>
-
-![quiz_3](img/compl_edit/quiz/quiz_3.jpg)
-<br>
-
-![quiz_lesson77](img/compl_edit/quiz/quiz_lesson77.jpg)
-<br>
-
-![quiz_l77_values_across_widgets](img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg)
-<br></details>
+![quiz_2](img/compl_edit/quiz/quiz_2.jpg)<br>
+![quiz_3](img/compl_edit/quiz/quiz_3.jpg)<br>
+![quiz_lesson77](img/compl_edit/quiz/quiz_lesson77.jpg)<br>
+![quiz_l77_values_across_widgets](img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg)<br>
+</details>
 
 ### les98_expense_tracker_app (chart &theme &calendar use examples &adaptive)
+- if (Platform.isIOS), theme: ThemeData(useMaterial3: true)
+- examples to use: Theme from(..) & copyWith(..) & colorScheme
+- Theme dark & light by device settings and TextField
 ![expense_1](img/compl_edit/expense/expense_1.jpg)
+..
+![expense_1](img/compl_edit/expense/expense_light.jpg)
 <details>
 
-![expense_2](img/compl_edit/expense/expense_2.jpg)
-<br>
-
-![expense_3](img/compl_edit/expense/expense_3.jpg)
-<br>
-
-![expense_adaptive_1](img/compl_edit/expense/expense_adaptive_1.jpg)
-<br>
-
+![expense_2](img/compl_edit/expense/expense_2.jpg)<br>
+![expense_3](img/compl_edit/expense/expense_3.jpg)<br>
+![expense_adaptive_1](img/compl_edit/expense/expense_adaptive_1.jpg)<br>
 ![expense_adaptive_2](img/compl_edit/expense/expense_adaptive_2.jpg)
 </details>
 
-### les146_todo_app
-#### how ui updated
-![how_ui_updated](img/compl_edit/how_ui_updated.jpg)
-<details>
-
-![uI_up_interface](img/compl_edit/uI_up_interface.jpg)
-<br>
-
-![ui_upd_console](img/compl_edit/ui_upd_console.jpg)
-</details>
-
-#### les149 todo app with reOrder..
+### les149 todo app with reOrder.. & les146 how ui updated
 ![todo_app](img/compl_edit//todo_app.jpg)
 <details>
 
-![widget_elem_trees](img/compl_edit/widget_elem_trees.jpg)
+![widget_elem_trees](img/compl_edit/widget_elem_trees.jpg)<br>
+![how_ui_updated](img/compl_edit/how_ui_updated.jpg)<br>
+![uI_up_interface](img/compl_edit/uI_up_interface.jpg)<br>
+![ui_upd_console](img/compl_edit/ui_upd_console.jpg)>
 </details>
 
 ### les155_meals_app 
   - (multi screen app, with filters for food, using Grid & Navigator)
-  - with examples to use: riverpod & animation
+  - with examples to use: riverpod & animation & GoogleFonts
+  - lesson 183 meals app with riverpod example
+    - theme: ThemeData(useMaterial3: true) & colorCheme (colorSchemeSeed?)
+  - lesson 198 meals app with animation
 ![meal_app_1_categories](img/compl_edit/meal/meal_app_1_categories.jpg)
 
 <details>
 
-![meal_app_screens](img/compl_edit/meal/meal_app_screens.jpg)
-<br>
+![meal_app_screens](img/compl_edit/meal/meal_app_screens.jpg)<br>
+![meal_app_2](img/compl_edit/meal/meal_app_2.jpg)<br>
+![meal_app_3_meal_details](img/compl_edit/meal/meal_app_3_meal_details.jpg)<br>
+![meal_app_4_favorites](img/compl_edit/meal/meal_app_4_favorites.jpg)<br>
+![meal_app_5_drawer_menu](img/compl_edit/meal/meal_app_5_drawer_menu.jpg)<br>
+![meal_app_6_checkbox_filters](img/compl_edit/meal/meal_app_6_checkbox_filters.jpg)<br>
 
-![meal_app_2](img/compl_edit/meal/meal_app_2.jpg)
-<br>
-
-![meal_app_3_meal_details](img/compl_edit/meal/meal_app_3_meal_details.jpg)
-<br>
-
-![meal_app_4_favorites](img/compl_edit/meal/meal_app_4_favorites.jpg)
-<br>
-
-![meal_app_5_drawer_menu](img/compl_edit/meal/meal_app_5_drawer_menu.jpg)
-<br>
-
-![meal_app_6_checkbox_filters](img/compl_edit/meal/meal_app_6_checkbox_filters.jpg)
-<br>
-
-### lesson 183 meals app with riverpod example
-- There’s a bunch of old, commented-out code here — kind of like “code trash” from the earlier version.  
-- It’s left here on purpose, so you can see how much extra code was needed before, and how much cleaner things look now with Riverpod.
-
-![meals_app_riverpod_1](img/compl_edit/meal/meals_app_riverpod_1.jpg)
-<br>
+###### lesson 183 meals app with riverpod example
+![meals_app_riverpod_1](img/compl_edit/meal/meals_app_riverpod_1.jpg)<br>
 
 ![meals_app_riverpod_2](img/compl_edit/meal/meals_app_riverpod_2.jpg)
-### lesson 198 meals app with animation
+</details>
+
+### les207 shopping list with forms examples
+ - forms: building & using & submission & resetting 
+ - showing on-screen validation errors
+ - TextFormField() integrated with Form()
+<details>
+
+![shopping_list_1](img/compl_edit/shopping_list/shopping_list_1.jpg)<br>
+![shopping_list_2](img/compl_edit/shopping_list/shopping_list_2.jpg)<br>
+![shopping_list_3](img/compl_edit/shopping_list/shopping_list_3.jpg)<br>
 </details>
 
 --------------------------------------------------------------------------------

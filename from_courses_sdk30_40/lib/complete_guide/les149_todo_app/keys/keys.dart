@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // for checkable_todo_item - ordering required using keys* for criteria (in ordering)
-import '../keys/checkable_todo_item.dart';
+import 'checkable_todo_item.dart';
 // import '../keys/todo_item.dart';
 
 class Todo {

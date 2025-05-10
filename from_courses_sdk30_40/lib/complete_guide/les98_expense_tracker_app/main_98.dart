@@ -5,11 +5,9 @@ import 'widgets/expenses.dart';
 
 // var kColorScheme = ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 68, 41, 143));
 var kColorScheme = ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 96, 59, 181));
-var kDarkColorScheme = ColorScheme.fromSeed(
-  // без Brightness.dark - в темной теме будет не правильное отображаение теней и тд
-  brightness: Brightness.dark,
-  seedColor: const Color.fromARGB(255, 5, 99, 125),
-);
+var kDarkColorScheme =
+    ColorScheme.fromSeed(brightness: Brightness.dark, seedColor: const Color.fromARGB(255, 5, 99, 125));
+// без Brightness.dark - в темной теме будет не правильное отображаение теней и тд
 
 void main() {
   // lesson 137 - adaptive
