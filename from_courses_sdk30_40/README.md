@@ -52,13 +52,13 @@
   - lesson 198 meals app with animation
 <img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="150">
 <details>
-<img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="300">
+<img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="250">
 <img src="img/compl_edit/meal/meal_app_screens.jpg" width="400"><br>
-<img src="img/compl_edit/meal/meal_app_2.jpg" width="400"><br>
-<img src="img/compl_edit/meal/meal_app_3_meal_details.jpg" width="400"><br>
-<img src="img/compl_edit/meal/meal_app_4_favorites.jpg" width="400"><br>
-<img src="img/compl_edit/meal/meal_app_5_drawer_menu.jpg" width="400"><br>
-<img src="img/compl_edit/meal/meal_app_6_checkbox_filters.jpg" width="400"><br>
+<img src="img/compl_edit/meal/meal_app_2.jpg" width="250"><br>
+<img src="img/compl_edit/meal/meal_app_3_meal_details.jpg" width="250"><br>
+<img src="img/compl_edit/meal/meal_app_4_favorites.jpg" width="250"><br>
+<img src="img/compl_edit/meal/meal_app_5_drawer_menu.jpg" width="250"><br>
+<img src="img/compl_edit/meal/meal_app_6_checkbox_filters.jpg" width="250"><br>
 - lesson 183 meals app with riverpod example
 <img src="img/compl_edit/meal/meals_app_riverpod_1.jpg" width="400"><br>
 <img src="img/compl_edit/meal/meals_app_riverpod_2.jpg" width="400"><br>
