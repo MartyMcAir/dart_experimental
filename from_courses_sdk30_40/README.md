@@ -9,41 +9,41 @@
 - https://academind.com/
 
 ### les38_dice_roller_app
-![roll_dice](img/compl_edit/roll_dice.jpg)
+<img src="img/compl_edit/roll_dice.jpg" width="200">
 ..
 ### les53_quiz_app
-![quiz_1](img/compl_edit/quiz/quiz_1.jpg)
+<img src="img/compl_edit/quiz/quiz_1.jpg" width="200">
 <details>
 
-![quiz_2](img/compl_edit/quiz/quiz_2.jpg)<br>
-![quiz_3](img/compl_edit/quiz/quiz_3.jpg)<br>
-![quiz_lesson77](img/compl_edit/quiz/quiz_lesson77.jpg)<br>
-![quiz_l77_values_across_widgets](img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg)<br>
+<img src="img/compl_edit/quiz/quiz_2.jpg" width="200"><br>
+<img src="img/compl_edit/quiz/quiz_3.jpg" width="200"><br>
+<img src="img/compl_edit/quiz/quiz_lesson77.jpg" width="200"><br>
+<img src="img/compl_edit/quiz/quiz_l77_values_across_widgets.jpg" width="200"><br>
 </details>
 
 ### les98_expense_tracker_app (chart &theme &calendar use examples &adaptive)
 - if (Platform.isIOS), theme: ThemeData(useMaterial3: true)
 - examples to use: Theme from(..) & copyWith(..) & colorScheme
 - Theme dark & light by device settings and TextField
-![expense_1](img/compl_edit/expense/expense_1.jpg)
+<img src="img/compl_edit/expense/expense_1.jpg" width="200">
 ..
-![expense_1](img/compl_edit/expense/expense_light.jpg)
+<img src="img/compl_edit/expense/expense_light.jpg" width="200">
 <details>
 
-![expense_2](img/compl_edit/expense/expense_2.jpg)<br>
-![expense_3](img/compl_edit/expense/expense_3.jpg)<br>
-![expense_adaptive_1](img/compl_edit/expense/expense_adaptive_1.jpg)<br>
-![expense_adaptive_2](img/compl_edit/expense/expense_adaptive_2.jpg)
+<img src="img/compl_edit/expense/expense_2.jpg" width="200"><br>
+<img src="img/compl_edit/expense/expense_3.jpg" width="200"><br>
+<img src="img/compl_edit/expense/expense_adaptive_1.jpg" width="200"><br>
+<img src="img/compl_edit/expense/expense_adaptive_2.jpg" width="200">
 </details>
 
 ### les149 todo app with reOrder.. & les146 how ui updated
-![todo_app](img/compl_edit//todo_app.jpg)
+<img src="img/compl_edit//todo_app.jpg" width="200">
 <details>
 
-![widget_elem_trees](img/compl_edit/widget_elem_trees.jpg)<br>
-![how_ui_updated](img/compl_edit/how_ui_updated.jpg)<br>
-![uI_up_interface](img/compl_edit/uI_up_interface.jpg)<br>
-![ui_upd_console](img/compl_edit/ui_upd_console.jpg)>
+<img src="img/compl_edit/widget_elem_trees.jpg" width="200"><br>
+<img src="img/compl_edit/how_ui_updated.jpg" width="200"><br>
+<img src="img/compl_edit/uI_up_interface.jpg" width="200"><br>
+<img src="img/compl_edit/ui_upd_console.jpg" width="200">>
 </details>
 
 ### les155_meals_app 
@@ -52,21 +52,21 @@
   - lesson 183 meals app with riverpod example
     - theme: ThemeData(useMaterial3: true) & colorCheme (colorSchemeSeed?)
   - lesson 198 meals app with animation
-![meal_app_1_categories](img/compl_edit/meal/meal_app_1_categories.jpg)
+<img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="200">
 
 <details>
 
-![meal_app_screens](img/compl_edit/meal/meal_app_screens.jpg)<br>
-![meal_app_2](img/compl_edit/meal/meal_app_2.jpg)<br>
-![meal_app_3_meal_details](img/compl_edit/meal/meal_app_3_meal_details.jpg)<br>
-![meal_app_4_favorites](img/compl_edit/meal/meal_app_4_favorites.jpg)<br>
-![meal_app_5_drawer_menu](img/compl_edit/meal/meal_app_5_drawer_menu.jpg)<br>
-![meal_app_6_checkbox_filters](img/compl_edit/meal/meal_app_6_checkbox_filters.jpg)<br>
+<img src="img/compl_edit/meal/meal_app_screens.jpg" width="200"><br>
+<img src="img/compl_edit/meal/meal_app_2.jpg" width="200"><br>
+<img src="img/compl_edit/meal/meal_app_3_meal_details.jpg" width="200"><br>
+<img src="img/compl_edit/meal/meal_app_4_favorites.jpg" width="200"><br>
+<img src="img/compl_edit/meal/meal_app_5_drawer_menu.jpg" width="200"><br>
+<img src="img/compl_edit/meal/meal_app_6_checkbox_filters.jpg" width="200"><br>
 
 ###### lesson 183 meals app with riverpod example
-![meals_app_riverpod_1](img/compl_edit/meal/meals_app_riverpod_1.jpg)<br>
+<img src="img/compl_edit/meal/meals_app_riverpod_1.jpg" width="200"><br>
 
-![meals_app_riverpod_2](img/compl_edit/meal/meals_app_riverpod_2.jpg)
+<img src="img/compl_edit/meal/meals_app_riverpod_2.jpg" width="200">
 </details>
 
 ### les207 shopping list with forms examples
@@ -75,108 +75,111 @@
  - TextFormField() integrated with Form()
 <details>
 
-![shopping_list_1](img/compl_edit/shopping_list/shopping_list_1.jpg)<br>
-![shopping_list_2](img/compl_edit/shopping_list/shopping_list_2.jpg)<br>
-![shopping_list_3](img/compl_edit/shopping_list/shopping_list_3.jpg)<br>
+<img src="img/compl_edit/shopping_list/shopping_list_1.jpg" width="200"><br>
+<img src="img/compl_edit/shopping_list/shopping_list_2.jpg" width="200"><br>
+<img src="img/compl_edit/shopping_list/shopping_list_3.jpg" width="200"><br>
 </details>
+
+### les221 http connect to BackEnd
+<img src="img/compl_edit/back_end/some.jpg" width="200">
 
 --------------------------------------------------------------------------------
 # Learn_flutter
 ###### https://www.udemy.com/course/learn_flutter/
 #### main_lesson15_16_img_font
-![main_lesson15_16_img_font](img/learn_flutter/main_lesson15_16_img_font.jpg)
+<img src="img/learn_flutter/main_lesson15_16_img_font.jpg" width="200">
 ..
 ## state_ful_less_13_14
 #### main_lesson13_stateless btn don't work
-![main_lesson13_stateless](img/learn_flutter/main_lesson13_stateless.jpg)
+<img src="img/learn_flutter/main_lesson13_stateless.jpg" width="200">
 ..
 #### main_lesson22_row_column
-![main_lesson22_row_column](img/learn_flutter/main_lesson22_row_column.jpg)
+<img src="img/learn_flutter/main_lesson22_row_column.jpg" width="200">
 ..
 #### main_lesson23_expanded
-![main_lesson23_expanded](img/learn_flutter/main_lesson23_expanded.jpg)
+<img src="img/learn_flutter/main_lesson23_expanded.jpg" width="200">
 ..
 ### main_lesson24_stack
-![main_lesson24_stack](img/learn_flutter/main_lesson24_stack.jpg)
+<img src="img/learn_flutter/main_lesson24_stack.jpg" width="200">
 ..
 ### main_lesson25_weather_app
-![main_lesson25_weather_app](img/learn_flutter/main_lesson25_weather_app.jpg)
+<img src="img/learn_flutter/main_lesson25_weather_app.jpg" width="200">
 ..
 ### main_lesson26_list_view
-![main_lesson26_list_view](img/learn_flutter/main_lesson26_list_view.jpg)
+<img src="img/learn_flutter/main_lesson26_list_view.jpg" width="200">
 ..
 ### main_lesson27_list_view_generate
-![main_lesson27_list_view_generate](img/learn_flutter/main_lesson27_list_view_generate.jpg)
+<img src="img/learn_flutter/main_lesson27_list_view_generate.jpg" width="200">
 ..
 ### main_lesson28_list_view_dynamic
-![main_lesson28_list_view_dynamic](img/learn_flutter/main_lesson28_list_view_dynamic.jpg)
+<img src="img/learn_flutter/main_lesson28_list_view_dynamic.jpg" width="200">
 ..
 ### main_material_design_9_10
-![main_material_design_9_10](img/learn_flutter/main_material_design_9_10.jpg)
+<img src="img/learn_flutter/main_material_design_9_10.jpg" width="200">
 ..
 ### main_scaffold_11_12
-![main_scaffold_11_12](img/learn_flutter/main_scaffold_11_12.jpg)
+<img src="img/learn_flutter/main_scaffold_11_12.jpg" width="200">
 ..
 
 --------------------------------------------------------------------------------
 # pro_flutter
 ###### https://www.udemy.com/course/pro_flutter/
 ### lesson_10_1
-![lesson_10_1](img/pro_flutter/lesson_10_1.jpg)
+<img src="img/pro_flutter/lesson_10_1.jpg" width="200">
 .. 
 ### lesson_10_2
-![lesson_10_2](img/pro_flutter/lesson_10_2.jpg)
+<img src="img/pro_flutter/lesson_10_2.jpg" width="200">
 .. 
 ### lesson_11
-![lesson_11](img/pro_flutter/lesson_11.jpg)
+<img src="img/pro_flutter/lesson_11.jpg" width="200">
 .. 
 ### lesson_9
-![lesson_9](img/pro_flutter/lesson_9.jpg)
+<img src="img/pro_flutter/lesson_9.jpg" width="200">
 .. 
 ### lesson_9/four_main_row_column
-![four_main_row_column](img/pro_flutter/four_main_row_column.jpg)
+<img src="img/pro_flutter/four_main_row_column.jpg" width="200">
 .. 
 ### lesson_9/six_main_grid_view
-![six_main_grid_view](img/pro_flutter/six_main_grid_view.jpg)
+<img src="img/pro_flutter/six_main_grid_view.jpg" width="200">
 .. 
 ### navigation_routes_14
-![navigate_route_1](img/pro_flutter/navigate_route_1.jpg)
+<img src="img/pro_flutter/navigate_route_1.jpg" width="200">
 ..
-![navigate_route_2](img/pro_flutter/navigate_route_2.jpg)
+<img src="img/pro_flutter/navigate_route_2.jpg" width="200">
 
 ### /widgets_examples/list_view7
-![list_view7](img/pro_flutter/widgets_examples/list_view_7.jpg)
+<img src="img/pro_flutter/widgets_examples/list_view_7.jpg" width="200">
 ..
 ### /widgets_examples/grid_view_table_8
-![grid_view_table_8](img/pro_flutter/widgets_examples/grid_view_table_8.jpg)
+<img src="img/pro_flutter/widgets_examples/grid_view_table_8.jpg" width="200">
 ..
 ### /widgets_examples/column_row_horizontal_vertical
-![column_row_horizontal_vertical](img/pro_flutter/widgets_examples/column_row_horizontal_vertical.jpg)
+<img src="img/pro_flutter/widgets_examples/column_row_horizontal_vertical.jpg" width="200">
 ..
 ### /widgets_examples/lesson9
-![send_data_to_other_device](img/pro_flutter/widgets_examples/send_data_to_other_device.jpg)
+<img src="img/pro_flutter/widgets_examples/send_data_to_other_device.jpg" width="200">
 ..
 ### /widgets_examples/theme_example13_main
-![theme_example13_main](img/pro_flutter/widgets_examples/theme_example13_main.jpg)
+<img src="img/pro_flutter/widgets_examples/theme_example13_main.jpg" width="200">
 ..
 
 --------------------------------------------------------------------------------
 # other_lessons
 ### filepicker_dont_ready
-![filepicker_dont_ready](img/other_lessons/filepicker_dont_ready.jpg)
+<img src="img/other_lessons/filepicker_dont_ready.jpg" width="200">
 ..
 ### infinite_list
-![infinite_list](img/other_lessons/infinite_list.jpg)
+<img src="img/other_lessons/infinite_list.jpg" width="200">
 ..
 ### jsonuse_example
-![jsonuse_example](img/other_lessons/jsonuse_example.jpg)
+<img src="img/other_lessons/jsonuse_example.jpg" width="200">
 ..
 ### 1) using_edittext.dart (720)
-![using_edittext](img/other_lessons/using_edittext.jpg)
+<img src="img/other_lessons/using_edittext.jpg" width="200">
 ..
 ### 2) text_editor_v2.dart (720)
-![text_editor_v2](img/other_lessons/text_editor_v2.jpg)
+<img src="img/other_lessons/text_editor_v2.jpg" width="200">
 ..
 ### 3) text_editor_v1.dart (720)
-![text_editor_v1](img/other_lessons/text_editor_v1.jpg)
+<img src="img/other_lessons/text_editor_v1.jpg" width="200">
 ..
