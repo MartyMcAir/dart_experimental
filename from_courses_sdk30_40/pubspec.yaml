@@ -48,6 +48,7 @@ dependencies:
   intl: ^0.20.2
   transparent_image: ^2.0.1
   flutter_riverpod: ^2.6.1
+  http: ^1.4.0
   # riverpod: ^2.6.1 // from https://pub.dev/packages/riverpod/install
   # https://riverpod.dev/ru/docs/introduction/getting_started
   # hooks_riverpod: ^3.0.0-dev.15

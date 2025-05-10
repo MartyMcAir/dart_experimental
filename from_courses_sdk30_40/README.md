@@ -12,7 +12,7 @@
 <img src="img/compl_edit/roll_dice.jpg" width="200">
 
 ### les53_quiz_app
-<img src="img/compl_edit/quiz/quiz_1.jpg" width="200">
+<img src="img/compl_edit/quiz/quiz_1.jpg" width="100">
 <details>
 <img src="img/compl_edit/quiz/quiz_2.jpg" width="300"><br>
 <img src="img/compl_edit/quiz/quiz_3.jpg" width="300"><br>
@@ -24,6 +24,7 @@
 - if (Platform.isIOS), theme: ThemeData(useMaterial3: true)
 - examples to use: Theme from(..) & copyWith(..) & colorScheme
 - Theme dark & light by device settings and TextField
+- based on one color: ColorScheme.fromSeed(seedColor..
 <img src="img/compl_edit/expense/expense_1.jpg" width="200">
 <details>
 <img src="img/compl_edit/expense/expense_1.jpg" width="300">
@@ -49,7 +50,7 @@
   - lesson 183 meals app with riverpod example
     - theme: ThemeData(useMaterial3: true) & colorCheme (colorSchemeSeed?)
   - lesson 198 meals app with animation
-<img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="200">
+<img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="150">
 <details>
 <img src="img/compl_edit/meal/meal_app_1_categories.jpg" width="300">
 <img src="img/compl_edit/meal/meal_app_screens.jpg" width="400"><br>
@@ -73,7 +74,7 @@
 <img src="img/compl_edit/shopping_list/shopping_list_3.jpg" width="300"><br>
 <hr></details>
 
-### les221 http connect to BackEnd
+### les221 shop list with FireBase
 <img src="img/compl_edit/back_end/some.jpg" width="200">
 
 
