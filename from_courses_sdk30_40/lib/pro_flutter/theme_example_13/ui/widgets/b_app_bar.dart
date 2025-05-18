@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'b_app_bar_button.dart';
 
 class BAppBar extends StatelessWidget {
   const BAppBar({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

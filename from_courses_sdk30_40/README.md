@@ -1,8 +1,18 @@
-####### ----------------------
+.project_setup.yml
+- - - - - - - - - - - - 
+- flutter doctor --verbose
+- flutter pub upgrade
+- flutter pub outdated
+- - - - - - - -  - - - -
+- flutter precache
 - dart pub cache repair
 - flutter clean
-- dart pub get
+- flutter create .
 - flutter pub get
+- - - - - - - - - - - -
+- flutter devices
+- flutter config --enable-android
+- flutter run -d emulator-5554 -t lib\complete_guide\les237_fovirite_place_app\main_237.dart
 
 ## complete_guide - Flutter & Dart - The Complete Guide [2025 Edition]
 ###### https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/
@@ -84,7 +94,10 @@
 <img src="img/compl_edit/shopping_list/shop_list_fire_base_4.jpg" width="250">
 <hr></details>
 
-### les237 use native sensors in device (camera /gps /etc) loading..
+### les237 favorite place app
+- image_picker, 
+- use native sensors in device (gps) 
+-  ColorScheme.fromSeed
 <img src="img/compl_edit/native/some.jpg" width="200">
 
 <hr>--------------------------------------------------------------------------------

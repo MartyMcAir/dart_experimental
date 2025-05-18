@@ -1,9 +1,43 @@
+# --- iOS --- 
 ios/
+# ios/Pods/
+# ios/Runner.xcworkspace/
+# ios/build/
+# ios/.symlinks/
+# ios/Flutter/Flutter.podspec
+# ios/Flutter/Generated.xcconfig
+# ios/Flutter/flutter_export_environment.sh
+# --- Android --- 
 android/
+!android/app/build.gradle.kts
+!android/build.gradle
+!android/gradle.properties
+!android/gradle/wrapper/gradle-wrapper.properties
+# --- Linux --- 
 linux/
+# linux/build/
+# --- Mac Os --- 
 macos/
+# macos/Flutter/ephemeral/
+# macos/build/
+# --- Windows --- 
 windows/
+# windows/build/
+# windows/x64/
+# windows/runner/Debug/
+# windows/runner/Release/
+# --- Web --- 
 web/
+# build/
+# web/main.dart.js
+# web/flutter.js
+# web/assets/
+
+# save for info (SDK, platform, etc)
+!.metadata
+!pubspec.yaml
+!.project_setup.yml
+!analysis_options.yaml
 
 # Miscellaneous
 *.class

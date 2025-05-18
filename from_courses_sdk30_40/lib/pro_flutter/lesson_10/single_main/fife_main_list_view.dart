@@ -19,7 +19,7 @@ class ScreenWidget extends StatelessWidget {
 }
 
 class TextWidget extends StatelessWidget {
-  const TextWidget({Key? key, this.text = 'default'}) : super(key: key);
+  const TextWidget({super.key, this.text = 'default'});
 
   final String text;
 

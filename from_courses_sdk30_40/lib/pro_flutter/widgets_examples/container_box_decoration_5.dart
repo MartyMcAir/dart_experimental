@@ -19,7 +19,7 @@ class ScreenWidget extends StatelessWidget {
 }
 
 class SimpleWidget extends StatelessWidget {
-  const SimpleWidget({Key? key}) : super(key: key);
+  const SimpleWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

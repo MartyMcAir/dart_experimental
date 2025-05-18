@@ -129,7 +129,7 @@ class GridViewCountWidget extends StatelessWidget {
 // ------------------------------------------------------------------
 
 class TextWidget extends StatelessWidget {
-  const TextWidget({Key? key, this.text = 'default txt'}) : super(key: key);
+  const TextWidget({super.key, this.text = 'default txt'});
   final String text;
 
   @override

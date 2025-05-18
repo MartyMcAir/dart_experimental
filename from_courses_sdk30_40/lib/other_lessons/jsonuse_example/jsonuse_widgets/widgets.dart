@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'utils.dart';
 
 class SimpleObjectView extends StatelessWidget {
-  const SimpleObjectView({required this.simpleObject, Key? key}) : super(key: key);
+  const SimpleObjectView({required this.simpleObject, super.key});
 
   final dynamic simpleObject;
 
@@ -90,7 +90,7 @@ class SimpleObjectView extends StatelessWidget {
 }
 
 class SimpleObjectViewList extends StatelessWidget {
-  const SimpleObjectViewList({required this.simpleObjects, Key? key}) : super(key: key);
+  const SimpleObjectViewList({required this.simpleObjects, super.key});
 
   final List<dynamic> simpleObjects;
 
@@ -122,7 +122,7 @@ class SimpleObjectViewList extends StatelessWidget {
 class ComplexObjectView extends StatelessWidget {
   final dynamic complexObject;
 
-  const ComplexObjectView({required this.complexObject, Key? key}) : super(key: key);
+  const ComplexObjectView({required this.complexObject, super.key});
 
   List<Widget> _generateSimpleObjectWidgets(Iterable<dynamic>? simpleObjects) {
     if (simpleObjects == null) {
@@ -251,7 +251,7 @@ class ComplexObjectView extends StatelessWidget {
 }
 
 class ComplexObjectViewList extends StatelessWidget {
-  const ComplexObjectViewList({required this.complexObjects, Key? key}) : super(key: key);
+  const ComplexObjectViewList({required this.complexObjects, super.key});
 
   final List<dynamic> complexObjects;
 

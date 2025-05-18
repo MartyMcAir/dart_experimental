@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'ui/widgets/b_app_bar.dart';
+
 import './utils/constants.dart';
 import './utils/theme.dart';
+import 'ui/widgets/b_app_bar.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,10 +40,7 @@ class HomeScreen extends StatelessWidget {
         title: Text(
           'Custom Theme',
           // style: Theme.of(context).textTheme.headline6,
-          style: Theme.of(context)
-              .textTheme
-              .titleLarge
-              ?.copyWith(fontSize: largeTextSize),
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: largeTextSize),
         ),
       ),
       body: const ListWidget(),

@@ -19,7 +19,7 @@ class ScreenWidget extends StatelessWidget {
 }
 
 class TextWidget extends StatelessWidget {
-  const TextWidget({Key? key, required this.text}) : super(key: key);
+  const TextWidget({super.key, required this.text});
 
   final String text;
 
@@ -29,8 +29,7 @@ class TextWidget extends StatelessWidget {
       alignment: Alignment.center,
       padding: const EdgeInsets.all(20),
       margin: const EdgeInsets.all(5),
-      decoration:
-          BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
+      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
       child: Text(
         text,
         style: const TextStyle(fontSize: 40),
@@ -100,8 +99,7 @@ class ListViewCustomWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.custom(childrenDelegate:
-        SliverChildBuilderDelegate((BuildContext context, int index) {
+    return ListView.custom(childrenDelegate: SliverChildBuilderDelegate((BuildContext context, int index) {
       return TextWidget(text: "$index");
     }));
   }

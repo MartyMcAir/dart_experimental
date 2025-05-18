@@ -21,14 +21,13 @@ class ScreenWidget extends StatelessWidget {
 
 class TextWidget extends StatelessWidget {
   final String text;
-  const TextWidget({Key? key, required this.text}) : super(key: key);
+  const TextWidget({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      decoration:
-          BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
+      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
       child: Text(
         text,
         style: const TextStyle(fontSize: 40),
@@ -84,8 +83,7 @@ class PageViewWidget extends StatelessWidget {
                   onPressed: () {
                     // controller.jumpToPage(0);
                     controller.animateToPage(0,
-                        duration: const Duration(seconds: 1),
-                        curve: Curves.easeInBack);
+                        duration: const Duration(seconds: 1), curve: Curves.easeInBack);
                   })
             ],
           ),

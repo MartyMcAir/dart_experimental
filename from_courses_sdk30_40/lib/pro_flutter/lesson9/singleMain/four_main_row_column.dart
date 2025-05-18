@@ -22,8 +22,7 @@ class ScreenWidget extends StatelessWidget {
 
 class TextWidget extends StatelessWidget {
   const TextWidget(
-      {Key? key, this.text = '', this.color = Colors.black, this.width = 3.14, this.fontSize = 13})
-      : super(key: key);
+      {super.key, this.text = '', this.color = Colors.black, this.width = 3.14, this.fontSize = 13});
 
   final String text;
   final Color color;

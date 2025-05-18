@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
 }
 
 class BodyListView extends StatelessWidget {
-  const BodyListView({Key? key}) : super(key: key);
+  const BodyListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,10 +35,7 @@ class BodyListView extends StatelessWidget {
 
 Widget _myListView() {
   final List<ListItem> items = List<ListItem>.generate(
-      100,
-      (i) => i % 6 == 0
-          ? HeadingItem('Heading $i')
-          : MessageItem('Sender $i', 'Message body $i'));
+      100, (i) => i % 6 == 0 ? HeadingItem('Heading $i') : MessageItem('Sender $i', 'Message body $i'));
 
   return ListView.builder(
     itemCount: items.length,
@@ -47,8 +44,7 @@ Widget _myListView() {
 
       if (item is HeadingItem) {
         return ListTile(
-          title: Text(item.heading,
-              style: Theme.of(context).textTheme.headlineSmall),
+          title: Text(item.heading, style: Theme.of(context).textTheme.headlineSmall),
         );
       } else if (item is MessageItem) {
         return ListTile(

@@ -111,7 +111,7 @@ class PageViewCustomWidget extends StatelessWidget {
 
 class TextWidget extends StatelessWidget {
   final String text;
-  const TextWidget({Key? key, this.text = 'default'}) : super(key: key);
+  const TextWidget({super.key, this.text = 'default'});
 
   @override
   Widget build(BuildContext context) {

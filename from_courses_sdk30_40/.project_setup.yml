@@ -1,0 +1,56 @@
+editor: "VS Code"
+meta_info: .metadata
+flutter_version: 3.24.0
+dart_version: 3.5.0
+java_version: 17.0.7
+kotlin_version: 1.9.20
+gradle_plugin_version: 8.2.1
+gradle_wrapper_version: 8.4
+compile_sdk: 36
+ndk_version: 27.0.12077973
+emulator:
+  name: Pixel_4a_API_36_arm64
+  abi: arm64-v8a
+
+host_machines:
+  - os: "Windows 11 Pro 22H2"
+    cpu: "Intel i5-13500H"
+    cpu_cores: 12
+    ram: "16 GB"
+
+devices:
+  - name: Huawei Nova 8
+    model: ANG-LX1
+    platform: android-arm64
+    android_version: 10
+    api_level: 29
+    chipset: Kirin 820E
+    cpu_cores: 8
+    cpu_info: "1x Cortex-A76 @ 2.22GHz, 3x Cortex-A76 @ 2.04GHz, 4x Cortex-A55 @ 1.84GHz"
+    ram: 8 GB
+    storage_total: 109.51 GB
+    screen_timeout: disabled_when_charging
+    remarks: "Main testing device. Fast, reliable USB debugging, stable hot reload, sufficient RAM and storage. No Google Play Store (!)"
+  - name: Samsung Galaxy M52 5G
+    model: SM-M526B
+    platform: android-arm64
+    android_version: 13
+    api_level: 33
+    chipset: Snapdragon 778G
+    cpu_cores: 8
+    cpu_info: "4x Cortex-A78 @ 2.4GHz, 4x Cortex-A55 @ 1.8GHz"
+    ram: 6 GB
+    storage_total: 128 GB
+    screen_timeout: disabled_when_charging
+    remarks: "Solid mid-high performance, good for release testing and animation smoothness checks."
+  - name: Asus ZenFone Max Pro M1
+    model: ZB602KL
+    platform: android-arm64
+    android_version: 10
+    api_level: 29
+    chipset: Snapdragon 660 (SDM660)
+    cpu_cores: 8
+    cpu_info: "4x Kryo 260 Gold + 4x Kryo 260 Silver"
+    ram: 3 GB
+    storage_total: 32 GB
+    remarks: "Legacy backup device. Limited RAM and outdated chipset make hot reload slow. Suitable for compatibility testing on low-end hardware."
