@@ -100,7 +100,7 @@
 -  ColorScheme.fromSeed, png with opacity / transparent
 <img src="img/compl_edit/place/places_screen.jpg" width="200">
 <details>
-  <summary>▶️ Demo animation (click to expand)</summary>
+  <summary>▶️ Demo animation - click to expand (⚠️23MB — loading may take time)</summary>
   <img src="img/compl_edit/place/places_animation.gif"/>
 <hr></details>
 
