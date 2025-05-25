@@ -5,11 +5,25 @@ import '../providers/user_places.dart';
 import '../widget/places_list.dart';
 import 'add_place.dart';
 
-class PlacesScreen extends ConsumerWidget {
+class PlacesScreen extends ConsumerStatefulWidget {
   const PlacesScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<PlacesScreen> createState() => _PlacesScreenState();
+}
+
+class _PlacesScreenState extends ConsumerState<PlacesScreen> {
+  late Future<void> _placesFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    _placesFuture = ref.read(userPolacesProvider.notifier).loadPlaces();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // Widget build(BuildContext context, WidgetRef ref) {
     final userPlaces = ref.watch(userPolacesProvider);
 
     return Scaffold(
@@ -28,7 +42,16 @@ class PlacesScreen extends ConsumerWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: PlacesList(places: userPlaces),
+        child: FutureBuilder(
+            future: _placesFuture,
+            builder: (context, snapshot) => snapshot.connectionState == ConnectionState.waiting
+                ? const Center(child: CircularProgressIndicator())
+                : PlacesList(
+                    places: userPlaces,
+                    onRemovePlace: (place) {
+                      ref.read(userPolacesProvider.notifier).onRemovePlace(place);
+                    },
+                  )),
       ),
     );
   }

@@ -54,6 +54,9 @@ dependencies:
   location: ^8.0.0
   flutter_map: ^8.1.1
   latlong2: ^0.9.1
+  path: ^1.9.1
+  sqflite: ^2.4.2
+  shared_preferences: ^2.5.3
   # riverpod: ^2.6.1 // from https://pub.dev/packages/riverpod/install
   # https://riverpod.dev/ru/docs/introduction/getting_started
   # hooks_riverpod: ^3.0.0-dev.15
@@ -70,7 +73,8 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  # flutter_lints: ^5.0.0 # old version wrong order
+  flutter_lints: ^3.0.1
   build_runner: ^2.0.4 # for jsonuse_example
   built_value_generator: ^8.0.0 # for jsonuse_example
   json_serializable: ^6.9.0 # for jsonuse_example

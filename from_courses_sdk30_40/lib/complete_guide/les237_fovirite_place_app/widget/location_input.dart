@@ -7,6 +7,7 @@ import 'package:latlong2/latlong.dart';
 import 'package:location/location.dart';
 
 import '../models/place.dart';
+import '../screens/map.dart';
 
 class LocationInput extends StatefulWidget {
   const LocationInput({super.key, required this.onSelectLocation});
@@ -53,6 +54,33 @@ class _LocationInputState extends State<LocationInput> {
     );
   }
 
+  Future<void> _savePlace(double lat, double lng) async {
+    final url = Uri.parse(
+        'https://nominatim.openstreetmap.org/reverse?lat=$lat&lon=$lng&accept-language=en&format=json');
+    final response = await http.get(url, headers: {
+      'Content-Type': 'application/json',
+      'User-Agent': 'flutter_app_for_test',
+    });
+    final Map<String, dynamic> resData = json.decode(response.body);
+    final displayName = resData['display_name']; // full addres with country &etc..
+    // final type = resData['type']; // apartments
+    // final addresstype = resData['addresstype']; // building
+    // final address = resData['address']; // object address{ }
+    // - house_number = 38 - postcode = 0120
+    // - country_code = ge - country = Georgia
+    // - city = Tbilisi - quarter = Navtlughi
+    // final boundingbox1 = resData['boundingbox'][0]; // array boundingbox[ ]
+    // final boundingbox2 = resData['boundingbox'][1];
+    // final boundingbox3 = resData['boundingbox'][2];
+    // final boundingbox4 = resData['boundingbox'][3];
+
+    setState(() {
+      _pickedLocation = PlaceLocation(latitude: lat, longitude: lng, address: displayName);
+      _isGettingLocation = false;
+    });
+    widget.onSelectLocation(_pickedLocation!);
+  }
+
   void _getCurrentLocation() async {
     Location location = Location();
 
@@ -85,31 +113,16 @@ class _LocationInputState extends State<LocationInput> {
     if (lat == null || lng == null) {
       return; // temporarely solution
     }
+    _savePlace(lat, lng);
+  }
 
-    final url = Uri.parse(
-        'https://nominatim.openstreetmap.org/reverse?lat=$lat&lon=$lng&accept-language=en&format=json');
-    final response = await http.get(url, headers: {
-      'Content-Type': 'application/json',
-      'User-Agent': 'flutter_app_for_test',
-    });
-    final Map<String, dynamic> resData = json.decode(response.body);
-    final displayName = resData['display_name']; // full addres with country &etc..
-    // final type = resData['type']; // apartments
-    // final addresstype = resData['addresstype']; // building
-    // final address = resData['address']; // object address{ }
-    // - house_number = 38 - postcode = 0120
-    // - country_code = ge - country = Georgia
-    // - city = Tbilisi - quarter = Navtlughi
-    // final boundingbox1 = resData['boundingbox'][0]; // array boundingbox[ ]
-    // final boundingbox2 = resData['boundingbox'][1];
-    // final boundingbox3 = resData['boundingbox'][2];
-    // final boundingbox4 = resData['boundingbox'][3];
-
-    setState(() {
-      _pickedLocation = PlaceLocation(latitude: lat, longitude: lng, address: displayName);
-      _isGettingLocation = false;
-    });
-    widget.onSelectLocation(_pickedLocation!);
+  void _selectOnMap() async {
+    final pickedLocation =
+        await Navigator.of(context).push<LatLng>(MaterialPageRoute(builder: (ctx) => MapScreen()));
+    if (pickedLocation == null) {
+      return;
+    }
+    _savePlace(pickedLocation.latitude, pickedLocation.longitude);
   }
 
   @override
@@ -152,7 +165,7 @@ class _LocationInputState extends State<LocationInput> {
             TextButton.icon(
               icon: Icon(Icons.map),
               label: Text('Selected on Map'),
-              onPressed: () {},
+              onPressed: _selectOnMap,
             ),
           ],
         ),

@@ -192,5 +192,8 @@
 		"numberedBookmarks.lineBackground": "#9ab04757",
 		// "numberedBookmarks.lineBorder": "#FF0000",
 		// "numberedBookmarks.overviewRuler": "#157EFB88"
-	}
+	},
+	"dart.analysisExcludedFolders": [],
+	"dart.analysisServer.enableCompletionModel": true,
+	"dart.showLintNames": true
 }

@@ -95,10 +95,15 @@
 <hr></details>
 
 ### les237 favorite place app
-- image_picker, 
+- image_picker, local database sql lite, geoLocation + FlutterMap
 - use native sensors in device (gps) 
--  ColorScheme.fromSeed
-<img src="img/compl_edit/native/some.jpg" width="200">
+-  ColorScheme.fromSeed, png with opacity / transparent
+<img src="img/compl_edit/place/places_screen.jpg" width="200">
+<details>
+  <summary>▶️ Demo animation (click to expand)</summary>
+  <img src="img/compl_edit/place/places_animation.gif"/>
+<hr></details>
+
 
 <hr>--------------------------------------------------------------------------------
 
