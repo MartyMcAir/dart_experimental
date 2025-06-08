@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'widgets/grocery_list_try_catch.dart';
 
@@ -6,10 +7,10 @@ import 'widgets/grocery_list_try_catch.dart';
 // les 224 https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37215156#overview
 // FireBase https://support.google.com/appsheet/answer/10104995?hl=en
 // go to console -> get started.. -> prj name: flutter-prep
-// => https://console.firebase.google.com/project/flutter-prep-e71e7/overview?hl=ru
+// => https://console.firebase.google.com/project/ * /overview?hl=ru
 // -> real time data base
 //
-// CREATE test data base -> https://console.firebase.google.com/project/flutter-prep-e71e7/database/flutter-prep-e71e7-default-rtdb/data?hl=ru
+// CREATE test data base -> https://console.firebase.google.com/project/ * /database/ * /data?hl=ru
 // DOCS REST https://firebase.google.com/docs/reference/rest/database?hl=ru
 //
 // https://pub.dev/packages/http/install -> flutter pub add http
@@ -18,7 +19,8 @@ import 'widgets/grocery_list_try_catch.dart';
 var kDarkColorScheme =
     ColorScheme.fromSeed(brightness: Brightness.dark, seedColor: const Color.fromARGB(255, 50, 58, 60));
 
-void main() {
+Future<void> main() async {
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 

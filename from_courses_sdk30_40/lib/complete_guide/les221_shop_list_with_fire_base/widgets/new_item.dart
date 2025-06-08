@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import '../../../config/firebase_config.dart';
 import '../data/categories.dart';
 import '../models/category.dart';
 import '../models/grocery_item.dart';
@@ -30,7 +31,7 @@ class _NewItemState extends State<NewItem> {
         _isSending = true;
       });
       // les226 https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37215160#overview
-      final url = Uri.https('flutter-prep-e71e7-default-rtdb.firebaseio.com', 'shopping-list.json');
+      final url = Uri.https('$firebaseUrl', '$firebaseShoppingList.json');
       final response = await http.post(
         url,
         headers: {'Content-Type': 'application/json'},

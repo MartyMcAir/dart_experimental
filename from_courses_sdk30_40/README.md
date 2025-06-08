@@ -4,11 +4,14 @@
 - flutter pub upgrade
 - flutter pub outdated
 - - - - - - - -  - - - -
+- Android Studio -> File > Invalidate Caches -> Restart
 - flutter precache
 - dart pub cache repair
+- rm -rf .dart_tool .gradle build
 - flutter clean
 - flutter create .
 - flutter pub get
+- flutter pub upgrade
 - - - - - - - - - - - -
 - flutter devices
 - flutter config --enable-android
@@ -19,6 +22,7 @@
 - https://academind.com/
 
 ### les38_dice_roller_app
+
 <img src="img/compl_edit/roll_dice.jpg" width="200">
 
 ### les53_quiz_app
@@ -95,15 +99,31 @@
 <hr></details>
 
 ### les237 favorite place app
-- image_picker, local database sql lite, geoLocation + FlutterMap
-- use native sensors in device (gps) 
--  ColorScheme.fromSeed, png with opacity / transparent
+- image_picker, local database sql lite
+- use native sensors in device: gps, camera 
+- using: geoLocation + FlutterMap & openstreetmap
+- ColorScheme.fromSeed, png with opacity / transparent
 <img src="img/compl_edit/place/places_screen.jpg" width="200">
 <details>
   <summary>▶️ Demo animation - click to expand (⚠️23MB — loading may take time)</summary>
   <img src="img/compl_edit/place/places_animation.gif"/>
 <hr></details>
 
+
+### les271 chat app (msg bubble)
+- device camera
+- supabase: user authentication, storage, database
+- img upload to a Backend (Backend via a SDK)
+- using flutter_dotenv, mime (for auto mime type img png/jpg/etc)
+- connectivity_plus - check network connection
+- log print example, 
+- push notification 
+<img src="img/compl_edit/chat_app/chat_app_auth.jpg" width="200">
+<details>
+  <summary>▶️ Demo animation - click to expand (⚠️18MB — loading may take time)</summary>
+  <img src="img/compl_edit/chat_app/chat_app.gif"/>
+  <img src="img/compl_edit/chat_app/chat_app.jpg" width="450"/>
+<hr></details>
 
 <hr>--------------------------------------------------------------------------------
 

@@ -1,13 +1,24 @@
+# flutter doctor --verbose
 editor: "VS Code"
+firebase:
+  integrated: true
+  services:
+    - firebase_core
+    - firebase_auth
+    - cloud_firestore
+    - firebase_messaging
 meta_info: .metadata
-flutter_version: 3.24.0
-dart_version: 3.5.0
+flutter_version: 3.29.3
+dart_version: 3.7.2
 java_version: 17.0.7
 kotlin_version: 1.9.20
 gradle_plugin_version: 8.2.1
-gradle_wrapper_version: 8.4
-compile_sdk: 36
+gradle_wrapper_version: 8.10.2
+compile_sdk: 35
+target_sdk: 33
+min_sdk: 21
 ndk_version: 27.0.12077973
+build_tools: 36.0.0
 emulator:
   name: Pixel_4a_API_36_arm64
   abi: arm64-v8a

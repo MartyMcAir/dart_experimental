@@ -9,10 +9,14 @@ ios/
 # ios/Flutter/flutter_export_environment.sh
 # --- Android --- 
 android/
-!android/app/build.gradle.kts
 !android/build.gradle
 !android/gradle.properties
 !android/gradle/wrapper/gradle-wrapper.properties
+!android\build.gradle.kts
+!android\app\build.gradle.kts
+!android\app\google-services.json
+!android\app\src\main\AndroidManifest.xml
+!android\app\src\profile\AndroidManifest.xml
 # --- Linux --- 
 linux/
 # linux/build/
@@ -34,10 +38,16 @@ web/
 # web/assets/
 
 # save for info (SDK, platform, etc)
+.env
 !.metadata
 !pubspec.yaml
 !.project_setup.yml
 !analysis_options.yaml
+# !firebase.json # sensetive data
+# ~/.bashrc
+# export PUB_CACHE=/d/flutter_pub_cache
+# source ~/.bashrc
+# in environment var: PUB_CACHE = D:\flutter_pub_cache
 
 # Miscellaneous
 *.class

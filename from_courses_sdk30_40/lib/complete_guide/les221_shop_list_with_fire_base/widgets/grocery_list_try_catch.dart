@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import '../../../config/firebase_config.dart';
 import '../data/categories.dart';
 import '../models/grocery_item.dart';
 import 'new_item.dart';
@@ -30,7 +31,7 @@ class _GroceryListState extends State<GroceryList> {
     //les234 error handling like in java (almost)
     // https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37215198#overview
     try {
-      final url = Uri.https('flutter-prep-e71e7-default-rtdb.firebaseio.com', 'shopping-list.json');
+      final url = Uri.https('$firebaseUrl', '$firebaseShoppingList.json');
       final response = await http.get(url);
       if (response.statusCode >= 400) {
         setState(() {
@@ -88,7 +89,7 @@ class _GroceryListState extends State<GroceryList> {
       _groceryItems.remove(item);
     });
     //
-    final url = Uri.https('flutter-prep-e71e7-default-rtdb.firebaseio.com', 'shopping-list/${item.id}.json');
+    final url = Uri.https('$firebaseUrl', '$firebaseShoppingList/${item.id}.json');
     final response = await http.delete(url);
     // if I don't need to wait for this request to finish to update my local list
     // that's why wee don't use here await and async
