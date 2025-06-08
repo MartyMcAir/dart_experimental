@@ -153,6 +153,11 @@
 <img src="img/learn_flutter/main_material_design_9_10.jpg" width="300"><br>
 - main_scaffold_11_12
 <img src="img/learn_flutter/main_scaffold_11_12.jpg" width="300"><br>
+- dart testing unit, widget, integration (& e2e) (pubspec.yaml -> integration_test)
+- toJson, fromJson and http.Client and mocktail 
+<img src="img/learn_flutter/les132/testing_pyramid.jpg" width="300"><br>
+<img src="img/learn_flutter/les132/arrange_act_assert.jpg" width="300"><br>
+<img src="img/learn_flutter/les132/calc.jpg" width="300"><br>
 <hr></details>
 <hr>
 

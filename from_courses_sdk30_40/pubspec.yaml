@@ -64,6 +64,7 @@ dependencies:
   mime: ^2.0.0
   connectivity_plus: ^6.1.4
   onesignal_flutter: ^5.3.3
+  mocktail: ^1.0.4
   # riverpod: ^2.6.1 // from https://pub.dev/packages/riverpod/install
   # https://riverpod.dev/ru/docs/introduction/getting_started
   # hooks_riverpod: ^3.0.0-dev.15
@@ -73,6 +74,8 @@ dependencies:
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+  integration_test:
     sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
