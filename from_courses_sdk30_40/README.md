@@ -117,7 +117,7 @@
 - using flutter_dotenv, mime (for auto mime type img png/jpg/etc)
 - connectivity_plus - check network connection
 - log print example, 
-- push notification 
+- push notification using onesignal.com
 <img src="img/compl_edit/chat_app/chat_app_auth.jpg" width="200">
 <details>
   <summary>▶️ Demo animation - click to expand (⚠️18MB — loading may take time)</summary>
