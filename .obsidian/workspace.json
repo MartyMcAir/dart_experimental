@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "fc9958b63c6d34ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d7ffa8e98de08fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1bcc519569bf1433",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Новая вкладка"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b69ce513b7586302",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b81973e43455c7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d96f1b321732817f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "finance",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "062c397547c663ba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "2b03a9947a0b4889",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 273.5
+  },
+  "right": {
+    "id": "d636e87c0048922e",
+    "type": "split",
+    "children": [
+      {
+        "id": "22be0be0f731d5de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ba2981832723f3f1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки"
+            }
+          },
+          {
+            "id": "bfdef3e15cf42144",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки"
+            }
+          },
+          {
+            "id": "4261a89532c36a34",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "2467945bf5533b2b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Создать новую базу": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "062c397547c663ba",
+  "lastOpenFiles": [
+    "life_diary_notes/00_inbox/rent_250_or_300_from_income_map.md",
+    "systems_and_tooling/obsidian_notes/loss_audit_2026_03_31.md",
+    "systems_and_tooling/obsidian_notes/ai_hub_merge_report_2026_04_01.md",
+    "systems_and_tooling/obsidian_notes/obsidian_human_advice.md",
+    "systems_and_tooling/obsidian_notes/notes_sys_rules.md",
+    "systems_and_tooling/obsidian_notes/notes_optimize_ydeya.md",
+    "systems_and_tooling/obsidian_notes/note_system1.md",
+    "systems_and_tooling/obsidian_notes",
+    "ai_hub/99_archive/reports/2026_04_01/ai_hub_legacy_cleanup_2026_04_01.md",
+    "ai_hub/99_archive/reports/2026_04_01/links_reindex_ai_hub_after_legacy_cleanup.json",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01/_legacy_about_ai_tools/about_ai_tools/google/gemini/gemini_cli_or_assistant.md",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01/_legacy_about_ai_tools/about_ai_tools/google/gemini/gemini_for_windows.md",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01/_legacy_about_ai_tools/about_ai_tools/google/gemini/mcp_settings.md",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01/_legacy_about_ai_tools/about_ai_tools/google/gemini/get_gemini_assistant_and_cli.md",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01/_legacy_about_ai_tools/about_ai_tools/google/gemini",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01/_legacy_about_ai_tools/about_ai_tools/google",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01/_legacy_about_ai_tools/about_ai_tools",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01/_legacy_about_ai_tools",
+    "ai_hub/99_archive/legacy/ai_hub_legacy_2026_04_01",
+    "ai_hub/99_archive/legacy",
+    "ai_hub/99_archive/reports/2026_04_01/ai_hub_cleanup_wave3_2026_04_01.md",
+    "ai_hub/99_archive/reports/2026_04_01/links_reindex_ai_hub_after_code_root_cleanup.json",
+    "ai_hub/10_unclassified_notes/claude_calc.md",
+    "ai_hub/10_unclassified_notes/claude_cli_clear_problem.md",
+    "ai_hub/10_unclassified_notes/who_am_i.md",
+    "ai_hub/10_unclassified_notes/limits_week_calc.md",
+    "ai_hub/10_unclassified_notes/codex_can_be_runnable.md",
+    "ai_hub/10_unclassified_notes/sonnet_vs_qwen3.md",
+    "ai_hub/about_ai_tools/code_tools/open_ai_codex_variant_from_foc.md",
+    "ai_hub/about_ai_tools/code_tools/claude_code_variant_from_foc.md",
+    "ai_hub/about_ai_tools/code_tools/claude_auth_log_out.md",
+    "ai_hub/about_ai_tools/code_tools/config_open_ai_eng_description.md",
+    "ai_hub/about_ai_tools/code_tools/open_ai_codex.md",
+    "ai_hub/about_ai_tools/code_tools/claude_code.md",
+    "ai_hub/about_ai_tools/code_tools/ide_extensions.md",
+    "ai_hub/about_ai_tools/code_tools",
+    "ai_hub/a_img/ai_about/me/2025_07_13_me_scheme.jpg",
+    "ai_hub/a_base_for_agent/prompts/gpt_limit.jpg",
+    "ai_hub/a_base_for_agent/prompts/chatGpt_limit.jpg",
+    "ai_hub/a_img/2025_07_13_me_scheme.jpg",
+    "ai_hub/a_img/girls/oth_girl_from_rosytalk/rosytalk_image_vimpire_mavis.jpg",
+    "ai_hub/a_img/girls/oth_girl_from_rosytalk/rosytalk_image_pizza.jpg",
+    "ai_hub/a_img/girls/oth_girl_from_rosytalk/rosytalk_image_1755954270639.jpg",
+    "ai_hub/a_img/girls/oth_girl_from_rosytalk/rosyTalk.jpg",
+    "ai_hub/a_img/girls/oth_girl_from_rosytalk/red_flag.jpg",
+    "ai_hub/a_img/girls/mira/rosytalk_image_1755954493587.jpg"
+  ]
+}

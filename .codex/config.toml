@@ -1,0 +1,5 @@
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+
+[projects."ai_agent_trader"]
+trust_level = "trusted"

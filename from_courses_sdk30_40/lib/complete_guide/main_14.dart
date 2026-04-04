@@ -17,19 +17,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('First App'),
-        ),
+        appBar: AppBar(title: const Text('First App')),
         body: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'Hello World!',
-              ),
-              Text(
-                'It\'s time to learn Flutter!',
-              ),
+              Text('Hello World!'),
+              Text('It\'s time to learn Flutter!'),
             ],
           ),
         ),
